@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashScreenTheme" parent="Theme.SplashScreen">
+
+        <!-- Background color of splash -->
+        <item name="windowSplashScreenBackground">@color/background_dark</item>
+        <!-- Icon/logo for Android 12+ system splash -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenBehavior">icon_preferred</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/dnd</item>
+        <!-- Theme after splash -->
+        <item name="postSplashScreenTheme">@style/Theme.Javascript</item>
+    </style>
+</resources>

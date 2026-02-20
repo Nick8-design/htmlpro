@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================= LIGHT THEME ================= -->
+
+    <color name="primary_light">#FF5A5892</color>
+    <color name="on_primary_light">#FFFFFFFF</color>
+    <color name="primary_container_light">#FFE2DFFF</color>
+    <color name="on_primary_container_light">#FF424178</color>
+
+    <color name="secondary_light">#FF1C6586</color>
+    <color name="on_secondary_light">#FFFFFFFF</color>
+    <color name="secondary_container_light">#FFC4E7FF</color>
+    <color name="on_secondary_container_light">#FF004C69</color>
+
+    <color name="tertiary_light">#FF825513</color>
+    <color name="on_tertiary_light">#FFFFFFFF</color>
+    <color name="tertiary_container_light">#FFFFDDB8</color>
+    <color name="on_tertiary_container_light">#FF653E00</color>
+
+    <color name="error_light">#FFBA1A1A</color>
+    <color name="on_error_light">#FFFFFFFF</color>
+    <color name="error_container_light">#FFFFDAD6</color>
+    <color name="on_error_container_light">#FF93000A</color>
+
+    <color name="background_light">#FFFCF8FF</color>
+    <color name="on_background_light">#FF1B1B21</color>
+
+    <color name="surface_light">#FFFAF8FF</color>
+    <color name="on_surface_light">#FF1A1B21</color>
+    <color name="surface_variant_light">#FFE1E2EC</color>
+    <color name="on_surface_variant_light">#FF44464F</color>
+
+    <color name="outline_light">#FF757780</color>
+    <color name="outline_variant_light">#FFC5C6D0</color>
+    <color name="scrim_light">#FF000000</color>
+
+    <color name="inverse_surface_light">#FF2F3036</color>
+    <color name="inverse_on_surface_light">#FFF1F0F7</color>
+    <color name="inverse_primary_light">#FFC3C0FF</color>
+
+    <color name="surface_dim_light">#FFDAD9E0</color>
+    <color name="surface_bright_light">#FFFAF8FF</color>
+
+    <color name="surface_container_lowest_light">#FFFFFFFF</color>
+    <color name="surface_container_low_light">#FFF4F3FA</color>
+    <color name="surface_container_light">#FFEEEDF4</color>
+    <color name="surface_container_high_light">#FFE8E7EF</color>
+    <color name="surface_container_highest_light">#FFE3E2E9</color>
+
+    <!-- ================= DARK THEME ================= -->
+
+    <color name="primary_dark">#FFC3C0FF</color>
+    <color name="on_primary_dark">#FF2B2A60</color>
+    <color name="primary_container_dark">#FF424178</color>
+    <color name="on_primary_container_dark">#FFE2DFFF</color>
+
+    <color name="secondary_dark">#FF90CEF3</color>
+    <color name="on_secondary_dark">#FF00354A</color>
+    <color name="secondary_container_dark">#FF004C69</color>
+    <color name="on_secondary_container_dark">#FFC4E7FF</color>
+
+    <color name="tertiary_dark">#FFF8BB71</color>
+    <color name="on_tertiary_dark">#FF472A00</color>
+    <color name="tertiary_container_dark">#FF653E00</color>
+    <color name="on_tertiary_container_dark">#FFFFDDB8</color>
+
+    <color name="error_dark">#FFFFB4AB</color>
+    <color name="on_error_dark">#FF690005</color>
+    <color name="error_container_dark">#FF93000A</color>
+    <color name="on_error_container_dark">#FFFFDAD6</color>
+
+    <color name="background_dark">#FF131318</color>
+    <color name="on_background_dark">#FFE5E1E9</color>
+
+    <color name="surface_dark">#FF121318</color>
+    <color name="on_surface_dark">#FFE3E2E9</color>
+    <color name="surface_variant_dark">#FF44464F</color>
+    <color name="on_surface_variant_dark">#FFC5C6D0</color>
+
+    <color name="outline_dark">#FF8F9099</color>
+    <color name="outline_variant_dark">#FF44464F</color>
+    <color name="scrim_dark">#FF000000</color>
+
+    <color name="inverse_surface_dark">#FFE3E2E9</color>
+    <color name="inverse_on_surface_dark">#FF2F3036</color>
+    <color name="inverse_primary_dark">#FF5A5892</color>
+
+    <color name="surface_dim_dark">#FF121318</color>
+    <color name="surface_bright_dark">#FF38393F</color>
+
+    <color name="surface_container_lowest_dark">#FF0D0E13</color>
+    <color name="surface_container_low_dark">#FF1A1B21</color>
+    <color name="surface_container_dark">#FF1E1F25</color>
+    <color name="surface_container_high_dark">#FF292A2F</color>
+    <color name="surface_container_highest_dark">#FF33343A</color>
+
+</resources>
