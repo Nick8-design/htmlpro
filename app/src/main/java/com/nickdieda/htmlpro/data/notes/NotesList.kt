@@ -5,109 +5,91 @@ import com.nickdieda.htmlpro.data.model.NoteModule
 import com.nickdieda.htmlpro.data.model.QuizQuestion
 import com.nickdieda.htmlpro.data.model.Subtopic
 
-val JavaScriptNotes = mutableListOf(
+val HtmlNotes = mutableListOf(
     NoteModule(
-        topic = "JS Basics",
+        topic = "HTML5 Basics",
         topicId=0,
         subtopics = listOf(
 
             Subtopic(
-                sutopicId=0,
-                subTopicName = "JS Overview",
+                sutopicId=1,
+                subTopicName = "HTML Intro",
                 headlines = listOf(
                     Headline(
-                        majorHeadline = "JavaScript Overview",
-                        majorHeadileExplanation = "JavaScript is one of the most popular programming languages in the world. It is mainly used to make websites interactive. With JavaScript, you can update content, control multimedia, create animations, validate forms, and even build full applications.",
-                        headline = "Requirements Before Starting",
-                        explaination = "Before learning JavaScript, you should have basic computer skills and a little understanding of how websites work. Knowing HTML and CSS is helpful but not mandatory because you can still learn the core concepts of JavaScript without them.",
-                        tip = "Tip: Practice as you learn. JavaScript is best understood by writing and running small programs."
+                        majorHeadline = "HTML5",
+                        majorHeadileExplanation = "Explain breifly" ,
+                        headline = "Importance of HTML",
+                        explaination = "Explain",
+                       tip = "give tip"
                     ),
                     Headline(
                         headline = "Why Use This App?",
-                        explaination = "This app is designed to help you learn JavaScript step by step in a simple way. You can read notes, test code instantly, and track your progress without needing complicated tools.",
-                        codeExample = """console.log("Welcome to JavaScript Learning!");""",
-                        codeOutput = "Welcome to JavaScript Learning!",
-                        tip = "JavaScript is NOT Java. They are completely different languages, like 'Car' and 'Carpet'.",
-                        afterCodeEplainations = "The console.log() command is used to display messages. It is often the first command beginners learn because it helps you see your program's output."
-                    )
+                        explaination = "explain how this app is easy to use ,notes,Try it Out code examples,tips, quiz and certificate ,offline compiler, samples projects ,save to storage and all that",
+                        codeExample = "give runnable html example with html structure",
+                        afterCodeEplainations = "Explain",
+                        ),
+
+                            Headline(
+                                headline = "Give other(s) Headline",
+                                explaination = "explain ",
+                                codeExample = "",
+                                afterCodeEplainations = "Explain",
+
                 ),
                 questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
                     QuizQuestion(
-                        "What is JavaScript mainly used for?",
+                        "Question",
                         listOf(
-                            "Hardware repair",
-                            "Web interactivity",
-                            "Graphic design",
-                            "Database cooling"
+                           "options"
                         ),
-                        1
-                    ),
-                    QuizQuestion("Which command displays messages in the console?", listOf("print()", "echo()", "console.log()", "system.out"), 2),
-                    QuizQuestion("Does JS require special software to run in a browser?", listOf("Yes", "No"), 1),
-                    QuizQuestion("Can you build full applications with JS?", listOf("Yes", "No"), 0),
-                    QuizQuestion("What does console.log() help a beginner see?", listOf("CPU temperature", "Program output", "Internet speed", "Memory usage"), 1)
-                )
-            ),
+                        number of correct ans
+                    )
 
+
+                )
+                )
+
+            ) ,
             Subtopic(
-                sutopicId=1,
-                subTopicName = "JS Introduction",
+                sutopicId=2,
+                subTopicName = "HTML Compiler",
                 headlines = listOf(
                     Headline(
-                        majorHeadline = "What is JavaScript?",
-                        majorHeadileExplanation = "JavaScript is a lightweight and powerful programming language used to create dynamic web pages. It runs directly inside your web browser, which means you do not need special software to execute it.",
-                        headline = "What is JavaScript About?",
-                        explaination = "JavaScript focuses on adding behavior to websites. While HTML provides structure and CSS handles design, JavaScript makes pages interactive. For example, it can respond when a button is clicked.",
-                        codeExample = """
-let message = "Hello, JavaScript!";
-console.log(message);
-                        """.trimIndent(),
-                        tip = "Tip: Always use meaningful variable names so your code is easier to understand."
+                        majorHeadline = "Where to code HTML files",
+                        majorHeadileExplanation = "Explain with examples",
+                        headline = "Saving HTML file",
+                        explaination = "Explain how , extension and say that this app allows saving to",
+                        codeExample ="give code example that user can save ",
+                        tip = "give",
+                        afterCodeEplainations = "explain how the user can save the html on this app by clicking the menu at the top and click save as or save or open saved "
                     ),
                     Headline(
-                        headline = "What Can JavaScript Do?",
-                        explaination = "JavaScript can change website content, hide or show elements, perform calculations, create games, and communicate with servers to load data without refreshing the page.",
-                        codeExample = """
-document.getElementById("demo").innerHTML = "Text changed using JavaScript!";
-                        """.trimIndent(),
-                        codeOutput = "The text inside the HTML element changes instantly.",
-                        afterCodeEplainations = "This code finds an element with the id 'demo' and replaces its content. It shows how JavaScript can directly control a webpage."
-                    ),
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "",
+                        afterCodeEplainations = "Explain",
+
+                        ),
                     Headline(
-                        headline = "Where Can JavaScript Run?",
-                        explaination = "JavaScript runs in web browsers like Chrome, Firefox, and Edge. Today, it can also run on servers using technologies such as Node.js, allowing developers to build full applications with one language.",
-                        codeExample = """
-console.log("JavaScript runs in the browser and on servers!");
-                        """.trimIndent(),
-                        codeOutput = "JavaScript runs in the browser and on servers!",
-                        afterCodeEplainations = "This proves that JavaScript programs can be executed outside web pages as well."
-                    ),
-                    Headline(
-                        headline = "Dynamic Interactions",
-                        explaination = "Modern websites use JS to load new data without refreshing the page. This is what makes platforms like Facebook or Gmail feel like apps rather than static documents.",
-                        codeExample = """
-                            // Example: A simple click counter
-                            let count = 0;
-                            function handleClick() {
-                                count++;
-                                console.log("Button clicked " + count + " times");
-                            }
-                        """.trimIndent()
-                    ),
-                    Headline(
-                        headline = "The JS Ecosystem",
-                        explaination = "Beyond the browser, JS runs on servers via Node.js, builds mobile apps via React Native, and even controls robots. It is truly 'write once, run anywhere' for the modern web.",
-                        codeExample = "const os = 'Linux';\nconsole.log(`Developing JS on \${os}`);",
-                        afterCodeEplainations = "This uses 'Template Literals' (backticks) to inject variables into strings easily."
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
                     )
-                ),
-                questions = listOf(
-                    QuizQuestion("Which of these is NOT a core web technology?", listOf("HTML", "CSS", "JavaScript", "Python"), 3),
-                    QuizQuestion("What does JavaScript handle in the 'House' analogy?", listOf("Decoration", "Structure", "Functionality", "Foundation"), 2),
-                    QuizQuestion("Is JavaScript the same as Java?", listOf("Yes, they are identical", "No, they are different", "Yes, JS is a version of Java", "Only in mobile apps"), 1),
-                    QuizQuestion("Where does JavaScript run natively?", listOf("Only on servers", "Inside web browsers", "Only on Windows", "Inside PDF files"), 1),
-                    QuizQuestion("Which technology allows JS to run on a server?", listOf("HTML5", "Node.js", "CSS3", "JSON"), 1)
-                )
 
             ),
 
@@ -794,8 +776,5347 @@ Subtopic(
 
 
 
+            ),
+            Subtopic(
+                    sutopicId=3,
+            subTopicName = "Elements",
+            headlines = listOf(
+                Headline(
+                    majorHeadline = "HTML Elements",
+                    majorHeadileExplanation = "Explain breifly" ,
+                    codeExample = "give a runnable involving html element ",
+                    afterCodeEplainations = "Explain it opening and closing",
+
+                    tip = "give tip"
+                ),
+                Headline(
+                    headline = "Nested Elements",
+                    explaination = "",
+                    codeExample = "give runnable html example with nested elements",
+                    afterCodeEplainations = "Explain giving example of other html element commonly used and thier names ",
+                ),
+                Headline(
+                    headline = "Single or empty elements",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain giving example of other html element commonly used and thier names "
+                    ),
+
+                Headline(
+                    headline = "Give other(s) Headline",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                    QuizQuestion(
+                        "Question",
+                        listOf(
+                            "options"
+                        ),
+                        number of correct ans
+                    )
+
+
+                )
             )
+
+        ),
+            Subtopic(
+            sutopicId=4,
+            subTopicName = "HTML Attributes",
+            headlines = listOf(
+                Headline(
+                    majorHeadline = "HTML Attributes",
+                    majorHeadileExplanation = "Explain ",
+                    headline = "Information About Attributes",
+                    explaination = "Explain how , explain most important information about attributes well and what things attribut have ",
+                    codeExample ="give a runnable code example with attributes you can use comment to explain inside the code",
+                    tip = "give",
+                    afterCodeEplainations = ""
+                ),
+                Headline(
+                    headline = "href attribute",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                Headline(
+                    explaination = "explain ",
+                    codeExample = "",
+
+                ),
+                Headline(
+                    headline = "link",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                Headline(
+                    headline = "style attribute",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                Headline(
+                    explaination = "explain ",
+                    codeExample = "",
+
+                    ),
+                Headline(
+                    headline = "title",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                Headline(
+                    headline = "id attribute",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                Headline(
+                    explaination = "explain ",
+                    codeExample = "",
+
+                    ),
+                Headline(
+                    headline = "class ",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ),
+                Headline(
+                    headline = " lang",
+                    explaination = "explain ",
+                    codeExample = "",
+                    afterCodeEplainations = "Explain",
+
+                    ), //add more Headlines with diffent commonly used attributes
+                questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                    QuizQuestion(
+                        "Question",
+                        listOf(
+                            "options"
+                        ),
+                        number of correct ans
+                    )
+
+
+                )
+
+            ),
+
+
+            // --- SUBTOPIC 2: WRITING & INTEGRATING JS ---
+            Subtopic(
+                sutopicId = 2,
+                subTopicName = "JS Writing Code",
+                headlines = listOf(
+                    Headline(
+                        headline = "The <script> Tag",
+                        explaination = "JavaScript is executed by the browser's engine. To run it, code is either embedded directly into HTML or linked as an external script using the <script> tag. This tag tells the browser to pause HTML parsing and execute the logic inside.",
+                        codeExample = "<script>\n  console.log('Writing JS directly in HTML!');\n</script>",
+                        afterCodeEplainations = "Browsers read files from top to bottom, executing scripts as they are encountered."
+                    ),
+                    Headline(
+                        headline = "Internal JS & Placement",
+                        explaination = "Internal JS lives inside your HTML file. If placed in the <head>, it loads early but can slow down visual rendering. If placed at the bottom of the <body>, the page structure loads first, which is a common performance optimization.",
+                        codeExample = "<body>\n  <h1 id='title'>Hello</h1>\n  <script>\n    // This runs after the <h1> is created\n    console.log('Body script executed');\n  </script>\n</body>",
+                        tip = "Placing scripts in the head might cause errors if the script tries to access HTML elements that haven't been created yet."
+                    ),
+                    Headline(
+                        headline = "External JS (.js Files)",
+                        explaination = "For production, code is kept in separate .js files. This promotes 'Separation of Concerns' and allows browsers to cache the file, similar to how Linux shared libraries (.so files) save memory by being reused.",
+                        codeExample = "// In HTML: <script src='script.js'></script>\n\n// In script.js:\nfunction init() {\n  console.log('External app started');\n}",
+                        afterCodeEplainations = "The 'src' attribute acts like a file path, pointing the browser to the logic's location."
+                    ),
+                    Headline(
+                        headline = "The Render Process & Parser Blocking",
+                        explaination = "When a browser hits a script tag without special attributes, it stops building the page to download and run it. This is 'parser blocking'—think of it like a sequential bash script where command B must wait for A.",
+                        codeExample = "<script src='heavy-library.js'></script>",
+                        afterCodeEplainations = "Large scripts can make a site feel 'frozen' during this download phase."
+                    ),
+                    Headline(
+                        headline = "Modern Loading: Async & Defer",
+                        explaination = "Modern JS uses 'async' and 'defer' to prevent blocking. 'Defer' downloads the script in the background and executes it only after the HTML is fully parsed. This is currently the industry standard.",
+                        codeExample = "<script src='app.js' defer></script>",
+                        tip = "Always use 'defer' for external scripts in the <head> to get the best performance and avoid null errors."
+                    ),
+                    Headline(
+                        headline = "Modern Module System",
+                        explaination = "Today we use 'type=module' to organize code into pieces that can import/export functionality. Modules automatically use 'strict mode' to prevent common coding errors.",
+                        codeExample = "<script type='module' src='main.js'></script>"
+                    )
+                ),
+                questions = listOf(
+                    QuizQuestion("Which tag is used for JavaScript?", listOf("<js>", "<script>", "<javascript>", "<code_js>"), 1),
+                    QuizQuestion("What is the best location for scripts for performance?", listOf("In the <head>", "Before the <html> tag", "At the bottom of the <body>", "Inside a <div>"), 2),
+                    QuizQuestion("Which attribute links an external JS file?", listOf("href", "link", "src", "path"), 2),
+                    QuizQuestion("What does the 'defer' attribute do?", listOf("Stops the script", "Hides the script", "Downloads in background and runs after parsing", "Deletes the script"), 2),
+                    QuizQuestion("Why is External JS better for performance?", listOf("It is smaller", "It can be cached by the browser", "It runs faster", "It uses less RAM"), 1)
+                )
+            ),
+
+            // --- SUBTOPIC 3: DISPLAYING OUTPUT & DEBUGGING ---
+            Subtopic(
+                sutopicId = 3,
+                subTopicName = "JS Displaying Output",
+                headlines = listOf(
+                    Headline(
+                        headline = "Data Visualization Streams",
+                        explaination = "JavaScript output means showing results to the user or developer. It can be displayed in the console, dialog boxes, or directly inside HTML elements.",
+                        codeExample = "// Different output streams\nconsole.log('For developers');\nalert('For urgent alerts');\ndocument.getElementById('msg').innerHTML = 'For users';"
+                    ),
+                    Headline(
+                        headline = "Using the Console",
+                        explaination = "The console is the primary tool for debugging. Beyond log(), you can use console.table() to visualize arrays of data clearly in the browser's DevTools (F12).",
+                        codeExample = """
+                            const servers = [
+                                { name: "Nginx", status: "Active" },
+                                { name: "Apache", status: "Down" }
+                            ];
+                            console.table(servers);
+                        """.trimIndent(),
+                        afterCodeEplainations = "The output is not visible to website users, making it safe for sensitive debugging info."
+                    ),
+                    Headline(
+                        headline = "Writing to HTML Components",
+                        explaination = "JavaScript can change content by selecting an element's ID. You use 'innerHTML' for HTML content or 'textContent' for plain text. Use <br> for line breaks within innerHTML.",
+                        codeExample = """
+                            <p id="status"></p>
+                            <script>
+                                document.getElementById("status").innerHTML = "System:<br>Online";
+                            </script>
+                        """.trimIndent(),
+                        tip = "Careful: innerHTML can be a security risk (XSS). Use textContent if you don't need to render HTML tags."
+                    ),
+                    Headline(
+                        headline = "Using Dialog Boxes",
+                        explaination = "Dialog boxes like alert(), confirm(), and prompt() are popups. Note that they are 'blocking' operations; they freeze the browser's main thread until the user interacts.",
+                        codeExample = "alert('Welcome to the JavaScript Compiler!');"
+                    ),
+                    Headline(
+                        headline = "The Window Object",
+                        explaination = "In the browser, 'window' is the global object. This means 'window.alert()' and 'alert()' are identical. It represents the browser window itself.",
+                        codeExample = "window.console.log('Global window access');"
+                    ),
+                    Headline(
+                        headline = "Dangerous Output: document.write()",
+                        explaination = "JavaScript can write directly to the document stream. However, if document.write() is used after the page has finished loading, it will overwrite the entire HTML document.",
+                        codeExample = "function wipe() {\n  document.write('The rest of the page is now gone.');\n}",
+                        tip = "Avoid using document.write() in real applications. It is strictly for quick testing."
+                    )
+                ),
+                questions = listOf(
+                    QuizQuestion("Which method is best for debugging?", listOf("alert()", "console.log()", "document.write()", "window.print()"), 1),
+                    QuizQuestion("How do you change the content of an HTML element?", listOf(".innerHTML", ".changeText", ".value", ".setContent"), 0),
+                    QuizQuestion("What is a risk of using innerHTML with user input?", listOf("Slow loading", "Security (XSS)", "Color changes", "Syntax errors"), 1),
+                    QuizQuestion("What happens if document.write() runs after the page loads?", listOf("Adds text at top", "Does nothing", "Wipes the entire page", "Opens a new tab"), 2),
+                    QuizQuestion("Which command prints a table of data?", listOf("console.grid()", "console.table()", "console.view()", "console.list()"), 1)
+                )
+            )
+            ,
+
+
+
+
+            Subtopic(
+                sutopicId=4,
+                subTopicName = "JS Statements",
+                headlines = listOf(
+
+                    Headline(
+                        headline = "JS Statements",
+                        explaination = "JavaScript statements are instructions that tell the browser what to do. "
+                                + "Each statement is executed in the order it is written.",
+                        codeExample = """
+                let x = 10;
+                let y = 20;
+                let sum = x + y;
+            """.trimIndent(),
+                        afterCodeEplainations = "Each line is a separate statement. "
+                                + "JavaScript reads and runs them one by one."
+                    ),
+
+                    Headline(
+                        explaination = "JavaScript statements usually end with a semicolon. "
+                                + "The semicolon separates one statement from another.",
+                        codeExample = """
+                let name = "John";
+                let age = 25;
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        explaination = "JavaScript allows multiple statements in one line, "
+                                + "but writing one statement per line makes the code easier to read.",
+                        codeExample = """
+                let a = 5; let b = 10; let c = a + b;
+            """.trimIndent(),
+                        tip = "For better readability, always write one statement per line."
+                    ),
+
+                    Headline(
+                        headline = "Grouping JS Statements",
+                        explaination = "JavaScript statements can be grouped together using curly braces {}. "
+                                + "Grouped statements are treated as a block of code.",
+                        codeExample = """
+                if (x > 5) {
+                    console.log("x is greater than 5");
+                    console.log("This is a block of statements");
+                }
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "JS Keywords",
+                        explaination = "JavaScript keywords are reserved words that have special meanings. "
+                                + "They are used to define actions, variables, and control the program flow.",
+                        codeExample = """
+                let number = 10;
+
+                if (number > 5) {
+                    console.log("Number is greater than 5");
+                }
+            """.trimIndent(),
+                        afterCodeEplainations = "`let` and `if` are JavaScript keywords and cannot be used as variable names."
+                    )
+
+                ),
+                questions = listOf(
+                    QuizQuestion("What is a JavaScript statement?", listOf("A style rule", "An instruction to the browser", "A type of variable", "A comment"), 1),
+                    QuizQuestion("Which character is usually used to separate JS statements?", listOf("Colon (:)", "Comma (,)", "Semicolon (;)", "Full stop (.)"), 2),
+                    QuizQuestion("Is it possible to write multiple statements on one line?", listOf("No, it causes an error", "Yes, but it's not recommended", "Only inside a function", "Only if they are empty"), 1),
+                    QuizQuestion("What are curly braces {} used for in statements?", listOf("To create a comment", "To group statements into a block", "To multiply numbers", "To end the program"), 1),
+                    QuizQuestion("In what order are JavaScript statements executed?", listOf("Randomly", "Bottom to top", "In the order they are written", "Alphabetically"), 2)
+                )
+            ),
+
+            Subtopic(
+                sutopicId=5,
+                subTopicName = "JS Syntax",questions = listOf(
+                    QuizQuestion("Which keyword is used for a variable that should NOT change?", listOf("let", "var", "const", "change"), 2),
+                    QuizQuestion("Is JavaScript case-sensitive?", listOf("Yes", "No", "Only for numbers", "Only in Linux"), 0),
+                    QuizQuestion("Which is a correct way to declare a variable in modern JS?", listOf("variable x = 5;", "let x = 5;", "set x = 5;", "int x = 5;"), 1),
+                    QuizQuestion("If you have 'let Name' and 'let name', how many variables exist?", listOf("One", "Two", "None (error)", "It depends on the browser"), 1),
+                    QuizQuestion("What is the naming style 'userName' called?", listOf("snake_case", "PascalCase", "camelCase", "Flatcase"), 2)
+                ),
+                headlines = listOf(
+
+                    Headline(
+                        headline = "JS Syntax?",
+                        explaination = "JavaScript syntax refers to the rules that define how JavaScript code is written "
+                                + "and structured. Following correct syntax helps the browser understand and execute the code."
+                    ),
+
+                    Headline(
+                        headline = "Variable Declaration",
+                        explaination = "Variable declaration means creating a variable to store data. "
+                                + "JavaScript allows variables to be declared using let, const, or var.",
+                        codeExample = """
+                let name = "John";
+                const age = 30;
+                var city = "Paris";
+            """.trimIndent(),
+                        afterCodeEplainations = "`let` is used for values that can change, "
+                                + "`const` is used for fixed values, and `var` is an older way to declare variables."
+                    ),
+
+                    Headline(
+                        headline = "Case Sensitivity",
+                        explaination = "JavaScript is case-sensitive, which means uppercase and lowercase letters "
+                                + "are treated as different.",
+                        codeExample = """
+                let userName = "Alice";
+                let username = "Bob";
+            """.trimIndent(),
+                        tip = "Always use consistent naming styles like camelCase to avoid errors."
+                    )
+
+                )
+            ),
+
+
+
+
+
+            Subtopic(
+                sutopicId=6,
+                questions = listOf(
+                    QuizQuestion("How do you start a single-line comment in JS?", listOf("/*", "//", "", "/* and */", "[[ and ]]"), 2),
+                    QuizQuestion("What happens to comments during program execution?", listOf("They are displayed in console", "They are ignored by the browser", "They make the code run faster", "They cause an error"), 1),
+                    QuizQuestion("Why would you use a comment to 'disable' code?", listOf("To make the file smaller", "To test logic without deleting it", "To encrypt the code", "To change the variable type"), 1),
+                    QuizQuestion("Can a single-line comment be placed at the end of a statement?", listOf("Yes", "No", "Only inside a block", "Only with const"), 0)
+                ),
+                subTopicName = "JS Comments",
+                headlines = listOf(
+
+                    Headline(
+                        headline = "JS Comments",
+                        explaination = "JavaScript comments are used to describe the code and make it easier to understand. "
+                                + "Comments are ignored by the browser and do not affect program execution."
+                    ),
+
+                    Headline(
+                        headline = "Single-Line Comments",
+                        explaination = "Single-line comments are used to comment only one line of code.",
+                        codeExample = """
+                // This is a single-line comment
+                let x = 10; // This comment explains the variable
+            """.trimIndent(),
+                        afterCodeEplainations = "Anything written after // is treated as a comment and is not executed."
+                    ),
+
+                    Headline(
+                        explaination = "Single-line comments are often used for short explanations or notes in the code.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        explaination = "Comments can also be used to explain complex logic or important steps in a program.",
+                        tip = "Write clear and meaningful comments, but avoid commenting obvious code.",
+                        codeExample = """
+                // Calculate total price
+                let total = price + tax;
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Multi-Line Comments",
+                        explaination = "Multi-line comments are used to comment multiple lines at once.",
+                        codeExample = """
+                /*
+                  This is a multi-line comment
+                  It can span multiple lines
+                */
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Disabling Code Using Comments",
+                        explaination = "Comments can be used to temporarily disable code without deleting it.",
+                        codeExample = """
+                // console.log("This line will not run");
+
+                /*
+                alert("This code is disabled");
+                */
+            """.trimIndent()
+                    )
+
+                )
+            ),
+
+
+            Subtopic(
+                sutopicId = 7,
+                questions = listOf(
+                    QuizQuestion("What is the result of 'let x;' if you log x?", listOf("0", "null", "undefined", "Error"), 2),
+                    QuizQuestion("Which operator is used to assign a value to a variable?", listOf("==", "===", "=", ":="), 2),
+                    QuizQuestion("What happens if you try to change a 'const' variable?", listOf("It changes successfully", "It resets to zero", "It causes a runtime error", "It creates a new variable"), 2),
+                    QuizQuestion("Which is a valid variable name?", listOf("1stUser", "user-name", "_totalAmount", "let"), 2),
+                    QuizQuestion("When should you use 'let' instead of 'const'?", listOf("When the value will stay the same", "When the value needs to be updated later", "Only for strings", "Only for numbers"), 1)
+                ),
+                subTopicName = "JS Variables",
+                headlines = listOf(
+
+                    Headline(
+                        headline = "JS Variables",
+                        explaination = "Variables are used to store data values in JavaScript. "
+                                + "A variable can hold different types of data such as numbers or text.",
+                        codeExample = "let name;",
+                        afterCodeEplainations = "This declares a variable named name without assigning a value."
+                    ),
+
+                    Headline(
+                        explaination = "The assignment operator (=) is used to assign a value to a variable.",
+                        codeExample = """
+                let age = 25;
+                let city = "New York";
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        explaination = "Variables can store different types of data and their values can be used later in the program.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        headline = "Undefined Variable",
+                        explaination = "A variable that is declared but not assigned a value is called an undefined variable.",
+                        codeExample = """
+                let x;
+                console.log(x);
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Changing Value",
+                        explaination = "The value of a variable can be changed after it is declared.",
+                        codeExample = """
+                let score = 10;
+                score = 20;
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Constant Variables",
+                        explaination = "Constant variables are declared using const and their values cannot be changed.",
+                        codeExample = """
+                const pi = 3.14;
+            """.trimIndent(),
+                        afterCodeEplainations = "Trying to change a const variable will cause an error."
+                    ),
+
+                    Headline(
+                        explaination = "Use let for values that change and const for values that should stay the same.",
+                        tip = "Always prefer const unless you know the value will change.",
+                        codeExample = """
+                let count = 1;
+                const maxLimit = 100;
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Naming Variables",
+                        explaination = "Variable names should be meaningful and describe the data they store."
+                    ),
+
+                    Headline(
+                        headline = "Rules for Naming Variables",
+                        explaination = "Variable names must start with a letter, underscore (_), or dollar sign ($) "
+                                + "and cannot contain spaces.",
+                        tip = "Use camelCase for variable names, like userName or totalPrice."
+                    )
+
+                ),
+            ),
+
+
+
+            Subtopic(
+                sutopicId = 8,
+                questions = listOf(
+                    QuizQuestion("What keyword is used to create a function?", listOf("method", "function", "def", "routine"), 1),
+                    QuizQuestion("How do you 'call' a function named 'myFunc'?", listOf("call myFunc", "myFunc[]", "myFunc()", "run(myFunc)"), 2),
+                    QuizQuestion("What does the 'return' statement do?", listOf("Restarts the function", "Exits the function and sends back a value", "Repeats the code", "Deletes the variable"), 1),
+                    QuizQuestion("A variable declared inside a function is:", listOf("Global", "Local (Function Scope)", "Shared", "Permanent"), 1),
+                    QuizQuestion("What happens if you define a function but never call it?", listOf("The code runs once", "The browser crashes", "The code inside never executes", "It runs automatically"), 2)
+                ),
+                subTopicName = "JS Functions",
+
+                headlines = listOf(
+
+                    Headline(
+                        headline = "JS Functions",
+                        explaination = "Functions are blocks of code designed to perform a specific task. "
+                                + "They help organize code and avoid repetition."
+                    ),
+
+                    Headline(
+                        headline = "Function Definition",
+                        explaination = "A function definition creates a function using the function keyword, "
+                                + "a name, and parentheses.",
+                        tip = "Choose clear and meaningful function names.",
+                        codeExample = """
+                function greet() {
+                    console.log("Hello!");
+                }
+            """.trimIndent(),
+                        afterCodeEplainations = "This defines a function named greet, but it will not run until called."
+                    ),
+
+                    Headline(
+                        explaination = "Functions can contain one or more statements inside their body.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        explaination = "Functions can be reused many times in a program.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        headline = "Calling a Function",
+                        explaination = "Calling a function means executing the code inside the function.",
+                        codeExample = """
+                greet();
+            """.trimIndent(),
+                        afterCodeEplainations = "This line runs the greet function."
+                    ),
+
+                    Headline(
+                        explaination = "A function can be called multiple times whenever needed.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        headline = "The return Statement",
+                        explaination = "The return statement sends a value back from the function.",
+                        codeExample = """
+                function add(a, b) {
+                    return a + b;
+                }
+            """.trimIndent(),
+                        afterCodeEplainations = "The function returns the result of a + b."
+                    ),
+
+                    Headline(
+                        explaination = "Returned values can be stored in variables.",
+                        codeExample = """
+                let result = add(5, 3);
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        explaination = "Once return is executed, the function stops running.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        explaination = "Not all functions need to return a value.",
+                        tip = "Use return only when you need a result from the function.",
+                        codeExample = ""
+                    ),
+
+                    Headline(
+                        headline = "Function Scope",
+                        explaination = "Variables declared inside a function can only be used within that function.",
+                        codeExample = """
+                function test() {
+                    let x = 10;
+                    console.log(x);
+                }
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Global Vaiables",
+                        explaination = "Global variables are declared outside functions and can be accessed anywhere in the code.",
+                        codeExample = """
+                let message = "Hello";
+
+                function showMessage() {
+                    console.log(message);
+                }
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Why Use Functions",
+                        explaination = "Functions make code reusable, organized, and easier to maintain.",
+                        tip = "Break large programs into smaller functions.",
+                        codeExample = """
+                function calculateTotal(price, tax) {
+                    return price + tax;
+                }
+            """.trimIndent(),
+                        afterCodeEplainations = "This function can be reused whenever total calculation is needed."
+                    )
+
+                )
+            ),
+
+
+
+
+            Subtopic(
+                sutopicId = 9,
+                questions = listOf(
+                    QuizQuestion("Which event fires when a user clicks an HTML element?", listOf("onhover", "onclick", "onpress", "onchange"), 1),
+                    QuizQuestion("What is the modern method to attach an event handler?", listOf("on()", "attachEvent()", "addEventListener()", "setEvent()"), 2),
+                    QuizQuestion("How do you prevent a form from refreshing the page on submit?", listOf("e.stop()", "e.preventDefault()", "e.halt()", "e.ignore()"), 1),
+                    QuizQuestion("Which event fires as soon as the HTML is loaded but before images load?", listOf("onload", "DOMReady", "DOMContentLoaded", "onfinish"), 2),
+                    QuizQuestion("What is the difference between 'focus' and 'blur'?", listOf("There is no difference", "Focus is entering a field, blur is leaving it", "Focus is for buttons, blur is for text", "Blur happens only on scroll"), 1),
+                    QuizQuestion("Which event tracks every single keystroke in an input?", listOf("change", "submit", "input", "blur"), 2),
+                    QuizQuestion("What does 'window.scrollY' tell you during a scroll event?", listOf("The width of the page", "The vertical distance scrolled in pixels", "The speed of scrolling", "The number of elements on screen"), 1)
+                ),
+                subTopicName = "JS Events",
+                headlines = listOf(
+                    Headline(
+                        headline = "JS Events",
+                        explaination = "JavaScript events are actions that happen in the browser, such as clicking a button, typing on the keyboard, or loading a page.",
+                        codeExample = """
+                <button onclick="showAlert()">Click Me</button>
+                <script>
+                    function showAlert() {
+                        alert("Button clicked!");
+                    }
+                </script>
+            """.trimIndent(),
+                        afterCodeEplainations = "The function runs when the button is clicked."
+                    ),
+
+                    Headline(
+                        headline = "Inline Event Handlers",
+                        explaination = "Inline event handlers are written directly inside HTML elements using attributes like onclick or onmouseover.",
+                        codeExample = """
+                <button onclick="alert('Hello!')">Click</button>
+            """.trimIndent(),
+                        afterCodeEplainations = "Inline events are easy to use but not recommended for large applications as they mix logic with structure."
+                    ),
+
+                    Headline(
+                        headline = "The addEventListener() Method",
+                        explaination = "addEventListener() is the modern way to attach event handlers. It allows multiple listeners for a single event.",
+                        codeExample = """
+                <button id="btn">Click Me</button>
+                <script>
+                    document.getElementById("btn")
+                        .addEventListener("click", () => {
+                            alert("Modern click handler!");
+                        });
+                </script>
+            """.trimIndent(),
+                        afterCodeEplainations = "This method keeps JavaScript separate from HTML and is easier to maintain."
+                    ),
+
+                    Headline(
+                        headline = "The DOMContentLoaded Event",
+                        explaination = "This event fires when the HTML document has been completely loaded and parsed, without waiting for images or stylesheets.",
+                        codeExample = """
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        console.log("DOM is ready, you can now manipulate elements!");
+                    });
+                </script>
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "The input Event",
+                        explaination = "Unlike 'change', the 'input' event fires immediately every time the value of an element changes.",
+                        codeExample = """
+                <input type="text" id="myInput">
+                <p id="output"></p>
+                <script>
+                    document.getElementById("myInput").addEventListener("input", (e) => {
+                        document.getElementById("output").innerText = e.target.value;
+                    });
+                </script>
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Mouse Events: mousedown & mouseup",
+                        explaination = "These track the exact moments a mouse button is pressed down and then released.",
+                        codeExample = """
+                <button id="holdBtn">Hold Me</button>
+                <script>
+                    const btn = document.getElementById("holdBtn");
+                    btn.addEventListener("mousedown", () => btn.innerText = "Pressed!");
+                    btn.addEventListener("mouseup", () => btn.innerText = "Released!");
+                </script>
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "The keydown Event",
+                        explaination = "The keydown event occurs the moment a key is pressed. It is more reliable than keypress for non-character keys.",
+                        codeExample = """
+                <script>
+                    window.addEventListener("keydown", (event) => {
+                        console.log("Key pressed: " + event.key);
+                    });
+                </script>
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "The submit Event",
+                        explaination = "This event occurs when a form is submitted. It is usually used to validate data or prevent the page from refreshing.",
+                        codeExample = """
+                <form id="myForm">
+                    <input type="text" required>
+                    <button type="submit">Send</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", (e) => {
+                        e.preventDefault(); // Stops the page from refreshing
+                        alert("Form submitted safely!");
+                    });
+                </script>
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "The focus and blur Events",
+                        explaination = "Focus happens when you enter an input field; blur happens when you leave it.",
+                        codeExample = """
+                <input type="text" id="fld" placeholder="Focus me">
+                <script>
+                    const fld = document.getElementById("fld");
+                    fld.onfocus = () => fld.style.border = "2px solid blue";
+                    fld.onblur = () => fld.style.border = "1px solid gray";
+                </script>
+            """.trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "The scroll Event",
+                        explaination = "The scroll event fires when the document view or an element has been scrolled.",
+                        codeExample = """
+                <script>
+                    window.onscroll = () => {
+                        console.log("You are scrolling at: " + window.scrollY + "px");
+                    };
+                </script>
+            """.trimIndent(),
+                        tip = "Use 'throttling' or 'debouncing' with scroll events to maintain browser performance."
+                    ),
+
+                    Headline(
+                        headline = "The contextmenu Event",
+                        explaination = "This event fires when the user attempts to open a context menu (usually by right-clicking).",
+                        codeExample = """
+                <div style="background: lightgray; height: 50px;">Right-click here</div>
+                <script>
+                    document.addEventListener("contextmenu", (e) => {
+                        e.preventDefault();
+                        alert("Right-click is disabled!");
+                    });
+                </script>
+            """.trimIndent()
+                    )
+                )
+            )
+
+
+
+
+
+
+
+
+
+        ),
+
+            Subtopic(
+                sutopicId=5,
+                subTopicName = "Comments",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Comments",
+                        majorHeadileExplanation = "Explain breifly" ,
+                        headline = "Importance of Comments",
+                        explaination = "Explain",
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        headline = "Comment in Html",
+                        explaination = "explain showing how ,and what is in comment",
+                        codeExample = " example ",
+                        afterCodeEplainations = "Explain",
+                    ),
+                    Headline(
+                        explaination = "explain ",
+                        codeExample = "give amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                        ),
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "amazing",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ) ,
+            Subtopic(
+                sutopicId=6,
+                subTopicName = "Styling in HTML",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Styling in HTML",
+                        majorHeadileExplanation = "Explain ",
+
+                        tip = "give",
+                        afterCodeEplainations = "explain how the user can save the html on this app by clicking the menu at the top and click save as or save or open saved "
+                    ),
+                    Headline(
+                        headline = "Internal Style Sheet /Internal styling",
+                        explaination = "Explain how , extension and say that this app allows saving to",
+                        codeExample ="give code example that user can run ",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        explaination = "explain ",
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Inline Styling",
+                        explaination = "explain ",
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "textcolor",
+                        codeExample = "give  amazing runnable html examples",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        explaination = "bg ",
+                        codeExample = "give  amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        explaination = "size ",
+                        codeExample = "give  amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        explaination = "font ",
+                        codeExample = "give  amazing runnable html examples",
+                        afterCodeEplainations = ""
+
+                    ),  Headline(
+                        explaination = "aligning ",
+                        codeExample = "give  amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),//give more headlines involing commonly used styles
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+            ),
+            Subtopic(
+                sutopicId=7,
+                subTopicName = "Colors in HTML",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Colors in HTML",
+                        majorHeadileExplanation = "Explain showing all ways how colors are in html and treated and defined with examples and good structure" ,
+                        codeExample = "give a runnable involving html colors more than one ",
+
+
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Examples",
+                        explaination = "List well commonly used colors and how they are used ,hex,rgb",
+                        codeExample = "give runnable html example ",
+                    ),
+
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ),
+            Subtopic(
+                sutopicId=8,
+                subTopicName = "HTML Responsive",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Responsive",
+                        majorHeadileExplanation = "Explain  and show what to put in the head",
+                           codeExample ="give a runnable code example with attributes you can use comment to explain inside the code",
+                        tip = "give",
+                        afterCodeEplainations = ""
+                    ),
+                    Headline(
+                        headline = "with viewport",
+                        explaination = "explain ",
+                        codeExample = "good example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "without viewport",
+                        explaination = "explain ",
+                        codeExample = "good example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        explaination = "explain ",
+                        codeExample = "",
+
+                        ),
+
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+
+
+                // --- SUBTOPIC 2: WRITING & INTEGRATING JS ---
+                Subtopic(
+                    sutopicId = 2,
+                    subTopicName = "JS Writing Code",
+                    headlines = listOf(
+                        Headline(
+                            headline = "The <script> Tag",
+                            explaination = "JavaScript is executed by the browser's engine. To run it, code is either embedded directly into HTML or linked as an external script using the <script> tag. This tag tells the browser to pause HTML parsing and execute the logic inside.",
+                            codeExample = "<script>\n  console.log('Writing JS directly in HTML!');\n</script>",
+                            afterCodeEplainations = "Browsers read files from top to bottom, executing scripts as they are encountered."
+                        ),
+                        Headline(
+                            headline = "Internal JS & Placement",
+                            explaination = "Internal JS lives inside your HTML file. If placed in the <head>, it loads early but can slow down visual rendering. If placed at the bottom of the <body>, the page structure loads first, which is a common performance optimization.",
+                            codeExample = "<body>\n  <h1 id='title'>Hello</h1>\n  <script>\n    // This runs after the <h1> is created\n    console.log('Body script executed');\n  </script>\n</body>",
+                            tip = "Placing scripts in the head might cause errors if the script tries to access HTML elements that haven't been created yet."
+                        ),
+                        Headline(
+                            headline = "External JS (.js Files)",
+                            explaination = "For production, code is kept in separate .js files. This promotes 'Separation of Concerns' and allows browsers to cache the file, similar to how Linux shared libraries (.so files) save memory by being reused.",
+                            codeExample = "// In HTML: <script src='script.js'></script>\n\n// In script.js:\nfunction init() {\n  console.log('External app started');\n}",
+                            afterCodeEplainations = "The 'src' attribute acts like a file path, pointing the browser to the logic's location."
+                        ),
+                        Headline(
+                            headline = "The Render Process & Parser Blocking",
+                            explaination = "When a browser hits a script tag without special attributes, it stops building the page to download and run it. This is 'parser blocking'—think of it like a sequential bash script where command B must wait for A.",
+                            codeExample = "<script src='heavy-library.js'></script>",
+                            afterCodeEplainations = "Large scripts can make a site feel 'frozen' during this download phase."
+                        ),
+                        Headline(
+                            headline = "Modern Loading: Async & Defer",
+                            explaination = "Modern JS uses 'async' and 'defer' to prevent blocking. 'Defer' downloads the script in the background and executes it only after the HTML is fully parsed. This is currently the industry standard.",
+                            codeExample = "<script src='app.js' defer></script>",
+                            tip = "Always use 'defer' for external scripts in the <head> to get the best performance and avoid null errors."
+                        ),
+                        Headline(
+                            headline = "Modern Module System",
+                            explaination = "Today we use 'type=module' to organize code into pieces that can import/export functionality. Modules automatically use 'strict mode' to prevent common coding errors.",
+                            codeExample = "<script type='module' src='main.js'></script>"
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which tag is used for JavaScript?", listOf("<js>", "<script>", "<javascript>", "<code_js>"), 1),
+                        QuizQuestion("What is the best location for scripts for performance?", listOf("In the <head>", "Before the <html> tag", "At the bottom of the <body>", "Inside a <div>"), 2),
+                        QuizQuestion("Which attribute links an external JS file?", listOf("href", "link", "src", "path"), 2),
+                        QuizQuestion("What does the 'defer' attribute do?", listOf("Stops the script", "Hides the script", "Downloads in background and runs after parsing", "Deletes the script"), 2),
+                        QuizQuestion("Why is External JS better for performance?", listOf("It is smaller", "It can be cached by the browser", "It runs faster", "It uses less RAM"), 1)
+                    )
+                ),
+
+                // --- SUBTOPIC 3: DISPLAYING OUTPUT & DEBUGGING ---
+                Subtopic(
+                    sutopicId = 3,
+                    subTopicName = "JS Displaying Output",
+                    headlines = listOf(
+                        Headline(
+                            headline = "Data Visualization Streams",
+                            explaination = "JavaScript output means showing results to the user or developer. It can be displayed in the console, dialog boxes, or directly inside HTML elements.",
+                            codeExample = "// Different output streams\nconsole.log('For developers');\nalert('For urgent alerts');\ndocument.getElementById('msg').innerHTML = 'For users';"
+                        ),
+                        Headline(
+                            headline = "Using the Console",
+                            explaination = "The console is the primary tool for debugging. Beyond log(), you can use console.table() to visualize arrays of data clearly in the browser's DevTools (F12).",
+                            codeExample = """
+                            const servers = [
+                                { name: "Nginx", status: "Active" },
+                                { name: "Apache", status: "Down" }
+                            ];
+                            console.table(servers);
+                        """.trimIndent(),
+                            afterCodeEplainations = "The output is not visible to website users, making it safe for sensitive debugging info."
+                        ),
+                        Headline(
+                            headline = "Writing to HTML Components",
+                            explaination = "JavaScript can change content by selecting an element's ID. You use 'innerHTML' for HTML content or 'textContent' for plain text. Use <br> for line breaks within innerHTML.",
+                            codeExample = """
+                            <p id="status"></p>
+                            <script>
+                                document.getElementById("status").innerHTML = "System:<br>Online";
+                            </script>
+                        """.trimIndent(),
+                            tip = "Careful: innerHTML can be a security risk (XSS). Use textContent if you don't need to render HTML tags."
+                        ),
+                        Headline(
+                            headline = "Using Dialog Boxes",
+                            explaination = "Dialog boxes like alert(), confirm(), and prompt() are popups. Note that they are 'blocking' operations; they freeze the browser's main thread until the user interacts.",
+                            codeExample = "alert('Welcome to the JavaScript Compiler!');"
+                        ),
+                        Headline(
+                            headline = "The Window Object",
+                            explaination = "In the browser, 'window' is the global object. This means 'window.alert()' and 'alert()' are identical. It represents the browser window itself.",
+                            codeExample = "window.console.log('Global window access');"
+                        ),
+                        Headline(
+                            headline = "Dangerous Output: document.write()",
+                            explaination = "JavaScript can write directly to the document stream. However, if document.write() is used after the page has finished loading, it will overwrite the entire HTML document.",
+                            codeExample = "function wipe() {\n  document.write('The rest of the page is now gone.');\n}",
+                            tip = "Avoid using document.write() in real applications. It is strictly for quick testing."
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which method is best for debugging?", listOf("alert()", "console.log()", "document.write()", "window.print()"), 1),
+                        QuizQuestion("How do you change the content of an HTML element?", listOf(".innerHTML", ".changeText", ".value", ".setContent"), 0),
+                        QuizQuestion("What is a risk of using innerHTML with user input?", listOf("Slow loading", "Security (XSS)", "Color changes", "Syntax errors"), 1),
+                        QuizQuestion("What happens if document.write() runs after the page loads?", listOf("Adds text at top", "Does nothing", "Wipes the entire page", "Opens a new tab"), 2),
+                        QuizQuestion("Which command prints a table of data?", listOf("console.grid()", "console.table()", "console.view()", "console.list()"), 1)
+                    )
+                )
+                ,
+
+
+
+
+                Subtopic(
+                    sutopicId=4,
+                    subTopicName = "JS Statements",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Statements",
+                            explaination = "JavaScript statements are instructions that tell the browser what to do. "
+                                    + "Each statement is executed in the order it is written.",
+                            codeExample = """
+                let x = 10;
+                let y = 20;
+                let sum = x + y;
+            """.trimIndent(),
+                            afterCodeEplainations = "Each line is a separate statement. "
+                                    + "JavaScript reads and runs them one by one."
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript statements usually end with a semicolon. "
+                                    + "The semicolon separates one statement from another.",
+                            codeExample = """
+                let name = "John";
+                let age = 25;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript allows multiple statements in one line, "
+                                    + "but writing one statement per line makes the code easier to read.",
+                            codeExample = """
+                let a = 5; let b = 10; let c = a + b;
+            """.trimIndent(),
+                            tip = "For better readability, always write one statement per line."
+                        ),
+
+                        Headline(
+                            headline = "Grouping JS Statements",
+                            explaination = "JavaScript statements can be grouped together using curly braces {}. "
+                                    + "Grouped statements are treated as a block of code.",
+                            codeExample = """
+                if (x > 5) {
+                    console.log("x is greater than 5");
+                    console.log("This is a block of statements");
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "JS Keywords",
+                            explaination = "JavaScript keywords are reserved words that have special meanings. "
+                                    + "They are used to define actions, variables, and control the program flow.",
+                            codeExample = """
+                let number = 10;
+
+                if (number > 5) {
+                    console.log("Number is greater than 5");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` and `if` are JavaScript keywords and cannot be used as variable names."
+                        )
+
+                    ),
+                    questions = listOf(
+                        QuizQuestion("What is a JavaScript statement?", listOf("A style rule", "An instruction to the browser", "A type of variable", "A comment"), 1),
+                        QuizQuestion("Which character is usually used to separate JS statements?", listOf("Colon (:)", "Comma (,)", "Semicolon (;)", "Full stop (.)"), 2),
+                        QuizQuestion("Is it possible to write multiple statements on one line?", listOf("No, it causes an error", "Yes, but it's not recommended", "Only inside a function", "Only if they are empty"), 1),
+                        QuizQuestion("What are curly braces {} used for in statements?", listOf("To create a comment", "To group statements into a block", "To multiply numbers", "To end the program"), 1),
+                        QuizQuestion("In what order are JavaScript statements executed?", listOf("Randomly", "Bottom to top", "In the order they are written", "Alphabetically"), 2)
+                    )
+                ),
+
+                Subtopic(
+                    sutopicId=5,
+                    subTopicName = "JS Syntax",questions = listOf(
+                        QuizQuestion("Which keyword is used for a variable that should NOT change?", listOf("let", "var", "const", "change"), 2),
+                        QuizQuestion("Is JavaScript case-sensitive?", listOf("Yes", "No", "Only for numbers", "Only in Linux"), 0),
+                        QuizQuestion("Which is a correct way to declare a variable in modern JS?", listOf("variable x = 5;", "let x = 5;", "set x = 5;", "int x = 5;"), 1),
+                        QuizQuestion("If you have 'let Name' and 'let name', how many variables exist?", listOf("One", "Two", "None (error)", "It depends on the browser"), 1),
+                        QuizQuestion("What is the naming style 'userName' called?", listOf("snake_case", "PascalCase", "camelCase", "Flatcase"), 2)
+                    ),
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Syntax?",
+                            explaination = "JavaScript syntax refers to the rules that define how JavaScript code is written "
+                                    + "and structured. Following correct syntax helps the browser understand and execute the code."
+                        ),
+
+                        Headline(
+                            headline = "Variable Declaration",
+                            explaination = "Variable declaration means creating a variable to store data. "
+                                    + "JavaScript allows variables to be declared using let, const, or var.",
+                            codeExample = """
+                let name = "John";
+                const age = 30;
+                var city = "Paris";
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` is used for values that can change, "
+                                    + "`const` is used for fixed values, and `var` is an older way to declare variables."
+                        ),
+
+                        Headline(
+                            headline = "Case Sensitivity",
+                            explaination = "JavaScript is case-sensitive, which means uppercase and lowercase letters "
+                                    + "are treated as different.",
+                            codeExample = """
+                let userName = "Alice";
+                let username = "Bob";
+            """.trimIndent(),
+                            tip = "Always use consistent naming styles like camelCase to avoid errors."
+                        )
+
+                    )
+                ),
+
+
+
+
+
+                Subtopic(
+                    sutopicId=6,
+                    questions = listOf(
+                        QuizQuestion("How do you start a single-line comment in JS?", listOf("/*", "//", "", "/* and */", "[[ and ]]"), 2),
+                        QuizQuestion("What happens to comments during program execution?", listOf("They are displayed in console", "They are ignored by the browser", "They make the code run faster", "They cause an error"), 1),
+                        QuizQuestion("Why would you use a comment to 'disable' code?", listOf("To make the file smaller", "To test logic without deleting it", "To encrypt the code", "To change the variable type"), 1),
+                        QuizQuestion("Can a single-line comment be placed at the end of a statement?", listOf("Yes", "No", "Only inside a block", "Only with const"), 0)
+                    ),
+                    subTopicName = "JS Comments",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Comments",
+                            explaination = "JavaScript comments are used to describe the code and make it easier to understand. "
+                                    + "Comments are ignored by the browser and do not affect program execution."
+                        ),
+
+                        Headline(
+                            headline = "Single-Line Comments",
+                            explaination = "Single-line comments are used to comment only one line of code.",
+                            codeExample = """
+                // This is a single-line comment
+                let x = 10; // This comment explains the variable
+            """.trimIndent(),
+                            afterCodeEplainations = "Anything written after // is treated as a comment and is not executed."
+                        ),
+
+                        Headline(
+                            explaination = "Single-line comments are often used for short explanations or notes in the code.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Comments can also be used to explain complex logic or important steps in a program.",
+                            tip = "Write clear and meaningful comments, but avoid commenting obvious code.",
+                            codeExample = """
+                // Calculate total price
+                let total = price + tax;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Multi-Line Comments",
+                            explaination = "Multi-line comments are used to comment multiple lines at once.",
+                            codeExample = """
+                /*
+                  This is a multi-line comment
+                  It can span multiple lines
+                */
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Disabling Code Using Comments",
+                            explaination = "Comments can be used to temporarily disable code without deleting it.",
+                            codeExample = """
+                // console.log("This line will not run");
+
+                /*
+                alert("This code is disabled");
+                */
+            """.trimIndent()
+                        )
+
+                    )
+                ),
+
+
+                Subtopic(
+                    sutopicId = 7,
+                    questions = listOf(
+                        QuizQuestion("What is the result of 'let x;' if you log x?", listOf("0", "null", "undefined", "Error"), 2),
+                        QuizQuestion("Which operator is used to assign a value to a variable?", listOf("==", "===", "=", ":="), 2),
+                        QuizQuestion("What happens if you try to change a 'const' variable?", listOf("It changes successfully", "It resets to zero", "It causes a runtime error", "It creates a new variable"), 2),
+                        QuizQuestion("Which is a valid variable name?", listOf("1stUser", "user-name", "_totalAmount", "let"), 2),
+                        QuizQuestion("When should you use 'let' instead of 'const'?", listOf("When the value will stay the same", "When the value needs to be updated later", "Only for strings", "Only for numbers"), 1)
+                    ),
+                    subTopicName = "JS Variables",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Variables",
+                            explaination = "Variables are used to store data values in JavaScript. "
+                                    + "A variable can hold different types of data such as numbers or text.",
+                            codeExample = "let name;",
+                            afterCodeEplainations = "This declares a variable named name without assigning a value."
+                        ),
+
+                        Headline(
+                            explaination = "The assignment operator (=) is used to assign a value to a variable.",
+                            codeExample = """
+                let age = 25;
+                let city = "New York";
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Variables can store different types of data and their values can be used later in the program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Undefined Variable",
+                            explaination = "A variable that is declared but not assigned a value is called an undefined variable.",
+                            codeExample = """
+                let x;
+                console.log(x);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Changing Value",
+                            explaination = "The value of a variable can be changed after it is declared.",
+                            codeExample = """
+                let score = 10;
+                score = 20;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Constant Variables",
+                            explaination = "Constant variables are declared using const and their values cannot be changed.",
+                            codeExample = """
+                const pi = 3.14;
+            """.trimIndent(),
+                            afterCodeEplainations = "Trying to change a const variable will cause an error."
+                        ),
+
+                        Headline(
+                            explaination = "Use let for values that change and const for values that should stay the same.",
+                            tip = "Always prefer const unless you know the value will change.",
+                            codeExample = """
+                let count = 1;
+                const maxLimit = 100;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Naming Variables",
+                            explaination = "Variable names should be meaningful and describe the data they store."
+                        ),
+
+                        Headline(
+                            headline = "Rules for Naming Variables",
+                            explaination = "Variable names must start with a letter, underscore (_), or dollar sign ($) "
+                                    + "and cannot contain spaces.",
+                            tip = "Use camelCase for variable names, like userName or totalPrice."
+                        )
+
+                    ),
+                ),
+
+
+
+                Subtopic(
+                    sutopicId = 8,
+                    questions = listOf(
+                        QuizQuestion("What keyword is used to create a function?", listOf("method", "function", "def", "routine"), 1),
+                        QuizQuestion("How do you 'call' a function named 'myFunc'?", listOf("call myFunc", "myFunc[]", "myFunc()", "run(myFunc)"), 2),
+                        QuizQuestion("What does the 'return' statement do?", listOf("Restarts the function", "Exits the function and sends back a value", "Repeats the code", "Deletes the variable"), 1),
+                        QuizQuestion("A variable declared inside a function is:", listOf("Global", "Local (Function Scope)", "Shared", "Permanent"), 1),
+                        QuizQuestion("What happens if you define a function but never call it?", listOf("The code runs once", "The browser crashes", "The code inside never executes", "It runs automatically"), 2)
+                    ),
+                    subTopicName = "JS Functions",
+
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Functions",
+                            explaination = "Functions are blocks of code designed to perform a specific task. "
+                                    + "They help organize code and avoid repetition."
+                        ),
+
+                        Headline(
+                            headline = "Function Definition",
+                            explaination = "A function definition creates a function using the function keyword, "
+                                    + "a name, and parentheses.",
+                            tip = "Choose clear and meaningful function names.",
+                            codeExample = """
+                function greet() {
+                    console.log("Hello!");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This defines a function named greet, but it will not run until called."
+                        ),
+
+                        Headline(
+                            explaination = "Functions can contain one or more statements inside their body.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Functions can be reused many times in a program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Calling a Function",
+                            explaination = "Calling a function means executing the code inside the function.",
+                            codeExample = """
+                greet();
+            """.trimIndent(),
+                            afterCodeEplainations = "This line runs the greet function."
+                        ),
+
+                        Headline(
+                            explaination = "A function can be called multiple times whenever needed.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "The return Statement",
+                            explaination = "The return statement sends a value back from the function.",
+                            codeExample = """
+                function add(a, b) {
+                    return a + b;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "The function returns the result of a + b."
+                        ),
+
+                        Headline(
+                            explaination = "Returned values can be stored in variables.",
+                            codeExample = """
+                let result = add(5, 3);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Once return is executed, the function stops running.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Not all functions need to return a value.",
+                            tip = "Use return only when you need a result from the function.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Function Scope",
+                            explaination = "Variables declared inside a function can only be used within that function.",
+                            codeExample = """
+                function test() {
+                    let x = 10;
+                    console.log(x);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Global Vaiables",
+                            explaination = "Global variables are declared outside functions and can be accessed anywhere in the code.",
+                            codeExample = """
+                let message = "Hello";
+
+                function showMessage() {
+                    console.log(message);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Why Use Functions",
+                            explaination = "Functions make code reusable, organized, and easier to maintain.",
+                            tip = "Break large programs into smaller functions.",
+                            codeExample = """
+                function calculateTotal(price, tax) {
+                    return price + tax;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This function can be reused whenever total calculation is needed."
+                        )
+
+                    )
+                ),
+
+
+
+
+                Subtopic(
+                    sutopicId = 9,
+                    questions = listOf(
+                        QuizQuestion("Which event fires when a user clicks an HTML element?", listOf("onhover", "onclick", "onpress", "onchange"), 1),
+                        QuizQuestion("What is the modern method to attach an event handler?", listOf("on()", "attachEvent()", "addEventListener()", "setEvent()"), 2),
+                        QuizQuestion("How do you prevent a form from refreshing the page on submit?", listOf("e.stop()", "e.preventDefault()", "e.halt()", "e.ignore()"), 1),
+                        QuizQuestion("Which event fires as soon as the HTML is loaded but before images load?", listOf("onload", "DOMReady", "DOMContentLoaded", "onfinish"), 2),
+                        QuizQuestion("What is the difference between 'focus' and 'blur'?", listOf("There is no difference", "Focus is entering a field, blur is leaving it", "Focus is for buttons, blur is for text", "Blur happens only on scroll"), 1),
+                        QuizQuestion("Which event tracks every single keystroke in an input?", listOf("change", "submit", "input", "blur"), 2),
+                        QuizQuestion("What does 'window.scrollY' tell you during a scroll event?", listOf("The width of the page", "The vertical distance scrolled in pixels", "The speed of scrolling", "The number of elements on screen"), 1)
+                    ),
+                    subTopicName = "JS Events",
+                    headlines = listOf(
+                        Headline(
+                            headline = "JS Events",
+                            explaination = "JavaScript events are actions that happen in the browser, such as clicking a button, typing on the keyboard, or loading a page.",
+                            codeExample = """
+                <button onclick="showAlert()">Click Me</button>
+                <script>
+                    function showAlert() {
+                        alert("Button clicked!");
+                    }
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "The function runs when the button is clicked."
+                        ),
+
+                        Headline(
+                            headline = "Inline Event Handlers",
+                            explaination = "Inline event handlers are written directly inside HTML elements using attributes like onclick or onmouseover.",
+                            codeExample = """
+                <button onclick="alert('Hello!')">Click</button>
+            """.trimIndent(),
+                            afterCodeEplainations = "Inline events are easy to use but not recommended for large applications as they mix logic with structure."
+                        ),
+
+                        Headline(
+                            headline = "The addEventListener() Method",
+                            explaination = "addEventListener() is the modern way to attach event handlers. It allows multiple listeners for a single event.",
+                            codeExample = """
+                <button id="btn">Click Me</button>
+                <script>
+                    document.getElementById("btn")
+                        .addEventListener("click", () => {
+                            alert("Modern click handler!");
+                        });
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "This method keeps JavaScript separate from HTML and is easier to maintain."
+                        ),
+
+                        Headline(
+                            headline = "The DOMContentLoaded Event",
+                            explaination = "This event fires when the HTML document has been completely loaded and parsed, without waiting for images or stylesheets.",
+                            codeExample = """
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        console.log("DOM is ready, you can now manipulate elements!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The input Event",
+                            explaination = "Unlike 'change', the 'input' event fires immediately every time the value of an element changes.",
+                            codeExample = """
+                <input type="text" id="myInput">
+                <p id="output"></p>
+                <script>
+                    document.getElementById("myInput").addEventListener("input", (e) => {
+                        document.getElementById("output").innerText = e.target.value;
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Mouse Events: mousedown & mouseup",
+                            explaination = "These track the exact moments a mouse button is pressed down and then released.",
+                            codeExample = """
+                <button id="holdBtn">Hold Me</button>
+                <script>
+                    const btn = document.getElementById("holdBtn");
+                    btn.addEventListener("mousedown", () => btn.innerText = "Pressed!");
+                    btn.addEventListener("mouseup", () => btn.innerText = "Released!");
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The keydown Event",
+                            explaination = "The keydown event occurs the moment a key is pressed. It is more reliable than keypress for non-character keys.",
+                            codeExample = """
+                <script>
+                    window.addEventListener("keydown", (event) => {
+                        console.log("Key pressed: " + event.key);
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The submit Event",
+                            explaination = "This event occurs when a form is submitted. It is usually used to validate data or prevent the page from refreshing.",
+                            codeExample = """
+                <form id="myForm">
+                    <input type="text" required>
+                    <button type="submit">Send</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", (e) => {
+                        e.preventDefault(); // Stops the page from refreshing
+                        alert("Form submitted safely!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The focus and blur Events",
+                            explaination = "Focus happens when you enter an input field; blur happens when you leave it.",
+                            codeExample = """
+                <input type="text" id="fld" placeholder="Focus me">
+                <script>
+                    const fld = document.getElementById("fld");
+                    fld.onfocus = () => fld.style.border = "2px solid blue";
+                    fld.onblur = () => fld.style.border = "1px solid gray";
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The scroll Event",
+                            explaination = "The scroll event fires when the document view or an element has been scrolled.",
+                            codeExample = """
+                <script>
+                    window.onscroll = () => {
+                        console.log("You are scrolling at: " + window.scrollY + "px");
+                    };
+                </script>
+            """.trimIndent(),
+                            tip = "Use 'throttling' or 'debouncing' with scroll events to maintain browser performance."
+                        ),
+
+                        Headline(
+                            headline = "The contextmenu Event",
+                            explaination = "This event fires when the user attempts to open a context menu (usually by right-clicking).",
+                            codeExample = """
+                <div style="background: lightgray; height: 50px;">Right-click here</div>
+                <script>
+                    document.addEventListener("contextmenu", (e) => {
+                        e.preventDefault();
+                        alert("Right-click is disabled!");
+                    });
+                </script>
+            """.trimIndent()
+                        )
+                    )
+                )
+
+
+
+
+
+
+
+
+
+            ),
+
+            Subtopic(
+                sutopicId=9,
+                subTopicName = "HTML Centered",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Centered",
+                        majorHeadileExplanation = "Explain breifly" ,
+                        headline = "Text center",
+                        explaination = "Explain",
+                        codeExample = " example ",
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        headline = "div",
+                        codeExample = " example ",
+                        afterCodeEplainations = "Explain",
+                    ),
+                    Headline(
+                        explaination = "image ",
+                        codeExample = "give amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "amazing",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ) ,
+            Subtopic(
+                sutopicId=10,
+                subTopicName = "Header and Footer",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Header and Footer",
+                        majorHeadileExplanation = "Explain ",
+
+                        tip = "give",
+                                 ),
+                    Headline(
+                        headline = "Header ",
+                        explaination = "Explain",
+                        codeExample ="give code example that user can run that has header",
+
+
+                        ),
+                    Headline(
+                        headline = "Header and Nav ",
+                        explaination = "Explain",
+                        codeExample ="give code example that user can run that has header and nav",
+
+
+                        ),
+                    Headline(
+                        headline = "Header nav and body ",
+                        explaination = "Explain",
+                        codeExample ="give code example that user can run that has header and body",
+
+
+                        ),
+
+                    Headline(
+                        headline = "Footer",
+                        explaination = "explain ",
+                        codeExample = "give amazing runnable html  example",
+
+
+                        ),
+
+                  Headline(
+                        explaination = "Full html website having all ",
+                        codeExample = "give  amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),//give more headlines involing commonly used styles
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+            ),
+            Subtopic(
+                sutopicId=11,
+                subTopicName = "Headings in Html",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Headings in HTML",
+                        majorHeadileExplanation = "Explain" ,
+                        codeExample = "give a runnable involving all html headers displaying Nick Dieda",
+                        afterCodeEplainations = "",
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Styling Heading",
+                        explaination = "explain and do inline styiling ",
+                        codeExample = "give runnable html example ",
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+
+
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ),
+            Subtopic(
+                sutopicId=12,
+                subTopicName = "HTML Paragraphs",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Paragraphs",
+                        majorHeadileExplanation = "explain showing tag used",
+                            tip = "give",
+                        codeExample = "give example",
+                        afterCodeEplainations = ""
+                    ),
+                    Headline(
+                        explaination = "explain ",
+
+                        codeExample ="give a runnable code examples you can use comment to explain inside the code",
+
+
+                        ),
+                    Headline(
+                        headline = "Styling Paragraph",
+                        explaination = "explain use inline ",
+                        codeExample = "good example",
+
+
+                        ),
+                    Headline(
+                        headline = "aligning ",
+                        codeExample = "give amazing runnable html involving all text alignment example",
+
+
+                    ),
+                    Headline(
+                        headline = "colors ",
+                        codeExample = "give amazing runnable html involving all text color example",
+
+                        ),
+                    Headline(
+                        headline = "Others Commonly used ",
+                        codeExample = "give amazing runnable html involving commonly used to style paragraph example",
+
+
+                        ),
+
+
+
+
+
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+
+
+                // --- SUBTOPIC 2: WRITING & INTEGRATING JS ---
+                Subtopic(
+                    sutopicId = 2,
+                    subTopicName = "JS Writing Code",
+                    headlines = listOf(
+                        Headline(
+                            headline = "The <script> Tag",
+                            explaination = "JavaScript is executed by the browser's engine. To run it, code is either embedded directly into HTML or linked as an external script using the <script> tag. This tag tells the browser to pause HTML parsing and execute the logic inside.",
+                            codeExample = "<script>\n  console.log('Writing JS directly in HTML!');\n</script>",
+                            afterCodeEplainations = "Browsers read files from top to bottom, executing scripts as they are encountered."
+                        ),
+                        Headline(
+                            headline = "Internal JS & Placement",
+                            explaination = "Internal JS lives inside your HTML file. If placed in the <head>, it loads early but can slow down visual rendering. If placed at the bottom of the <body>, the page structure loads first, which is a common performance optimization.",
+                            codeExample = "<body>\n  <h1 id='title'>Hello</h1>\n  <script>\n    // This runs after the <h1> is created\n    console.log('Body script executed');\n  </script>\n</body>",
+                            tip = "Placing scripts in the head might cause errors if the script tries to access HTML elements that haven't been created yet."
+                        ),
+                        Headline(
+                            headline = "External JS (.js Files)",
+                            explaination = "For production, code is kept in separate .js files. This promotes 'Separation of Concerns' and allows browsers to cache the file, similar to how Linux shared libraries (.so files) save memory by being reused.",
+                            codeExample = "// In HTML: <script src='script.js'></script>\n\n// In script.js:\nfunction init() {\n  console.log('External app started');\n}",
+                            afterCodeEplainations = "The 'src' attribute acts like a file path, pointing the browser to the logic's location."
+                        ),
+                        Headline(
+                            headline = "The Render Process & Parser Blocking",
+                            explaination = "When a browser hits a script tag without special attributes, it stops building the page to download and run it. This is 'parser blocking'—think of it like a sequential bash script where command B must wait for A.",
+                            codeExample = "<script src='heavy-library.js'></script>",
+                            afterCodeEplainations = "Large scripts can make a site feel 'frozen' during this download phase."
+                        ),
+                        Headline(
+                            headline = "Modern Loading: Async & Defer",
+                            explaination = "Modern JS uses 'async' and 'defer' to prevent blocking. 'Defer' downloads the script in the background and executes it only after the HTML is fully parsed. This is currently the industry standard.",
+                            codeExample = "<script src='app.js' defer></script>",
+                            tip = "Always use 'defer' for external scripts in the <head> to get the best performance and avoid null errors."
+                        ),
+                        Headline(
+                            headline = "Modern Module System",
+                            explaination = "Today we use 'type=module' to organize code into pieces that can import/export functionality. Modules automatically use 'strict mode' to prevent common coding errors.",
+                            codeExample = "<script type='module' src='main.js'></script>"
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which tag is used for JavaScript?", listOf("<js>", "<script>", "<javascript>", "<code_js>"), 1),
+                        QuizQuestion("What is the best location for scripts for performance?", listOf("In the <head>", "Before the <html> tag", "At the bottom of the <body>", "Inside a <div>"), 2),
+                        QuizQuestion("Which attribute links an external JS file?", listOf("href", "link", "src", "path"), 2),
+                        QuizQuestion("What does the 'defer' attribute do?", listOf("Stops the script", "Hides the script", "Downloads in background and runs after parsing", "Deletes the script"), 2),
+                        QuizQuestion("Why is External JS better for performance?", listOf("It is smaller", "It can be cached by the browser", "It runs faster", "It uses less RAM"), 1)
+                    )
+                ),
+
+                // --- SUBTOPIC 3: DISPLAYING OUTPUT & DEBUGGING ---
+                Subtopic(
+                    sutopicId = 3,
+                    subTopicName = "JS Displaying Output",
+                    headlines = listOf(
+                        Headline(
+                            headline = "Data Visualization Streams",
+                            explaination = "JavaScript output means showing results to the user or developer. It can be displayed in the console, dialog boxes, or directly inside HTML elements.",
+                            codeExample = "// Different output streams\nconsole.log('For developers');\nalert('For urgent alerts');\ndocument.getElementById('msg').innerHTML = 'For users';"
+                        ),
+                        Headline(
+                            headline = "Using the Console",
+                            explaination = "The console is the primary tool for debugging. Beyond log(), you can use console.table() to visualize arrays of data clearly in the browser's DevTools (F12).",
+                            codeExample = """
+                            const servers = [
+                                { name: "Nginx", status: "Active" },
+                                { name: "Apache", status: "Down" }
+                            ];
+                            console.table(servers);
+                        """.trimIndent(),
+                            afterCodeEplainations = "The output is not visible to website users, making it safe for sensitive debugging info."
+                        ),
+                        Headline(
+                            headline = "Writing to HTML Components",
+                            explaination = "JavaScript can change content by selecting an element's ID. You use 'innerHTML' for HTML content or 'textContent' for plain text. Use <br> for line breaks within innerHTML.",
+                            codeExample = """
+                            <p id="status"></p>
+                            <script>
+                                document.getElementById("status").innerHTML = "System:<br>Online";
+                            </script>
+                        """.trimIndent(),
+                            tip = "Careful: innerHTML can be a security risk (XSS). Use textContent if you don't need to render HTML tags."
+                        ),
+                        Headline(
+                            headline = "Using Dialog Boxes",
+                            explaination = "Dialog boxes like alert(), confirm(), and prompt() are popups. Note that they are 'blocking' operations; they freeze the browser's main thread until the user interacts.",
+                            codeExample = "alert('Welcome to the JavaScript Compiler!');"
+                        ),
+                        Headline(
+                            headline = "The Window Object",
+                            explaination = "In the browser, 'window' is the global object. This means 'window.alert()' and 'alert()' are identical. It represents the browser window itself.",
+                            codeExample = "window.console.log('Global window access');"
+                        ),
+                        Headline(
+                            headline = "Dangerous Output: document.write()",
+                            explaination = "JavaScript can write directly to the document stream. However, if document.write() is used after the page has finished loading, it will overwrite the entire HTML document.",
+                            codeExample = "function wipe() {\n  document.write('The rest of the page is now gone.');\n}",
+                            tip = "Avoid using document.write() in real applications. It is strictly for quick testing."
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which method is best for debugging?", listOf("alert()", "console.log()", "document.write()", "window.print()"), 1),
+                        QuizQuestion("How do you change the content of an HTML element?", listOf(".innerHTML", ".changeText", ".value", ".setContent"), 0),
+                        QuizQuestion("What is a risk of using innerHTML with user input?", listOf("Slow loading", "Security (XSS)", "Color changes", "Syntax errors"), 1),
+                        QuizQuestion("What happens if document.write() runs after the page loads?", listOf("Adds text at top", "Does nothing", "Wipes the entire page", "Opens a new tab"), 2),
+                        QuizQuestion("Which command prints a table of data?", listOf("console.grid()", "console.table()", "console.view()", "console.list()"), 1)
+                    )
+                )
+                ,
+
+
+
+
+                Subtopic(
+                    sutopicId=4,
+                    subTopicName = "JS Statements",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Statements",
+                            explaination = "JavaScript statements are instructions that tell the browser what to do. "
+                                    + "Each statement is executed in the order it is written.",
+                            codeExample = """
+                let x = 10;
+                let y = 20;
+                let sum = x + y;
+            """.trimIndent(),
+                            afterCodeEplainations = "Each line is a separate statement. "
+                                    + "JavaScript reads and runs them one by one."
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript statements usually end with a semicolon. "
+                                    + "The semicolon separates one statement from another.",
+                            codeExample = """
+                let name = "John";
+                let age = 25;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript allows multiple statements in one line, "
+                                    + "but writing one statement per line makes the code easier to read.",
+                            codeExample = """
+                let a = 5; let b = 10; let c = a + b;
+            """.trimIndent(),
+                            tip = "For better readability, always write one statement per line."
+                        ),
+
+                        Headline(
+                            headline = "Grouping JS Statements",
+                            explaination = "JavaScript statements can be grouped together using curly braces {}. "
+                                    + "Grouped statements are treated as a block of code.",
+                            codeExample = """
+                if (x > 5) {
+                    console.log("x is greater than 5");
+                    console.log("This is a block of statements");
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "JS Keywords",
+                            explaination = "JavaScript keywords are reserved words that have special meanings. "
+                                    + "They are used to define actions, variables, and control the program flow.",
+                            codeExample = """
+                let number = 10;
+
+                if (number > 5) {
+                    console.log("Number is greater than 5");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` and `if` are JavaScript keywords and cannot be used as variable names."
+                        )
+
+                    ),
+                    questions = listOf(
+                        QuizQuestion("What is a JavaScript statement?", listOf("A style rule", "An instruction to the browser", "A type of variable", "A comment"), 1),
+                        QuizQuestion("Which character is usually used to separate JS statements?", listOf("Colon (:)", "Comma (,)", "Semicolon (;)", "Full stop (.)"), 2),
+                        QuizQuestion("Is it possible to write multiple statements on one line?", listOf("No, it causes an error", "Yes, but it's not recommended", "Only inside a function", "Only if they are empty"), 1),
+                        QuizQuestion("What are curly braces {} used for in statements?", listOf("To create a comment", "To group statements into a block", "To multiply numbers", "To end the program"), 1),
+                        QuizQuestion("In what order are JavaScript statements executed?", listOf("Randomly", "Bottom to top", "In the order they are written", "Alphabetically"), 2)
+                    )
+                ),
+
+                Subtopic(
+                    sutopicId=5,
+                    subTopicName = "JS Syntax",questions = listOf(
+                        QuizQuestion("Which keyword is used for a variable that should NOT change?", listOf("let", "var", "const", "change"), 2),
+                        QuizQuestion("Is JavaScript case-sensitive?", listOf("Yes", "No", "Only for numbers", "Only in Linux"), 0),
+                        QuizQuestion("Which is a correct way to declare a variable in modern JS?", listOf("variable x = 5;", "let x = 5;", "set x = 5;", "int x = 5;"), 1),
+                        QuizQuestion("If you have 'let Name' and 'let name', how many variables exist?", listOf("One", "Two", "None (error)", "It depends on the browser"), 1),
+                        QuizQuestion("What is the naming style 'userName' called?", listOf("snake_case", "PascalCase", "camelCase", "Flatcase"), 2)
+                    ),
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Syntax?",
+                            explaination = "JavaScript syntax refers to the rules that define how JavaScript code is written "
+                                    + "and structured. Following correct syntax helps the browser understand and execute the code."
+                        ),
+
+                        Headline(
+                            headline = "Variable Declaration",
+                            explaination = "Variable declaration means creating a variable to store data. "
+                                    + "JavaScript allows variables to be declared using let, const, or var.",
+                            codeExample = """
+                let name = "John";
+                const age = 30;
+                var city = "Paris";
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` is used for values that can change, "
+                                    + "`const` is used for fixed values, and `var` is an older way to declare variables."
+                        ),
+
+                        Headline(
+                            headline = "Case Sensitivity",
+                            explaination = "JavaScript is case-sensitive, which means uppercase and lowercase letters "
+                                    + "are treated as different.",
+                            codeExample = """
+                let userName = "Alice";
+                let username = "Bob";
+            """.trimIndent(),
+                            tip = "Always use consistent naming styles like camelCase to avoid errors."
+                        )
+
+                    )
+                ),
+
+
+
+
+
+                Subtopic(
+                    sutopicId=6,
+                    questions = listOf(
+                        QuizQuestion("How do you start a single-line comment in JS?", listOf("/*", "//", "", "/* and */", "[[ and ]]"), 2),
+                        QuizQuestion("What happens to comments during program execution?", listOf("They are displayed in console", "They are ignored by the browser", "They make the code run faster", "They cause an error"), 1),
+                        QuizQuestion("Why would you use a comment to 'disable' code?", listOf("To make the file smaller", "To test logic without deleting it", "To encrypt the code", "To change the variable type"), 1),
+                        QuizQuestion("Can a single-line comment be placed at the end of a statement?", listOf("Yes", "No", "Only inside a block", "Only with const"), 0)
+                    ),
+                    subTopicName = "JS Comments",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Comments",
+                            explaination = "JavaScript comments are used to describe the code and make it easier to understand. "
+                                    + "Comments are ignored by the browser and do not affect program execution."
+                        ),
+
+                        Headline(
+                            headline = "Single-Line Comments",
+                            explaination = "Single-line comments are used to comment only one line of code.",
+                            codeExample = """
+                // This is a single-line comment
+                let x = 10; // This comment explains the variable
+            """.trimIndent(),
+                            afterCodeEplainations = "Anything written after // is treated as a comment and is not executed."
+                        ),
+
+                        Headline(
+                            explaination = "Single-line comments are often used for short explanations or notes in the code.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Comments can also be used to explain complex logic or important steps in a program.",
+                            tip = "Write clear and meaningful comments, but avoid commenting obvious code.",
+                            codeExample = """
+                // Calculate total price
+                let total = price + tax;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Multi-Line Comments",
+                            explaination = "Multi-line comments are used to comment multiple lines at once.",
+                            codeExample = """
+                /*
+                  This is a multi-line comment
+                  It can span multiple lines
+                */
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Disabling Code Using Comments",
+                            explaination = "Comments can be used to temporarily disable code without deleting it.",
+                            codeExample = """
+                // console.log("This line will not run");
+
+                /*
+                alert("This code is disabled");
+                */
+            """.trimIndent()
+                        )
+
+                    )
+                ),
+
+
+                Subtopic(
+                    sutopicId = 7,
+                    questions = listOf(
+                        QuizQuestion("What is the result of 'let x;' if you log x?", listOf("0", "null", "undefined", "Error"), 2),
+                        QuizQuestion("Which operator is used to assign a value to a variable?", listOf("==", "===", "=", ":="), 2),
+                        QuizQuestion("What happens if you try to change a 'const' variable?", listOf("It changes successfully", "It resets to zero", "It causes a runtime error", "It creates a new variable"), 2),
+                        QuizQuestion("Which is a valid variable name?", listOf("1stUser", "user-name", "_totalAmount", "let"), 2),
+                        QuizQuestion("When should you use 'let' instead of 'const'?", listOf("When the value will stay the same", "When the value needs to be updated later", "Only for strings", "Only for numbers"), 1)
+                    ),
+                    subTopicName = "JS Variables",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Variables",
+                            explaination = "Variables are used to store data values in JavaScript. "
+                                    + "A variable can hold different types of data such as numbers or text.",
+                            codeExample = "let name;",
+                            afterCodeEplainations = "This declares a variable named name without assigning a value."
+                        ),
+
+                        Headline(
+                            explaination = "The assignment operator (=) is used to assign a value to a variable.",
+                            codeExample = """
+                let age = 25;
+                let city = "New York";
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Variables can store different types of data and their values can be used later in the program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Undefined Variable",
+                            explaination = "A variable that is declared but not assigned a value is called an undefined variable.",
+                            codeExample = """
+                let x;
+                console.log(x);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Changing Value",
+                            explaination = "The value of a variable can be changed after it is declared.",
+                            codeExample = """
+                let score = 10;
+                score = 20;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Constant Variables",
+                            explaination = "Constant variables are declared using const and their values cannot be changed.",
+                            codeExample = """
+                const pi = 3.14;
+            """.trimIndent(),
+                            afterCodeEplainations = "Trying to change a const variable will cause an error."
+                        ),
+
+                        Headline(
+                            explaination = "Use let for values that change and const for values that should stay the same.",
+                            tip = "Always prefer const unless you know the value will change.",
+                            codeExample = """
+                let count = 1;
+                const maxLimit = 100;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Naming Variables",
+                            explaination = "Variable names should be meaningful and describe the data they store."
+                        ),
+
+                        Headline(
+                            headline = "Rules for Naming Variables",
+                            explaination = "Variable names must start with a letter, underscore (_), or dollar sign ($) "
+                                    + "and cannot contain spaces.",
+                            tip = "Use camelCase for variable names, like userName or totalPrice."
+                        )
+
+                    ),
+                ),
+
+
+
+                Subtopic(
+                    sutopicId = 8,
+                    questions = listOf(
+                        QuizQuestion("What keyword is used to create a function?", listOf("method", "function", "def", "routine"), 1),
+                        QuizQuestion("How do you 'call' a function named 'myFunc'?", listOf("call myFunc", "myFunc[]", "myFunc()", "run(myFunc)"), 2),
+                        QuizQuestion("What does the 'return' statement do?", listOf("Restarts the function", "Exits the function and sends back a value", "Repeats the code", "Deletes the variable"), 1),
+                        QuizQuestion("A variable declared inside a function is:", listOf("Global", "Local (Function Scope)", "Shared", "Permanent"), 1),
+                        QuizQuestion("What happens if you define a function but never call it?", listOf("The code runs once", "The browser crashes", "The code inside never executes", "It runs automatically"), 2)
+                    ),
+                    subTopicName = "JS Functions",
+
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Functions",
+                            explaination = "Functions are blocks of code designed to perform a specific task. "
+                                    + "They help organize code and avoid repetition."
+                        ),
+
+                        Headline(
+                            headline = "Function Definition",
+                            explaination = "A function definition creates a function using the function keyword, "
+                                    + "a name, and parentheses.",
+                            tip = "Choose clear and meaningful function names.",
+                            codeExample = """
+                function greet() {
+                    console.log("Hello!");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This defines a function named greet, but it will not run until called."
+                        ),
+
+                        Headline(
+                            explaination = "Functions can contain one or more statements inside their body.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Functions can be reused many times in a program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Calling a Function",
+                            explaination = "Calling a function means executing the code inside the function.",
+                            codeExample = """
+                greet();
+            """.trimIndent(),
+                            afterCodeEplainations = "This line runs the greet function."
+                        ),
+
+                        Headline(
+                            explaination = "A function can be called multiple times whenever needed.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "The return Statement",
+                            explaination = "The return statement sends a value back from the function.",
+                            codeExample = """
+                function add(a, b) {
+                    return a + b;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "The function returns the result of a + b."
+                        ),
+
+                        Headline(
+                            explaination = "Returned values can be stored in variables.",
+                            codeExample = """
+                let result = add(5, 3);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Once return is executed, the function stops running.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Not all functions need to return a value.",
+                            tip = "Use return only when you need a result from the function.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Function Scope",
+                            explaination = "Variables declared inside a function can only be used within that function.",
+                            codeExample = """
+                function test() {
+                    let x = 10;
+                    console.log(x);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Global Vaiables",
+                            explaination = "Global variables are declared outside functions and can be accessed anywhere in the code.",
+                            codeExample = """
+                let message = "Hello";
+
+                function showMessage() {
+                    console.log(message);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Why Use Functions",
+                            explaination = "Functions make code reusable, organized, and easier to maintain.",
+                            tip = "Break large programs into smaller functions.",
+                            codeExample = """
+                function calculateTotal(price, tax) {
+                    return price + tax;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This function can be reused whenever total calculation is needed."
+                        )
+
+                    )
+                ),
+
+
+
+
+                Subtopic(
+                    sutopicId = 9,
+                    questions = listOf(
+                        QuizQuestion("Which event fires when a user clicks an HTML element?", listOf("onhover", "onclick", "onpress", "onchange"), 1),
+                        QuizQuestion("What is the modern method to attach an event handler?", listOf("on()", "attachEvent()", "addEventListener()", "setEvent()"), 2),
+                        QuizQuestion("How do you prevent a form from refreshing the page on submit?", listOf("e.stop()", "e.preventDefault()", "e.halt()", "e.ignore()"), 1),
+                        QuizQuestion("Which event fires as soon as the HTML is loaded but before images load?", listOf("onload", "DOMReady", "DOMContentLoaded", "onfinish"), 2),
+                        QuizQuestion("What is the difference between 'focus' and 'blur'?", listOf("There is no difference", "Focus is entering a field, blur is leaving it", "Focus is for buttons, blur is for text", "Blur happens only on scroll"), 1),
+                        QuizQuestion("Which event tracks every single keystroke in an input?", listOf("change", "submit", "input", "blur"), 2),
+                        QuizQuestion("What does 'window.scrollY' tell you during a scroll event?", listOf("The width of the page", "The vertical distance scrolled in pixels", "The speed of scrolling", "The number of elements on screen"), 1)
+                    ),
+                    subTopicName = "JS Events",
+                    headlines = listOf(
+                        Headline(
+                            headline = "JS Events",
+                            explaination = "JavaScript events are actions that happen in the browser, such as clicking a button, typing on the keyboard, or loading a page.",
+                            codeExample = """
+                <button onclick="showAlert()">Click Me</button>
+                <script>
+                    function showAlert() {
+                        alert("Button clicked!");
+                    }
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "The function runs when the button is clicked."
+                        ),
+
+                        Headline(
+                            headline = "Inline Event Handlers",
+                            explaination = "Inline event handlers are written directly inside HTML elements using attributes like onclick or onmouseover.",
+                            codeExample = """
+                <button onclick="alert('Hello!')">Click</button>
+            """.trimIndent(),
+                            afterCodeEplainations = "Inline events are easy to use but not recommended for large applications as they mix logic with structure."
+                        ),
+
+                        Headline(
+                            headline = "The addEventListener() Method",
+                            explaination = "addEventListener() is the modern way to attach event handlers. It allows multiple listeners for a single event.",
+                            codeExample = """
+                <button id="btn">Click Me</button>
+                <script>
+                    document.getElementById("btn")
+                        .addEventListener("click", () => {
+                            alert("Modern click handler!");
+                        });
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "This method keeps JavaScript separate from HTML and is easier to maintain."
+                        ),
+
+                        Headline(
+                            headline = "The DOMContentLoaded Event",
+                            explaination = "This event fires when the HTML document has been completely loaded and parsed, without waiting for images or stylesheets.",
+                            codeExample = """
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        console.log("DOM is ready, you can now manipulate elements!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The input Event",
+                            explaination = "Unlike 'change', the 'input' event fires immediately every time the value of an element changes.",
+                            codeExample = """
+                <input type="text" id="myInput">
+                <p id="output"></p>
+                <script>
+                    document.getElementById("myInput").addEventListener("input", (e) => {
+                        document.getElementById("output").innerText = e.target.value;
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Mouse Events: mousedown & mouseup",
+                            explaination = "These track the exact moments a mouse button is pressed down and then released.",
+                            codeExample = """
+                <button id="holdBtn">Hold Me</button>
+                <script>
+                    const btn = document.getElementById("holdBtn");
+                    btn.addEventListener("mousedown", () => btn.innerText = "Pressed!");
+                    btn.addEventListener("mouseup", () => btn.innerText = "Released!");
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The keydown Event",
+                            explaination = "The keydown event occurs the moment a key is pressed. It is more reliable than keypress for non-character keys.",
+                            codeExample = """
+                <script>
+                    window.addEventListener("keydown", (event) => {
+                        console.log("Key pressed: " + event.key);
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The submit Event",
+                            explaination = "This event occurs when a form is submitted. It is usually used to validate data or prevent the page from refreshing.",
+                            codeExample = """
+                <form id="myForm">
+                    <input type="text" required>
+                    <button type="submit">Send</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", (e) => {
+                        e.preventDefault(); // Stops the page from refreshing
+                        alert("Form submitted safely!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The focus and blur Events",
+                            explaination = "Focus happens when you enter an input field; blur happens when you leave it.",
+                            codeExample = """
+                <input type="text" id="fld" placeholder="Focus me">
+                <script>
+                    const fld = document.getElementById("fld");
+                    fld.onfocus = () => fld.style.border = "2px solid blue";
+                    fld.onblur = () => fld.style.border = "1px solid gray";
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The scroll Event",
+                            explaination = "The scroll event fires when the document view or an element has been scrolled.",
+                            codeExample = """
+                <script>
+                    window.onscroll = () => {
+                        console.log("You are scrolling at: " + window.scrollY + "px");
+                    };
+                </script>
+            """.trimIndent(),
+                            tip = "Use 'throttling' or 'debouncing' with scroll events to maintain browser performance."
+                        ),
+
+                        Headline(
+                            headline = "The contextmenu Event",
+                            explaination = "This event fires when the user attempts to open a context menu (usually by right-clicking).",
+                            codeExample = """
+                <div style="background: lightgray; height: 50px;">Right-click here</div>
+                <script>
+                    document.addEventListener("contextmenu", (e) => {
+                        e.preventDefault();
+                        alert("Right-click is disabled!");
+                    });
+                </script>
+            """.trimIndent()
+                        )
+                    )
+                )
+
+
+
+
+
+
+
+
+
+            ),
+
+
+            Subtopic(
+                sutopicId=13,
+                subTopicName = "HTML Links",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Links",
+                        majorHeadileExplanation = "Explain breifly" ,
+                        headline = "Uses of Links in Html",
+                        explaination = "Explain bulleting",
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        headline = "Link Structure",
+                        explaination = "explain showing how ,with bulleting ",
+                        codeExample = " example ",
+
+                    ),
+                    Headline(
+                        headline = "Internal Linking ",
+                        explaination = "",
+                        codeExample = "give amazing runnable html example",
+
+                    ),
+                    Headline(
+                        headline = "External Linking ",
+                        explaination = "",
+                        codeExample = "give amazing runnable html example use https://nickdieda.web.app",
+
+
+                    ),
+                    Headline(
+                        headline = "inPage Linking ",
+                        explaination = "",
+                        codeExample = "give amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Open link in new tap example",
+                        explaination = "",
+                        codeExample = "give amazing runnable html example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "amazing",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ) ,
+            Subtopic(
+                sutopicId=14,
+                subTopicName = "Line Break",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Line Break",
+                        majorHeadileExplanation = "Explain showing tag used ",
+
+                        tip = "give",
+                             ),
+                    Headline(
+                        headline = "without break",
+                        codeExample ="give a runnable code examples you can use comment to explain inside the code",
+
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "with break",
+                        codeExample ="give a runnable code examples you can use comment to explain inside the code",
+
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+            ),
+            Subtopic(
+                sutopicId=15,
+                subTopicName = "Horizontal Rule/Line",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Horizontal Rule/Line",
+                        majorHeadileExplanation = "Explain showing tag used" ,
+                        codeExample = "give a runnable involving ",
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        headline = "Styling the line ",
+                        explaination = "List well commonly used colors and how they are used ,hex,rgb",
+                        codeExample = "give runnable html example ",
+                    ),
+                    Headline(
+                        headline = "heights and width ",
+                        codeExample = "give amazing runnable html involving all text alignment example",
+
+
+                        ),
+                    Headline(
+                        headline = "colors ",
+                        codeExample = "give amazing runnable html involving all text color example",
+
+                        ),
+                    Headline(
+                        headline = "Others Commonly used ",
+                        codeExample = "give amazing runnable html involving commonly used to style horizontal rule example",
+
+
+                        ),
+
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ),
+            Subtopic(
+                sutopicId=16,
+                subTopicName = "Text Formating",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Text Formating",
+                        majorHeadileExplanation = "Explain  ",
+                             tip = "give",
+
+                    ),
+                    Headline(
+                        headline = "Elements for Formatting Text",
+                        explaination = "explain and llist all the elemts and there tags and uses in bulleting ",
+                        codeExample = "good example involving all",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "another example",
+
+                        codeExample = "good example",
+
+
+                        ),
+
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+
+
+                // --- SUBTOPIC 2: WRITING & INTEGRATING JS ---
+                Subtopic(
+                    sutopicId = 2,
+                    subTopicName = "JS Writing Code",
+                    headlines = listOf(
+                        Headline(
+                            headline = "The <script> Tag",
+                            explaination = "JavaScript is executed by the browser's engine. To run it, code is either embedded directly into HTML or linked as an external script using the <script> tag. This tag tells the browser to pause HTML parsing and execute the logic inside.",
+                            codeExample = "<script>\n  console.log('Writing JS directly in HTML!');\n</script>",
+                            afterCodeEplainations = "Browsers read files from top to bottom, executing scripts as they are encountered."
+                        ),
+                        Headline(
+                            headline = "Internal JS & Placement",
+                            explaination = "Internal JS lives inside your HTML file. If placed in the <head>, it loads early but can slow down visual rendering. If placed at the bottom of the <body>, the page structure loads first, which is a common performance optimization.",
+                            codeExample = "<body>\n  <h1 id='title'>Hello</h1>\n  <script>\n    // This runs after the <h1> is created\n    console.log('Body script executed');\n  </script>\n</body>",
+                            tip = "Placing scripts in the head might cause errors if the script tries to access HTML elements that haven't been created yet."
+                        ),
+                        Headline(
+                            headline = "External JS (.js Files)",
+                            explaination = "For production, code is kept in separate .js files. This promotes 'Separation of Concerns' and allows browsers to cache the file, similar to how Linux shared libraries (.so files) save memory by being reused.",
+                            codeExample = "// In HTML: <script src='script.js'></script>\n\n// In script.js:\nfunction init() {\n  console.log('External app started');\n}",
+                            afterCodeEplainations = "The 'src' attribute acts like a file path, pointing the browser to the logic's location."
+                        ),
+                        Headline(
+                            headline = "The Render Process & Parser Blocking",
+                            explaination = "When a browser hits a script tag without special attributes, it stops building the page to download and run it. This is 'parser blocking'—think of it like a sequential bash script where command B must wait for A.",
+                            codeExample = "<script src='heavy-library.js'></script>",
+                            afterCodeEplainations = "Large scripts can make a site feel 'frozen' during this download phase."
+                        ),
+                        Headline(
+                            headline = "Modern Loading: Async & Defer",
+                            explaination = "Modern JS uses 'async' and 'defer' to prevent blocking. 'Defer' downloads the script in the background and executes it only after the HTML is fully parsed. This is currently the industry standard.",
+                            codeExample = "<script src='app.js' defer></script>",
+                            tip = "Always use 'defer' for external scripts in the <head> to get the best performance and avoid null errors."
+                        ),
+                        Headline(
+                            headline = "Modern Module System",
+                            explaination = "Today we use 'type=module' to organize code into pieces that can import/export functionality. Modules automatically use 'strict mode' to prevent common coding errors.",
+                            codeExample = "<script type='module' src='main.js'></script>"
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which tag is used for JavaScript?", listOf("<js>", "<script>", "<javascript>", "<code_js>"), 1),
+                        QuizQuestion("What is the best location for scripts for performance?", listOf("In the <head>", "Before the <html> tag", "At the bottom of the <body>", "Inside a <div>"), 2),
+                        QuizQuestion("Which attribute links an external JS file?", listOf("href", "link", "src", "path"), 2),
+                        QuizQuestion("What does the 'defer' attribute do?", listOf("Stops the script", "Hides the script", "Downloads in background and runs after parsing", "Deletes the script"), 2),
+                        QuizQuestion("Why is External JS better for performance?", listOf("It is smaller", "It can be cached by the browser", "It runs faster", "It uses less RAM"), 1)
+                    )
+                ),
+
+                // --- SUBTOPIC 3: DISPLAYING OUTPUT & DEBUGGING ---
+                Subtopic(
+                    sutopicId = 3,
+                    subTopicName = "JS Displaying Output",
+                    headlines = listOf(
+                        Headline(
+                            headline = "Data Visualization Streams",
+                            explaination = "JavaScript output means showing results to the user or developer. It can be displayed in the console, dialog boxes, or directly inside HTML elements.",
+                            codeExample = "// Different output streams\nconsole.log('For developers');\nalert('For urgent alerts');\ndocument.getElementById('msg').innerHTML = 'For users';"
+                        ),
+                        Headline(
+                            headline = "Using the Console",
+                            explaination = "The console is the primary tool for debugging. Beyond log(), you can use console.table() to visualize arrays of data clearly in the browser's DevTools (F12).",
+                            codeExample = """
+                            const servers = [
+                                { name: "Nginx", status: "Active" },
+                                { name: "Apache", status: "Down" }
+                            ];
+                            console.table(servers);
+                        """.trimIndent(),
+                            afterCodeEplainations = "The output is not visible to website users, making it safe for sensitive debugging info."
+                        ),
+                        Headline(
+                            headline = "Writing to HTML Components",
+                            explaination = "JavaScript can change content by selecting an element's ID. You use 'innerHTML' for HTML content or 'textContent' for plain text. Use <br> for line breaks within innerHTML.",
+                            codeExample = """
+                            <p id="status"></p>
+                            <script>
+                                document.getElementById("status").innerHTML = "System:<br>Online";
+                            </script>
+                        """.trimIndent(),
+                            tip = "Careful: innerHTML can be a security risk (XSS). Use textContent if you don't need to render HTML tags."
+                        ),
+                        Headline(
+                            headline = "Using Dialog Boxes",
+                            explaination = "Dialog boxes like alert(), confirm(), and prompt() are popups. Note that they are 'blocking' operations; they freeze the browser's main thread until the user interacts.",
+                            codeExample = "alert('Welcome to the JavaScript Compiler!');"
+                        ),
+                        Headline(
+                            headline = "The Window Object",
+                            explaination = "In the browser, 'window' is the global object. This means 'window.alert()' and 'alert()' are identical. It represents the browser window itself.",
+                            codeExample = "window.console.log('Global window access');"
+                        ),
+                        Headline(
+                            headline = "Dangerous Output: document.write()",
+                            explaination = "JavaScript can write directly to the document stream. However, if document.write() is used after the page has finished loading, it will overwrite the entire HTML document.",
+                            codeExample = "function wipe() {\n  document.write('The rest of the page is now gone.');\n}",
+                            tip = "Avoid using document.write() in real applications. It is strictly for quick testing."
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which method is best for debugging?", listOf("alert()", "console.log()", "document.write()", "window.print()"), 1),
+                        QuizQuestion("How do you change the content of an HTML element?", listOf(".innerHTML", ".changeText", ".value", ".setContent"), 0),
+                        QuizQuestion("What is a risk of using innerHTML with user input?", listOf("Slow loading", "Security (XSS)", "Color changes", "Syntax errors"), 1),
+                        QuizQuestion("What happens if document.write() runs after the page loads?", listOf("Adds text at top", "Does nothing", "Wipes the entire page", "Opens a new tab"), 2),
+                        QuizQuestion("Which command prints a table of data?", listOf("console.grid()", "console.table()", "console.view()", "console.list()"), 1)
+                    )
+                )
+                ,
+
+
+
+
+                Subtopic(
+                    sutopicId=4,
+                    subTopicName = "JS Statements",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Statements",
+                            explaination = "JavaScript statements are instructions that tell the browser what to do. "
+                                    + "Each statement is executed in the order it is written.",
+                            codeExample = """
+                let x = 10;
+                let y = 20;
+                let sum = x + y;
+            """.trimIndent(),
+                            afterCodeEplainations = "Each line is a separate statement. "
+                                    + "JavaScript reads and runs them one by one."
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript statements usually end with a semicolon. "
+                                    + "The semicolon separates one statement from another.",
+                            codeExample = """
+                let name = "John";
+                let age = 25;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript allows multiple statements in one line, "
+                                    + "but writing one statement per line makes the code easier to read.",
+                            codeExample = """
+                let a = 5; let b = 10; let c = a + b;
+            """.trimIndent(),
+                            tip = "For better readability, always write one statement per line."
+                        ),
+
+                        Headline(
+                            headline = "Grouping JS Statements",
+                            explaination = "JavaScript statements can be grouped together using curly braces {}. "
+                                    + "Grouped statements are treated as a block of code.",
+                            codeExample = """
+                if (x > 5) {
+                    console.log("x is greater than 5");
+                    console.log("This is a block of statements");
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "JS Keywords",
+                            explaination = "JavaScript keywords are reserved words that have special meanings. "
+                                    + "They are used to define actions, variables, and control the program flow.",
+                            codeExample = """
+                let number = 10;
+
+                if (number > 5) {
+                    console.log("Number is greater than 5");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` and `if` are JavaScript keywords and cannot be used as variable names."
+                        )
+
+                    ),
+                    questions = listOf(
+                        QuizQuestion("What is a JavaScript statement?", listOf("A style rule", "An instruction to the browser", "A type of variable", "A comment"), 1),
+                        QuizQuestion("Which character is usually used to separate JS statements?", listOf("Colon (:)", "Comma (,)", "Semicolon (;)", "Full stop (.)"), 2),
+                        QuizQuestion("Is it possible to write multiple statements on one line?", listOf("No, it causes an error", "Yes, but it's not recommended", "Only inside a function", "Only if they are empty"), 1),
+                        QuizQuestion("What are curly braces {} used for in statements?", listOf("To create a comment", "To group statements into a block", "To multiply numbers", "To end the program"), 1),
+                        QuizQuestion("In what order are JavaScript statements executed?", listOf("Randomly", "Bottom to top", "In the order they are written", "Alphabetically"), 2)
+                    )
+                ),
+
+                Subtopic(
+                    sutopicId=5,
+                    subTopicName = "JS Syntax",questions = listOf(
+                        QuizQuestion("Which keyword is used for a variable that should NOT change?", listOf("let", "var", "const", "change"), 2),
+                        QuizQuestion("Is JavaScript case-sensitive?", listOf("Yes", "No", "Only for numbers", "Only in Linux"), 0),
+                        QuizQuestion("Which is a correct way to declare a variable in modern JS?", listOf("variable x = 5;", "let x = 5;", "set x = 5;", "int x = 5;"), 1),
+                        QuizQuestion("If you have 'let Name' and 'let name', how many variables exist?", listOf("One", "Two", "None (error)", "It depends on the browser"), 1),
+                        QuizQuestion("What is the naming style 'userName' called?", listOf("snake_case", "PascalCase", "camelCase", "Flatcase"), 2)
+                    ),
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Syntax?",
+                            explaination = "JavaScript syntax refers to the rules that define how JavaScript code is written "
+                                    + "and structured. Following correct syntax helps the browser understand and execute the code."
+                        ),
+
+                        Headline(
+                            headline = "Variable Declaration",
+                            explaination = "Variable declaration means creating a variable to store data. "
+                                    + "JavaScript allows variables to be declared using let, const, or var.",
+                            codeExample = """
+                let name = "John";
+                const age = 30;
+                var city = "Paris";
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` is used for values that can change, "
+                                    + "`const` is used for fixed values, and `var` is an older way to declare variables."
+                        ),
+
+                        Headline(
+                            headline = "Case Sensitivity",
+                            explaination = "JavaScript is case-sensitive, which means uppercase and lowercase letters "
+                                    + "are treated as different.",
+                            codeExample = """
+                let userName = "Alice";
+                let username = "Bob";
+            """.trimIndent(),
+                            tip = "Always use consistent naming styles like camelCase to avoid errors."
+                        )
+
+                    )
+                ),
+
+
+
+
+
+                Subtopic(
+                    sutopicId=6,
+                    questions = listOf(
+                        QuizQuestion("How do you start a single-line comment in JS?", listOf("/*", "//", "", "/* and */", "[[ and ]]"), 2),
+                        QuizQuestion("What happens to comments during program execution?", listOf("They are displayed in console", "They are ignored by the browser", "They make the code run faster", "They cause an error"), 1),
+                        QuizQuestion("Why would you use a comment to 'disable' code?", listOf("To make the file smaller", "To test logic without deleting it", "To encrypt the code", "To change the variable type"), 1),
+                        QuizQuestion("Can a single-line comment be placed at the end of a statement?", listOf("Yes", "No", "Only inside a block", "Only with const"), 0)
+                    ),
+                    subTopicName = "JS Comments",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Comments",
+                            explaination = "JavaScript comments are used to describe the code and make it easier to understand. "
+                                    + "Comments are ignored by the browser and do not affect program execution."
+                        ),
+
+                        Headline(
+                            headline = "Single-Line Comments",
+                            explaination = "Single-line comments are used to comment only one line of code.",
+                            codeExample = """
+                // This is a single-line comment
+                let x = 10; // This comment explains the variable
+            """.trimIndent(),
+                            afterCodeEplainations = "Anything written after // is treated as a comment and is not executed."
+                        ),
+
+                        Headline(
+                            explaination = "Single-line comments are often used for short explanations or notes in the code.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Comments can also be used to explain complex logic or important steps in a program.",
+                            tip = "Write clear and meaningful comments, but avoid commenting obvious code.",
+                            codeExample = """
+                // Calculate total price
+                let total = price + tax;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Multi-Line Comments",
+                            explaination = "Multi-line comments are used to comment multiple lines at once.",
+                            codeExample = """
+                /*
+                  This is a multi-line comment
+                  It can span multiple lines
+                */
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Disabling Code Using Comments",
+                            explaination = "Comments can be used to temporarily disable code without deleting it.",
+                            codeExample = """
+                // console.log("This line will not run");
+
+                /*
+                alert("This code is disabled");
+                */
+            """.trimIndent()
+                        )
+
+                    )
+                ),
+
+
+                Subtopic(
+                    sutopicId = 7,
+                    questions = listOf(
+                        QuizQuestion("What is the result of 'let x;' if you log x?", listOf("0", "null", "undefined", "Error"), 2),
+                        QuizQuestion("Which operator is used to assign a value to a variable?", listOf("==", "===", "=", ":="), 2),
+                        QuizQuestion("What happens if you try to change a 'const' variable?", listOf("It changes successfully", "It resets to zero", "It causes a runtime error", "It creates a new variable"), 2),
+                        QuizQuestion("Which is a valid variable name?", listOf("1stUser", "user-name", "_totalAmount", "let"), 2),
+                        QuizQuestion("When should you use 'let' instead of 'const'?", listOf("When the value will stay the same", "When the value needs to be updated later", "Only for strings", "Only for numbers"), 1)
+                    ),
+                    subTopicName = "JS Variables",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Variables",
+                            explaination = "Variables are used to store data values in JavaScript. "
+                                    + "A variable can hold different types of data such as numbers or text.",
+                            codeExample = "let name;",
+                            afterCodeEplainations = "This declares a variable named name without assigning a value."
+                        ),
+
+                        Headline(
+                            explaination = "The assignment operator (=) is used to assign a value to a variable.",
+                            codeExample = """
+                let age = 25;
+                let city = "New York";
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Variables can store different types of data and their values can be used later in the program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Undefined Variable",
+                            explaination = "A variable that is declared but not assigned a value is called an undefined variable.",
+                            codeExample = """
+                let x;
+                console.log(x);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Changing Value",
+                            explaination = "The value of a variable can be changed after it is declared.",
+                            codeExample = """
+                let score = 10;
+                score = 20;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Constant Variables",
+                            explaination = "Constant variables are declared using const and their values cannot be changed.",
+                            codeExample = """
+                const pi = 3.14;
+            """.trimIndent(),
+                            afterCodeEplainations = "Trying to change a const variable will cause an error."
+                        ),
+
+                        Headline(
+                            explaination = "Use let for values that change and const for values that should stay the same.",
+                            tip = "Always prefer const unless you know the value will change.",
+                            codeExample = """
+                let count = 1;
+                const maxLimit = 100;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Naming Variables",
+                            explaination = "Variable names should be meaningful and describe the data they store."
+                        ),
+
+                        Headline(
+                            headline = "Rules for Naming Variables",
+                            explaination = "Variable names must start with a letter, underscore (_), or dollar sign ($) "
+                                    + "and cannot contain spaces.",
+                            tip = "Use camelCase for variable names, like userName or totalPrice."
+                        )
+
+                    ),
+                ),
+
+
+
+                Subtopic(
+                    sutopicId = 8,
+                    questions = listOf(
+                        QuizQuestion("What keyword is used to create a function?", listOf("method", "function", "def", "routine"), 1),
+                        QuizQuestion("How do you 'call' a function named 'myFunc'?", listOf("call myFunc", "myFunc[]", "myFunc()", "run(myFunc)"), 2),
+                        QuizQuestion("What does the 'return' statement do?", listOf("Restarts the function", "Exits the function and sends back a value", "Repeats the code", "Deletes the variable"), 1),
+                        QuizQuestion("A variable declared inside a function is:", listOf("Global", "Local (Function Scope)", "Shared", "Permanent"), 1),
+                        QuizQuestion("What happens if you define a function but never call it?", listOf("The code runs once", "The browser crashes", "The code inside never executes", "It runs automatically"), 2)
+                    ),
+                    subTopicName = "JS Functions",
+
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Functions",
+                            explaination = "Functions are blocks of code designed to perform a specific task. "
+                                    + "They help organize code and avoid repetition."
+                        ),
+
+                        Headline(
+                            headline = "Function Definition",
+                            explaination = "A function definition creates a function using the function keyword, "
+                                    + "a name, and parentheses.",
+                            tip = "Choose clear and meaningful function names.",
+                            codeExample = """
+                function greet() {
+                    console.log("Hello!");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This defines a function named greet, but it will not run until called."
+                        ),
+
+                        Headline(
+                            explaination = "Functions can contain one or more statements inside their body.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Functions can be reused many times in a program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Calling a Function",
+                            explaination = "Calling a function means executing the code inside the function.",
+                            codeExample = """
+                greet();
+            """.trimIndent(),
+                            afterCodeEplainations = "This line runs the greet function."
+                        ),
+
+                        Headline(
+                            explaination = "A function can be called multiple times whenever needed.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "The return Statement",
+                            explaination = "The return statement sends a value back from the function.",
+                            codeExample = """
+                function add(a, b) {
+                    return a + b;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "The function returns the result of a + b."
+                        ),
+
+                        Headline(
+                            explaination = "Returned values can be stored in variables.",
+                            codeExample = """
+                let result = add(5, 3);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Once return is executed, the function stops running.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Not all functions need to return a value.",
+                            tip = "Use return only when you need a result from the function.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Function Scope",
+                            explaination = "Variables declared inside a function can only be used within that function.",
+                            codeExample = """
+                function test() {
+                    let x = 10;
+                    console.log(x);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Global Vaiables",
+                            explaination = "Global variables are declared outside functions and can be accessed anywhere in the code.",
+                            codeExample = """
+                let message = "Hello";
+
+                function showMessage() {
+                    console.log(message);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Why Use Functions",
+                            explaination = "Functions make code reusable, organized, and easier to maintain.",
+                            tip = "Break large programs into smaller functions.",
+                            codeExample = """
+                function calculateTotal(price, tax) {
+                    return price + tax;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This function can be reused whenever total calculation is needed."
+                        )
+
+                    )
+                ),
+
+
+
+
+                Subtopic(
+                    sutopicId = 9,
+                    questions = listOf(
+                        QuizQuestion("Which event fires when a user clicks an HTML element?", listOf("onhover", "onclick", "onpress", "onchange"), 1),
+                        QuizQuestion("What is the modern method to attach an event handler?", listOf("on()", "attachEvent()", "addEventListener()", "setEvent()"), 2),
+                        QuizQuestion("How do you prevent a form from refreshing the page on submit?", listOf("e.stop()", "e.preventDefault()", "e.halt()", "e.ignore()"), 1),
+                        QuizQuestion("Which event fires as soon as the HTML is loaded but before images load?", listOf("onload", "DOMReady", "DOMContentLoaded", "onfinish"), 2),
+                        QuizQuestion("What is the difference between 'focus' and 'blur'?", listOf("There is no difference", "Focus is entering a field, blur is leaving it", "Focus is for buttons, blur is for text", "Blur happens only on scroll"), 1),
+                        QuizQuestion("Which event tracks every single keystroke in an input?", listOf("change", "submit", "input", "blur"), 2),
+                        QuizQuestion("What does 'window.scrollY' tell you during a scroll event?", listOf("The width of the page", "The vertical distance scrolled in pixels", "The speed of scrolling", "The number of elements on screen"), 1)
+                    ),
+                    subTopicName = "JS Events",
+                    headlines = listOf(
+                        Headline(
+                            headline = "JS Events",
+                            explaination = "JavaScript events are actions that happen in the browser, such as clicking a button, typing on the keyboard, or loading a page.",
+                            codeExample = """
+                <button onclick="showAlert()">Click Me</button>
+                <script>
+                    function showAlert() {
+                        alert("Button clicked!");
+                    }
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "The function runs when the button is clicked."
+                        ),
+
+                        Headline(
+                            headline = "Inline Event Handlers",
+                            explaination = "Inline event handlers are written directly inside HTML elements using attributes like onclick or onmouseover.",
+                            codeExample = """
+                <button onclick="alert('Hello!')">Click</button>
+            """.trimIndent(),
+                            afterCodeEplainations = "Inline events are easy to use but not recommended for large applications as they mix logic with structure."
+                        ),
+
+                        Headline(
+                            headline = "The addEventListener() Method",
+                            explaination = "addEventListener() is the modern way to attach event handlers. It allows multiple listeners for a single event.",
+                            codeExample = """
+                <button id="btn">Click Me</button>
+                <script>
+                    document.getElementById("btn")
+                        .addEventListener("click", () => {
+                            alert("Modern click handler!");
+                        });
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "This method keeps JavaScript separate from HTML and is easier to maintain."
+                        ),
+
+                        Headline(
+                            headline = "The DOMContentLoaded Event",
+                            explaination = "This event fires when the HTML document has been completely loaded and parsed, without waiting for images or stylesheets.",
+                            codeExample = """
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        console.log("DOM is ready, you can now manipulate elements!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The input Event",
+                            explaination = "Unlike 'change', the 'input' event fires immediately every time the value of an element changes.",
+                            codeExample = """
+                <input type="text" id="myInput">
+                <p id="output"></p>
+                <script>
+                    document.getElementById("myInput").addEventListener("input", (e) => {
+                        document.getElementById("output").innerText = e.target.value;
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Mouse Events: mousedown & mouseup",
+                            explaination = "These track the exact moments a mouse button is pressed down and then released.",
+                            codeExample = """
+                <button id="holdBtn">Hold Me</button>
+                <script>
+                    const btn = document.getElementById("holdBtn");
+                    btn.addEventListener("mousedown", () => btn.innerText = "Pressed!");
+                    btn.addEventListener("mouseup", () => btn.innerText = "Released!");
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The keydown Event",
+                            explaination = "The keydown event occurs the moment a key is pressed. It is more reliable than keypress for non-character keys.",
+                            codeExample = """
+                <script>
+                    window.addEventListener("keydown", (event) => {
+                        console.log("Key pressed: " + event.key);
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The submit Event",
+                            explaination = "This event occurs when a form is submitted. It is usually used to validate data or prevent the page from refreshing.",
+                            codeExample = """
+                <form id="myForm">
+                    <input type="text" required>
+                    <button type="submit">Send</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", (e) => {
+                        e.preventDefault(); // Stops the page from refreshing
+                        alert("Form submitted safely!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The focus and blur Events",
+                            explaination = "Focus happens when you enter an input field; blur happens when you leave it.",
+                            codeExample = """
+                <input type="text" id="fld" placeholder="Focus me">
+                <script>
+                    const fld = document.getElementById("fld");
+                    fld.onfocus = () => fld.style.border = "2px solid blue";
+                    fld.onblur = () => fld.style.border = "1px solid gray";
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The scroll Event",
+                            explaination = "The scroll event fires when the document view or an element has been scrolled.",
+                            codeExample = """
+                <script>
+                    window.onscroll = () => {
+                        console.log("You are scrolling at: " + window.scrollY + "px");
+                    };
+                </script>
+            """.trimIndent(),
+                            tip = "Use 'throttling' or 'debouncing' with scroll events to maintain browser performance."
+                        ),
+
+                        Headline(
+                            headline = "The contextmenu Event",
+                            explaination = "This event fires when the user attempts to open a context menu (usually by right-clicking).",
+                            codeExample = """
+                <div style="background: lightgray; height: 50px;">Right-click here</div>
+                <script>
+                    document.addEventListener("contextmenu", (e) => {
+                        e.preventDefault();
+                        alert("Right-click is disabled!");
+                    });
+                </script>
+            """.trimIndent()
+                        )
+                    )
+                )
+
+
+
+
+
+
+
+
+
+            ),
+
+            Subtopic(
+                sutopicId=19,
+                subTopicName = "Block Level Elements",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Block Level Elements",
+                        explaination = "Explain and list commonly used with thier tags and used for" ,
+                        codeExample = "give amazing runnable html example involving all",
+                        tip = "give tip"
+                    ),
+
+                    Headline(
+                        explaination = "Example ",
+                        codeExample = "give amazing runnable html example involving all",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Inline Elements",
+                        explaination = "Explain and list commonly used with thier tags and used for" ,
+                        codeExample = "give amazing runnable html example involving all",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "amazing",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ) ,
+            Subtopic(
+                sutopicId=17,
+                subTopicName = "HTML Sections",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Sections",
+                        majorHeadileExplanation = "Explain ",
+
+                        tip = "give",
+                     ),
+                    Headline(
+                        headline = "Elements used for HTML Sections",
+                        explaination = "Explain listing them and bulleting them all",
+                        codeExample ="give code example that user can run ",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "HTML5 Semantic Elements ",
+                        explaination = "Explain listing them and bulleting them all",
+                        codeExample ="give code example that user can run ",
+
+                        ),
+                    Headline(
+                        headline = "Element <div>",
+
+                        codeExample ="give code example that user can run ",
+
+                        ),
+                    Headline(
+                        headline = "Element <span>",
+
+                        codeExample ="give code example that user can run ",
+
+                        ),
+
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+            ),
+            Subtopic(
+                sutopicId=18,
+                subTopicName = "Images",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Images in HTML",
+                        majorHeadileExplanation = "explain shing tag used",
+                        codeExample = "give a runnable involving html colors more than one ",
+
+
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        headline = "src",
+                        explaination = "explain",
+                        codeExample = "give amazing runnable html  example",
+
+
+                    ),
+                    Headline(
+                        headline = "alt",
+                        explaination = "explain",
+                        codeExample = "give amazing runnable html  example",
+
+
+                        ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "styling image",
+                        explaination = "List well commonly used styles",
+                        codeExample = "give runnable html example  involving them",
+                    ),
+
+
+                    Headline(
+                        headline = "width and height",
+                        explaination = "explain ",
+                        codeExample = "",
+
+
+                        ),
+                    Headline(
+                        headline = "floating image",
+                        explaination = "explain ",
+                        codeExample = "",
+
+
+                        ),
+                    Headline(
+                        headline = "shape image",
+                        explaination = "explain ",
+                        codeExample = "",
+
+
+                        ),
+                    Headline(
+                        headline = "image as link",
+                        explaination = "explain ",
+                        codeExample = "",
+
+
+                        ),
+                    Headline(
+                        headline = "web image",
+                        explaination = "explain ",
+                        codeExample = "",
+
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ),
+            Subtopic(
+                sutopicId=20,
+                subTopicName = "HTML Tables",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Tables",
+                        majorHeadileExplanation = "Explain  and show tag used",
+                        codeExample ="give a runnable code example with attributes you can use comment to explain inside the code",
+                        tip = "give",
+
+                    ),
+                    Headline(
+                        headline = "Table Elements",
+                        explaination = "explain all using bulleting listing them with their tags ",
+                        codeExample = "good example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Table Attributes",
+                        explaination = "explain all using bulleting listing them with their tags ",
+                        codeExample = "good example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Example Of a table",
+
+                        codeExample = "good example example of a table having most of the things above",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = " table having bg,colgroup,witdth,border",
+
+                        codeExample = "good example example of a table having bg,colgroup,witdth,border",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "table havingcell padding,cell spacing,row group,caption",
+
+                        codeExample = "good example example of a table having cell padding,cell spacing,row group,caption",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Collapsing HTML Table Borders",
+
+                        codeExample = "good example example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Rowspan ",
+
+                        codeExample = "good example example of a table having Rowspan",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Collspan ",
+
+                        codeExample = "good example example of a table having colspan",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Collapsed border,rowspan,colspan ",
+
+                        codeExample = "good example example of a table having Rowspan",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        explaination = "Example  ",
+                        codeExample = "Complex Example but amazing",
+
+                        ),
+
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+
+
+                // --- SUBTOPIC 2: WRITING & INTEGRATING JS ---
+                Subtopic(
+                    sutopicId = 2,
+                    subTopicName = "JS Writing Code",
+                    headlines = listOf(
+                        Headline(
+                            headline = "The <script> Tag",
+                            explaination = "JavaScript is executed by the browser's engine. To run it, code is either embedded directly into HTML or linked as an external script using the <script> tag. This tag tells the browser to pause HTML parsing and execute the logic inside.",
+                            codeExample = "<script>\n  console.log('Writing JS directly in HTML!');\n</script>",
+                            afterCodeEplainations = "Browsers read files from top to bottom, executing scripts as they are encountered."
+                        ),
+                        Headline(
+                            headline = "Internal JS & Placement",
+                            explaination = "Internal JS lives inside your HTML file. If placed in the <head>, it loads early but can slow down visual rendering. If placed at the bottom of the <body>, the page structure loads first, which is a common performance optimization.",
+                            codeExample = "<body>\n  <h1 id='title'>Hello</h1>\n  <script>\n    // This runs after the <h1> is created\n    console.log('Body script executed');\n  </script>\n</body>",
+                            tip = "Placing scripts in the head might cause errors if the script tries to access HTML elements that haven't been created yet."
+                        ),
+                        Headline(
+                            headline = "External JS (.js Files)",
+                            explaination = "For production, code is kept in separate .js files. This promotes 'Separation of Concerns' and allows browsers to cache the file, similar to how Linux shared libraries (.so files) save memory by being reused.",
+                            codeExample = "// In HTML: <script src='script.js'></script>\n\n// In script.js:\nfunction init() {\n  console.log('External app started');\n}",
+                            afterCodeEplainations = "The 'src' attribute acts like a file path, pointing the browser to the logic's location."
+                        ),
+                        Headline(
+                            headline = "The Render Process & Parser Blocking",
+                            explaination = "When a browser hits a script tag without special attributes, it stops building the page to download and run it. This is 'parser blocking'—think of it like a sequential bash script where command B must wait for A.",
+                            codeExample = "<script src='heavy-library.js'></script>",
+                            afterCodeEplainations = "Large scripts can make a site feel 'frozen' during this download phase."
+                        ),
+                        Headline(
+                            headline = "Modern Loading: Async & Defer",
+                            explaination = "Modern JS uses 'async' and 'defer' to prevent blocking. 'Defer' downloads the script in the background and executes it only after the HTML is fully parsed. This is currently the industry standard.",
+                            codeExample = "<script src='app.js' defer></script>",
+                            tip = "Always use 'defer' for external scripts in the <head> to get the best performance and avoid null errors."
+                        ),
+                        Headline(
+                            headline = "Modern Module System",
+                            explaination = "Today we use 'type=module' to organize code into pieces that can import/export functionality. Modules automatically use 'strict mode' to prevent common coding errors.",
+                            codeExample = "<script type='module' src='main.js'></script>"
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which tag is used for JavaScript?", listOf("<js>", "<script>", "<javascript>", "<code_js>"), 1),
+                        QuizQuestion("What is the best location for scripts for performance?", listOf("In the <head>", "Before the <html> tag", "At the bottom of the <body>", "Inside a <div>"), 2),
+                        QuizQuestion("Which attribute links an external JS file?", listOf("href", "link", "src", "path"), 2),
+                        QuizQuestion("What does the 'defer' attribute do?", listOf("Stops the script", "Hides the script", "Downloads in background and runs after parsing", "Deletes the script"), 2),
+                        QuizQuestion("Why is External JS better for performance?", listOf("It is smaller", "It can be cached by the browser", "It runs faster", "It uses less RAM"), 1)
+                    )
+                ),
+
+                // --- SUBTOPIC 3: DISPLAYING OUTPUT & DEBUGGING ---
+                Subtopic(
+                    sutopicId = 3,
+                    subTopicName = "JS Displaying Output",
+                    headlines = listOf(
+                        Headline(
+                            headline = "Data Visualization Streams",
+                            explaination = "JavaScript output means showing results to the user or developer. It can be displayed in the console, dialog boxes, or directly inside HTML elements.",
+                            codeExample = "// Different output streams\nconsole.log('For developers');\nalert('For urgent alerts');\ndocument.getElementById('msg').innerHTML = 'For users';"
+                        ),
+                        Headline(
+                            headline = "Using the Console",
+                            explaination = "The console is the primary tool for debugging. Beyond log(), you can use console.table() to visualize arrays of data clearly in the browser's DevTools (F12).",
+                            codeExample = """
+                            const servers = [
+                                { name: "Nginx", status: "Active" },
+                                { name: "Apache", status: "Down" }
+                            ];
+                            console.table(servers);
+                        """.trimIndent(),
+                            afterCodeEplainations = "The output is not visible to website users, making it safe for sensitive debugging info."
+                        ),
+                        Headline(
+                            headline = "Writing to HTML Components",
+                            explaination = "JavaScript can change content by selecting an element's ID. You use 'innerHTML' for HTML content or 'textContent' for plain text. Use <br> for line breaks within innerHTML.",
+                            codeExample = """
+                            <p id="status"></p>
+                            <script>
+                                document.getElementById("status").innerHTML = "System:<br>Online";
+                            </script>
+                        """.trimIndent(),
+                            tip = "Careful: innerHTML can be a security risk (XSS). Use textContent if you don't need to render HTML tags."
+                        ),
+                        Headline(
+                            headline = "Using Dialog Boxes",
+                            explaination = "Dialog boxes like alert(), confirm(), and prompt() are popups. Note that they are 'blocking' operations; they freeze the browser's main thread until the user interacts.",
+                            codeExample = "alert('Welcome to the JavaScript Compiler!');"
+                        ),
+                        Headline(
+                            headline = "The Window Object",
+                            explaination = "In the browser, 'window' is the global object. This means 'window.alert()' and 'alert()' are identical. It represents the browser window itself.",
+                            codeExample = "window.console.log('Global window access');"
+                        ),
+                        Headline(
+                            headline = "Dangerous Output: document.write()",
+                            explaination = "JavaScript can write directly to the document stream. However, if document.write() is used after the page has finished loading, it will overwrite the entire HTML document.",
+                            codeExample = "function wipe() {\n  document.write('The rest of the page is now gone.');\n}",
+                            tip = "Avoid using document.write() in real applications. It is strictly for quick testing."
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which method is best for debugging?", listOf("alert()", "console.log()", "document.write()", "window.print()"), 1),
+                        QuizQuestion("How do you change the content of an HTML element?", listOf(".innerHTML", ".changeText", ".value", ".setContent"), 0),
+                        QuizQuestion("What is a risk of using innerHTML with user input?", listOf("Slow loading", "Security (XSS)", "Color changes", "Syntax errors"), 1),
+                        QuizQuestion("What happens if document.write() runs after the page loads?", listOf("Adds text at top", "Does nothing", "Wipes the entire page", "Opens a new tab"), 2),
+                        QuizQuestion("Which command prints a table of data?", listOf("console.grid()", "console.table()", "console.view()", "console.list()"), 1)
+                    )
+                )
+                ,
+
+
+
+
+                Subtopic(
+                    sutopicId=4,
+                    subTopicName = "JS Statements",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Statements",
+                            explaination = "JavaScript statements are instructions that tell the browser what to do. "
+                                    + "Each statement is executed in the order it is written.",
+                            codeExample = """
+                let x = 10;
+                let y = 20;
+                let sum = x + y;
+            """.trimIndent(),
+                            afterCodeEplainations = "Each line is a separate statement. "
+                                    + "JavaScript reads and runs them one by one."
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript statements usually end with a semicolon. "
+                                    + "The semicolon separates one statement from another.",
+                            codeExample = """
+                let name = "John";
+                let age = 25;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript allows multiple statements in one line, "
+                                    + "but writing one statement per line makes the code easier to read.",
+                            codeExample = """
+                let a = 5; let b = 10; let c = a + b;
+            """.trimIndent(),
+                            tip = "For better readability, always write one statement per line."
+                        ),
+
+                        Headline(
+                            headline = "Grouping JS Statements",
+                            explaination = "JavaScript statements can be grouped together using curly braces {}. "
+                                    + "Grouped statements are treated as a block of code.",
+                            codeExample = """
+                if (x > 5) {
+                    console.log("x is greater than 5");
+                    console.log("This is a block of statements");
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "JS Keywords",
+                            explaination = "JavaScript keywords are reserved words that have special meanings. "
+                                    + "They are used to define actions, variables, and control the program flow.",
+                            codeExample = """
+                let number = 10;
+
+                if (number > 5) {
+                    console.log("Number is greater than 5");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` and `if` are JavaScript keywords and cannot be used as variable names."
+                        )
+
+                    ),
+                    questions = listOf(
+                        QuizQuestion("What is a JavaScript statement?", listOf("A style rule", "An instruction to the browser", "A type of variable", "A comment"), 1),
+                        QuizQuestion("Which character is usually used to separate JS statements?", listOf("Colon (:)", "Comma (,)", "Semicolon (;)", "Full stop (.)"), 2),
+                        QuizQuestion("Is it possible to write multiple statements on one line?", listOf("No, it causes an error", "Yes, but it's not recommended", "Only inside a function", "Only if they are empty"), 1),
+                        QuizQuestion("What are curly braces {} used for in statements?", listOf("To create a comment", "To group statements into a block", "To multiply numbers", "To end the program"), 1),
+                        QuizQuestion("In what order are JavaScript statements executed?", listOf("Randomly", "Bottom to top", "In the order they are written", "Alphabetically"), 2)
+                    )
+                ),
+
+                Subtopic(
+                    sutopicId=5,
+                    subTopicName = "JS Syntax",questions = listOf(
+                        QuizQuestion("Which keyword is used for a variable that should NOT change?", listOf("let", "var", "const", "change"), 2),
+                        QuizQuestion("Is JavaScript case-sensitive?", listOf("Yes", "No", "Only for numbers", "Only in Linux"), 0),
+                        QuizQuestion("Which is a correct way to declare a variable in modern JS?", listOf("variable x = 5;", "let x = 5;", "set x = 5;", "int x = 5;"), 1),
+                        QuizQuestion("If you have 'let Name' and 'let name', how many variables exist?", listOf("One", "Two", "None (error)", "It depends on the browser"), 1),
+                        QuizQuestion("What is the naming style 'userName' called?", listOf("snake_case", "PascalCase", "camelCase", "Flatcase"), 2)
+                    ),
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Syntax?",
+                            explaination = "JavaScript syntax refers to the rules that define how JavaScript code is written "
+                                    + "and structured. Following correct syntax helps the browser understand and execute the code."
+                        ),
+
+                        Headline(
+                            headline = "Variable Declaration",
+                            explaination = "Variable declaration means creating a variable to store data. "
+                                    + "JavaScript allows variables to be declared using let, const, or var.",
+                            codeExample = """
+                let name = "John";
+                const age = 30;
+                var city = "Paris";
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` is used for values that can change, "
+                                    + "`const` is used for fixed values, and `var` is an older way to declare variables."
+                        ),
+
+                        Headline(
+                            headline = "Case Sensitivity",
+                            explaination = "JavaScript is case-sensitive, which means uppercase and lowercase letters "
+                                    + "are treated as different.",
+                            codeExample = """
+                let userName = "Alice";
+                let username = "Bob";
+            """.trimIndent(),
+                            tip = "Always use consistent naming styles like camelCase to avoid errors."
+                        )
+
+                    )
+                ),
+
+
+
+
+
+                Subtopic(
+                    sutopicId=6,
+                    questions = listOf(
+                        QuizQuestion("How do you start a single-line comment in JS?", listOf("/*", "//", "", "/* and */", "[[ and ]]"), 2),
+                        QuizQuestion("What happens to comments during program execution?", listOf("They are displayed in console", "They are ignored by the browser", "They make the code run faster", "They cause an error"), 1),
+                        QuizQuestion("Why would you use a comment to 'disable' code?", listOf("To make the file smaller", "To test logic without deleting it", "To encrypt the code", "To change the variable type"), 1),
+                        QuizQuestion("Can a single-line comment be placed at the end of a statement?", listOf("Yes", "No", "Only inside a block", "Only with const"), 0)
+                    ),
+                    subTopicName = "JS Comments",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Comments",
+                            explaination = "JavaScript comments are used to describe the code and make it easier to understand. "
+                                    + "Comments are ignored by the browser and do not affect program execution."
+                        ),
+
+                        Headline(
+                            headline = "Single-Line Comments",
+                            explaination = "Single-line comments are used to comment only one line of code.",
+                            codeExample = """
+                // This is a single-line comment
+                let x = 10; // This comment explains the variable
+            """.trimIndent(),
+                            afterCodeEplainations = "Anything written after // is treated as a comment and is not executed."
+                        ),
+
+                        Headline(
+                            explaination = "Single-line comments are often used for short explanations or notes in the code.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Comments can also be used to explain complex logic or important steps in a program.",
+                            tip = "Write clear and meaningful comments, but avoid commenting obvious code.",
+                            codeExample = """
+                // Calculate total price
+                let total = price + tax;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Multi-Line Comments",
+                            explaination = "Multi-line comments are used to comment multiple lines at once.",
+                            codeExample = """
+                /*
+                  This is a multi-line comment
+                  It can span multiple lines
+                */
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Disabling Code Using Comments",
+                            explaination = "Comments can be used to temporarily disable code without deleting it.",
+                            codeExample = """
+                // console.log("This line will not run");
+
+                /*
+                alert("This code is disabled");
+                */
+            """.trimIndent()
+                        )
+
+                    )
+                ),
+
+
+                Subtopic(
+                    sutopicId = 7,
+                    questions = listOf(
+                        QuizQuestion("What is the result of 'let x;' if you log x?", listOf("0", "null", "undefined", "Error"), 2),
+                        QuizQuestion("Which operator is used to assign a value to a variable?", listOf("==", "===", "=", ":="), 2),
+                        QuizQuestion("What happens if you try to change a 'const' variable?", listOf("It changes successfully", "It resets to zero", "It causes a runtime error", "It creates a new variable"), 2),
+                        QuizQuestion("Which is a valid variable name?", listOf("1stUser", "user-name", "_totalAmount", "let"), 2),
+                        QuizQuestion("When should you use 'let' instead of 'const'?", listOf("When the value will stay the same", "When the value needs to be updated later", "Only for strings", "Only for numbers"), 1)
+                    ),
+                    subTopicName = "JS Variables",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Variables",
+                            explaination = "Variables are used to store data values in JavaScript. "
+                                    + "A variable can hold different types of data such as numbers or text.",
+                            codeExample = "let name;",
+                            afterCodeEplainations = "This declares a variable named name without assigning a value."
+                        ),
+
+                        Headline(
+                            explaination = "The assignment operator (=) is used to assign a value to a variable.",
+                            codeExample = """
+                let age = 25;
+                let city = "New York";
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Variables can store different types of data and their values can be used later in the program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Undefined Variable",
+                            explaination = "A variable that is declared but not assigned a value is called an undefined variable.",
+                            codeExample = """
+                let x;
+                console.log(x);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Changing Value",
+                            explaination = "The value of a variable can be changed after it is declared.",
+                            codeExample = """
+                let score = 10;
+                score = 20;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Constant Variables",
+                            explaination = "Constant variables are declared using const and their values cannot be changed.",
+                            codeExample = """
+                const pi = 3.14;
+            """.trimIndent(),
+                            afterCodeEplainations = "Trying to change a const variable will cause an error."
+                        ),
+
+                        Headline(
+                            explaination = "Use let for values that change and const for values that should stay the same.",
+                            tip = "Always prefer const unless you know the value will change.",
+                            codeExample = """
+                let count = 1;
+                const maxLimit = 100;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Naming Variables",
+                            explaination = "Variable names should be meaningful and describe the data they store."
+                        ),
+
+                        Headline(
+                            headline = "Rules for Naming Variables",
+                            explaination = "Variable names must start with a letter, underscore (_), or dollar sign ($) "
+                                    + "and cannot contain spaces.",
+                            tip = "Use camelCase for variable names, like userName or totalPrice."
+                        )
+
+                    ),
+                ),
+
+
+
+                Subtopic(
+                    sutopicId = 8,
+                    questions = listOf(
+                        QuizQuestion("What keyword is used to create a function?", listOf("method", "function", "def", "routine"), 1),
+                        QuizQuestion("How do you 'call' a function named 'myFunc'?", listOf("call myFunc", "myFunc[]", "myFunc()", "run(myFunc)"), 2),
+                        QuizQuestion("What does the 'return' statement do?", listOf("Restarts the function", "Exits the function and sends back a value", "Repeats the code", "Deletes the variable"), 1),
+                        QuizQuestion("A variable declared inside a function is:", listOf("Global", "Local (Function Scope)", "Shared", "Permanent"), 1),
+                        QuizQuestion("What happens if you define a function but never call it?", listOf("The code runs once", "The browser crashes", "The code inside never executes", "It runs automatically"), 2)
+                    ),
+                    subTopicName = "JS Functions",
+
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Functions",
+                            explaination = "Functions are blocks of code designed to perform a specific task. "
+                                    + "They help organize code and avoid repetition."
+                        ),
+
+                        Headline(
+                            headline = "Function Definition",
+                            explaination = "A function definition creates a function using the function keyword, "
+                                    + "a name, and parentheses.",
+                            tip = "Choose clear and meaningful function names.",
+                            codeExample = """
+                function greet() {
+                    console.log("Hello!");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This defines a function named greet, but it will not run until called."
+                        ),
+
+                        Headline(
+                            explaination = "Functions can contain one or more statements inside their body.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Functions can be reused many times in a program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Calling a Function",
+                            explaination = "Calling a function means executing the code inside the function.",
+                            codeExample = """
+                greet();
+            """.trimIndent(),
+                            afterCodeEplainations = "This line runs the greet function."
+                        ),
+
+                        Headline(
+                            explaination = "A function can be called multiple times whenever needed.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "The return Statement",
+                            explaination = "The return statement sends a value back from the function.",
+                            codeExample = """
+                function add(a, b) {
+                    return a + b;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "The function returns the result of a + b."
+                        ),
+
+                        Headline(
+                            explaination = "Returned values can be stored in variables.",
+                            codeExample = """
+                let result = add(5, 3);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Once return is executed, the function stops running.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Not all functions need to return a value.",
+                            tip = "Use return only when you need a result from the function.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Function Scope",
+                            explaination = "Variables declared inside a function can only be used within that function.",
+                            codeExample = """
+                function test() {
+                    let x = 10;
+                    console.log(x);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Global Vaiables",
+                            explaination = "Global variables are declared outside functions and can be accessed anywhere in the code.",
+                            codeExample = """
+                let message = "Hello";
+
+                function showMessage() {
+                    console.log(message);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Why Use Functions",
+                            explaination = "Functions make code reusable, organized, and easier to maintain.",
+                            tip = "Break large programs into smaller functions.",
+                            codeExample = """
+                function calculateTotal(price, tax) {
+                    return price + tax;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This function can be reused whenever total calculation is needed."
+                        )
+
+                    )
+                ),
+
+
+
+
+                Subtopic(
+                    sutopicId = 9,
+                    questions = listOf(
+                        QuizQuestion("Which event fires when a user clicks an HTML element?", listOf("onhover", "onclick", "onpress", "onchange"), 1),
+                        QuizQuestion("What is the modern method to attach an event handler?", listOf("on()", "attachEvent()", "addEventListener()", "setEvent()"), 2),
+                        QuizQuestion("How do you prevent a form from refreshing the page on submit?", listOf("e.stop()", "e.preventDefault()", "e.halt()", "e.ignore()"), 1),
+                        QuizQuestion("Which event fires as soon as the HTML is loaded but before images load?", listOf("onload", "DOMReady", "DOMContentLoaded", "onfinish"), 2),
+                        QuizQuestion("What is the difference between 'focus' and 'blur'?", listOf("There is no difference", "Focus is entering a field, blur is leaving it", "Focus is for buttons, blur is for text", "Blur happens only on scroll"), 1),
+                        QuizQuestion("Which event tracks every single keystroke in an input?", listOf("change", "submit", "input", "blur"), 2),
+                        QuizQuestion("What does 'window.scrollY' tell you during a scroll event?", listOf("The width of the page", "The vertical distance scrolled in pixels", "The speed of scrolling", "The number of elements on screen"), 1)
+                    ),
+                    subTopicName = "JS Events",
+                    headlines = listOf(
+                        Headline(
+                            headline = "JS Events",
+                            explaination = "JavaScript events are actions that happen in the browser, such as clicking a button, typing on the keyboard, or loading a page.",
+                            codeExample = """
+                <button onclick="showAlert()">Click Me</button>
+                <script>
+                    function showAlert() {
+                        alert("Button clicked!");
+                    }
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "The function runs when the button is clicked."
+                        ),
+
+                        Headline(
+                            headline = "Inline Event Handlers",
+                            explaination = "Inline event handlers are written directly inside HTML elements using attributes like onclick or onmouseover.",
+                            codeExample = """
+                <button onclick="alert('Hello!')">Click</button>
+            """.trimIndent(),
+                            afterCodeEplainations = "Inline events are easy to use but not recommended for large applications as they mix logic with structure."
+                        ),
+
+                        Headline(
+                            headline = "The addEventListener() Method",
+                            explaination = "addEventListener() is the modern way to attach event handlers. It allows multiple listeners for a single event.",
+                            codeExample = """
+                <button id="btn">Click Me</button>
+                <script>
+                    document.getElementById("btn")
+                        .addEventListener("click", () => {
+                            alert("Modern click handler!");
+                        });
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "This method keeps JavaScript separate from HTML and is easier to maintain."
+                        ),
+
+                        Headline(
+                            headline = "The DOMContentLoaded Event",
+                            explaination = "This event fires when the HTML document has been completely loaded and parsed, without waiting for images or stylesheets.",
+                            codeExample = """
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        console.log("DOM is ready, you can now manipulate elements!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The input Event",
+                            explaination = "Unlike 'change', the 'input' event fires immediately every time the value of an element changes.",
+                            codeExample = """
+                <input type="text" id="myInput">
+                <p id="output"></p>
+                <script>
+                    document.getElementById("myInput").addEventListener("input", (e) => {
+                        document.getElementById("output").innerText = e.target.value;
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Mouse Events: mousedown & mouseup",
+                            explaination = "These track the exact moments a mouse button is pressed down and then released.",
+                            codeExample = """
+                <button id="holdBtn">Hold Me</button>
+                <script>
+                    const btn = document.getElementById("holdBtn");
+                    btn.addEventListener("mousedown", () => btn.innerText = "Pressed!");
+                    btn.addEventListener("mouseup", () => btn.innerText = "Released!");
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The keydown Event",
+                            explaination = "The keydown event occurs the moment a key is pressed. It is more reliable than keypress for non-character keys.",
+                            codeExample = """
+                <script>
+                    window.addEventListener("keydown", (event) => {
+                        console.log("Key pressed: " + event.key);
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The submit Event",
+                            explaination = "This event occurs when a form is submitted. It is usually used to validate data or prevent the page from refreshing.",
+                            codeExample = """
+                <form id="myForm">
+                    <input type="text" required>
+                    <button type="submit">Send</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", (e) => {
+                        e.preventDefault(); // Stops the page from refreshing
+                        alert("Form submitted safely!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The focus and blur Events",
+                            explaination = "Focus happens when you enter an input field; blur happens when you leave it.",
+                            codeExample = """
+                <input type="text" id="fld" placeholder="Focus me">
+                <script>
+                    const fld = document.getElementById("fld");
+                    fld.onfocus = () => fld.style.border = "2px solid blue";
+                    fld.onblur = () => fld.style.border = "1px solid gray";
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The scroll Event",
+                            explaination = "The scroll event fires when the document view or an element has been scrolled.",
+                            codeExample = """
+                <script>
+                    window.onscroll = () => {
+                        console.log("You are scrolling at: " + window.scrollY + "px");
+                    };
+                </script>
+            """.trimIndent(),
+                            tip = "Use 'throttling' or 'debouncing' with scroll events to maintain browser performance."
+                        ),
+
+                        Headline(
+                            headline = "The contextmenu Event",
+                            explaination = "This event fires when the user attempts to open a context menu (usually by right-clicking).",
+                            codeExample = """
+                <div style="background: lightgray; height: 50px;">Right-click here</div>
+                <script>
+                    document.addEventListener("contextmenu", (e) => {
+                        e.preventDefault();
+                        alert("Right-click is disabled!");
+                    });
+                </script>
+            """.trimIndent()
+                        )
+                    )
+                )
+
+
+
+
+
+
+
+
+
+            ),
+
+            Subtopic(
+                sutopicId=201,
+                subTopicName = "HTML Lists",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Lists",
+                        majorHeadileExplanation = "Explain and good structure" ,
+
+                        tip = "give tip"
+                    ),
+                    Headline(
+                        headline = "HTML List Elements",
+                        explaination = "List well all ,with their tags and bulleting and explain them",
+                        codeExample = "give runnable html example ",
+                    ),
+
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Nested HTML Lists",
+                        explaination = "explain",
+                        codeExample = "give runnable html example ",
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+
+                    Headline(
+                        headline = "List Style Type",
+                        explaination = "explain",
+                        codeExample = "give runnable html example ",
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        headline = "Changing and Coloring Bullets",
+                        explaination = "explain",
+                        codeExample = "give runnable html example ",
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+                    Headline(
+                        codeExample = "give amazing runnable html  example",
+                        afterCodeEplainations = ""
+
+                    ),
+
+                    Headline(
+                        headline = "Give other(s) Headline",
+                        explaination = "explain ",
+                        codeExample = "",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    questions = listOf(
+//                      give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+                )
+
+            ),
+            Subtopic(
+                sutopicId=203,
+                subTopicName = "HTML Description Lists",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "HTML Description Lists",
+                        majorHeadileExplanation = "Explain  and list the tags all of them ",
+                        codeExample ="give a runnable code example ",
+                        tip = "give",
+                        afterCodeEplainations = ""
+                    ),
+                    Headline(
+
+                        codeExample = "good example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        headline = "Styling HTML Description Lists ",
+                        explaination = "explain ",
+                        codeExample = "good example",
+                        afterCodeEplainations = "Explain",
+
+                        ),
+                    Headline(
+                        explaination = "explain ",
+                        codeExample = "",
+
+                        ),
+
+                    questions = listOf(
+//                    give 5-8 questions on the subtopic in this format
+                        QuizQuestion(
+                            "Question",
+                            listOf(
+                                "options"
+                            ),
+                            number of correct ans
+                        )
+
+
+                    )
+
+                ),
+
+
+                // --- SUBTOPIC 2: WRITING & INTEGRATING JS ---
+                Subtopic(
+                    sutopicId = 2,
+                    subTopicName = "JS Writing Code",
+                    headlines = listOf(
+                        Headline(
+                            headline = "The <script> Tag",
+                            explaination = "JavaScript is executed by the browser's engine. To run it, code is either embedded directly into HTML or linked as an external script using the <script> tag. This tag tells the browser to pause HTML parsing and execute the logic inside.",
+                            codeExample = "<script>\n  console.log('Writing JS directly in HTML!');\n</script>",
+                            afterCodeEplainations = "Browsers read files from top to bottom, executing scripts as they are encountered."
+                        ),
+                        Headline(
+                            headline = "Internal JS & Placement",
+                            explaination = "Internal JS lives inside your HTML file. If placed in the <head>, it loads early but can slow down visual rendering. If placed at the bottom of the <body>, the page structure loads first, which is a common performance optimization.",
+                            codeExample = "<body>\n  <h1 id='title'>Hello</h1>\n  <script>\n    // This runs after the <h1> is created\n    console.log('Body script executed');\n  </script>\n</body>",
+                            tip = "Placing scripts in the head might cause errors if the script tries to access HTML elements that haven't been created yet."
+                        ),
+                        Headline(
+                            headline = "External JS (.js Files)",
+                            explaination = "For production, code is kept in separate .js files. This promotes 'Separation of Concerns' and allows browsers to cache the file, similar to how Linux shared libraries (.so files) save memory by being reused.",
+                            codeExample = "// In HTML: <script src='script.js'></script>\n\n// In script.js:\nfunction init() {\n  console.log('External app started');\n}",
+                            afterCodeEplainations = "The 'src' attribute acts like a file path, pointing the browser to the logic's location."
+                        ),
+                        Headline(
+                            headline = "The Render Process & Parser Blocking",
+                            explaination = "When a browser hits a script tag without special attributes, it stops building the page to download and run it. This is 'parser blocking'—think of it like a sequential bash script where command B must wait for A.",
+                            codeExample = "<script src='heavy-library.js'></script>",
+                            afterCodeEplainations = "Large scripts can make a site feel 'frozen' during this download phase."
+                        ),
+                        Headline(
+                            headline = "Modern Loading: Async & Defer",
+                            explaination = "Modern JS uses 'async' and 'defer' to prevent blocking. 'Defer' downloads the script in the background and executes it only after the HTML is fully parsed. This is currently the industry standard.",
+                            codeExample = "<script src='app.js' defer></script>",
+                            tip = "Always use 'defer' for external scripts in the <head> to get the best performance and avoid null errors."
+                        ),
+                        Headline(
+                            headline = "Modern Module System",
+                            explaination = "Today we use 'type=module' to organize code into pieces that can import/export functionality. Modules automatically use 'strict mode' to prevent common coding errors.",
+                            codeExample = "<script type='module' src='main.js'></script>"
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which tag is used for JavaScript?", listOf("<js>", "<script>", "<javascript>", "<code_js>"), 1),
+                        QuizQuestion("What is the best location for scripts for performance?", listOf("In the <head>", "Before the <html> tag", "At the bottom of the <body>", "Inside a <div>"), 2),
+                        QuizQuestion("Which attribute links an external JS file?", listOf("href", "link", "src", "path"), 2),
+                        QuizQuestion("What does the 'defer' attribute do?", listOf("Stops the script", "Hides the script", "Downloads in background and runs after parsing", "Deletes the script"), 2),
+                        QuizQuestion("Why is External JS better for performance?", listOf("It is smaller", "It can be cached by the browser", "It runs faster", "It uses less RAM"), 1)
+                    )
+                ),
+
+                // --- SUBTOPIC 3: DISPLAYING OUTPUT & DEBUGGING ---
+                Subtopic(
+                    sutopicId = 3,
+                    subTopicName = "JS Displaying Output",
+                    headlines = listOf(
+                        Headline(
+                            headline = "Data Visualization Streams",
+                            explaination = "JavaScript output means showing results to the user or developer. It can be displayed in the console, dialog boxes, or directly inside HTML elements.",
+                            codeExample = "// Different output streams\nconsole.log('For developers');\nalert('For urgent alerts');\ndocument.getElementById('msg').innerHTML = 'For users';"
+                        ),
+                        Headline(
+                            headline = "Using the Console",
+                            explaination = "The console is the primary tool for debugging. Beyond log(), you can use console.table() to visualize arrays of data clearly in the browser's DevTools (F12).",
+                            codeExample = """
+                            const servers = [
+                                { name: "Nginx", status: "Active" },
+                                { name: "Apache", status: "Down" }
+                            ];
+                            console.table(servers);
+                        """.trimIndent(),
+                            afterCodeEplainations = "The output is not visible to website users, making it safe for sensitive debugging info."
+                        ),
+                        Headline(
+                            headline = "Writing to HTML Components",
+                            explaination = "JavaScript can change content by selecting an element's ID. You use 'innerHTML' for HTML content or 'textContent' for plain text. Use <br> for line breaks within innerHTML.",
+                            codeExample = """
+                            <p id="status"></p>
+                            <script>
+                                document.getElementById("status").innerHTML = "System:<br>Online";
+                            </script>
+                        """.trimIndent(),
+                            tip = "Careful: innerHTML can be a security risk (XSS). Use textContent if you don't need to render HTML tags."
+                        ),
+                        Headline(
+                            headline = "Using Dialog Boxes",
+                            explaination = "Dialog boxes like alert(), confirm(), and prompt() are popups. Note that they are 'blocking' operations; they freeze the browser's main thread until the user interacts.",
+                            codeExample = "alert('Welcome to the JavaScript Compiler!');"
+                        ),
+                        Headline(
+                            headline = "The Window Object",
+                            explaination = "In the browser, 'window' is the global object. This means 'window.alert()' and 'alert()' are identical. It represents the browser window itself.",
+                            codeExample = "window.console.log('Global window access');"
+                        ),
+                        Headline(
+                            headline = "Dangerous Output: document.write()",
+                            explaination = "JavaScript can write directly to the document stream. However, if document.write() is used after the page has finished loading, it will overwrite the entire HTML document.",
+                            codeExample = "function wipe() {\n  document.write('The rest of the page is now gone.');\n}",
+                            tip = "Avoid using document.write() in real applications. It is strictly for quick testing."
+                        )
+                    ),
+                    questions = listOf(
+                        QuizQuestion("Which method is best for debugging?", listOf("alert()", "console.log()", "document.write()", "window.print()"), 1),
+                        QuizQuestion("How do you change the content of an HTML element?", listOf(".innerHTML", ".changeText", ".value", ".setContent"), 0),
+                        QuizQuestion("What is a risk of using innerHTML with user input?", listOf("Slow loading", "Security (XSS)", "Color changes", "Syntax errors"), 1),
+                        QuizQuestion("What happens if document.write() runs after the page loads?", listOf("Adds text at top", "Does nothing", "Wipes the entire page", "Opens a new tab"), 2),
+                        QuizQuestion("Which command prints a table of data?", listOf("console.grid()", "console.table()", "console.view()", "console.list()"), 1)
+                    )
+                )
+                ,
+
+
+
+
+                Subtopic(
+                    sutopicId=4,
+                    subTopicName = "JS Statements",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Statements",
+                            explaination = "JavaScript statements are instructions that tell the browser what to do. "
+                                    + "Each statement is executed in the order it is written.",
+                            codeExample = """
+                let x = 10;
+                let y = 20;
+                let sum = x + y;
+            """.trimIndent(),
+                            afterCodeEplainations = "Each line is a separate statement. "
+                                    + "JavaScript reads and runs them one by one."
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript statements usually end with a semicolon. "
+                                    + "The semicolon separates one statement from another.",
+                            codeExample = """
+                let name = "John";
+                let age = 25;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "JavaScript allows multiple statements in one line, "
+                                    + "but writing one statement per line makes the code easier to read.",
+                            codeExample = """
+                let a = 5; let b = 10; let c = a + b;
+            """.trimIndent(),
+                            tip = "For better readability, always write one statement per line."
+                        ),
+
+                        Headline(
+                            headline = "Grouping JS Statements",
+                            explaination = "JavaScript statements can be grouped together using curly braces {}. "
+                                    + "Grouped statements are treated as a block of code.",
+                            codeExample = """
+                if (x > 5) {
+                    console.log("x is greater than 5");
+                    console.log("This is a block of statements");
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "JS Keywords",
+                            explaination = "JavaScript keywords are reserved words that have special meanings. "
+                                    + "They are used to define actions, variables, and control the program flow.",
+                            codeExample = """
+                let number = 10;
+
+                if (number > 5) {
+                    console.log("Number is greater than 5");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` and `if` are JavaScript keywords and cannot be used as variable names."
+                        )
+
+                    ),
+                    questions = listOf(
+                        QuizQuestion("What is a JavaScript statement?", listOf("A style rule", "An instruction to the browser", "A type of variable", "A comment"), 1),
+                        QuizQuestion("Which character is usually used to separate JS statements?", listOf("Colon (:)", "Comma (,)", "Semicolon (;)", "Full stop (.)"), 2),
+                        QuizQuestion("Is it possible to write multiple statements on one line?", listOf("No, it causes an error", "Yes, but it's not recommended", "Only inside a function", "Only if they are empty"), 1),
+                        QuizQuestion("What are curly braces {} used for in statements?", listOf("To create a comment", "To group statements into a block", "To multiply numbers", "To end the program"), 1),
+                        QuizQuestion("In what order are JavaScript statements executed?", listOf("Randomly", "Bottom to top", "In the order they are written", "Alphabetically"), 2)
+                    )
+                ),
+
+                Subtopic(
+                    sutopicId=5,
+                    subTopicName = "JS Syntax",questions = listOf(
+                        QuizQuestion("Which keyword is used for a variable that should NOT change?", listOf("let", "var", "const", "change"), 2),
+                        QuizQuestion("Is JavaScript case-sensitive?", listOf("Yes", "No", "Only for numbers", "Only in Linux"), 0),
+                        QuizQuestion("Which is a correct way to declare a variable in modern JS?", listOf("variable x = 5;", "let x = 5;", "set x = 5;", "int x = 5;"), 1),
+                        QuizQuestion("If you have 'let Name' and 'let name', how many variables exist?", listOf("One", "Two", "None (error)", "It depends on the browser"), 1),
+                        QuizQuestion("What is the naming style 'userName' called?", listOf("snake_case", "PascalCase", "camelCase", "Flatcase"), 2)
+                    ),
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Syntax?",
+                            explaination = "JavaScript syntax refers to the rules that define how JavaScript code is written "
+                                    + "and structured. Following correct syntax helps the browser understand and execute the code."
+                        ),
+
+                        Headline(
+                            headline = "Variable Declaration",
+                            explaination = "Variable declaration means creating a variable to store data. "
+                                    + "JavaScript allows variables to be declared using let, const, or var.",
+                            codeExample = """
+                let name = "John";
+                const age = 30;
+                var city = "Paris";
+            """.trimIndent(),
+                            afterCodeEplainations = "`let` is used for values that can change, "
+                                    + "`const` is used for fixed values, and `var` is an older way to declare variables."
+                        ),
+
+                        Headline(
+                            headline = "Case Sensitivity",
+                            explaination = "JavaScript is case-sensitive, which means uppercase and lowercase letters "
+                                    + "are treated as different.",
+                            codeExample = """
+                let userName = "Alice";
+                let username = "Bob";
+            """.trimIndent(),
+                            tip = "Always use consistent naming styles like camelCase to avoid errors."
+                        )
+
+                    )
+                ),
+
+
+
+
+
+                Subtopic(
+                    sutopicId=6,
+                    questions = listOf(
+                        QuizQuestion("How do you start a single-line comment in JS?", listOf("/*", "//", "", "/* and */", "[[ and ]]"), 2),
+                        QuizQuestion("What happens to comments during program execution?", listOf("They are displayed in console", "They are ignored by the browser", "They make the code run faster", "They cause an error"), 1),
+                        QuizQuestion("Why would you use a comment to 'disable' code?", listOf("To make the file smaller", "To test logic without deleting it", "To encrypt the code", "To change the variable type"), 1),
+                        QuizQuestion("Can a single-line comment be placed at the end of a statement?", listOf("Yes", "No", "Only inside a block", "Only with const"), 0)
+                    ),
+                    subTopicName = "JS Comments",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Comments",
+                            explaination = "JavaScript comments are used to describe the code and make it easier to understand. "
+                                    + "Comments are ignored by the browser and do not affect program execution."
+                        ),
+
+                        Headline(
+                            headline = "Single-Line Comments",
+                            explaination = "Single-line comments are used to comment only one line of code.",
+                            codeExample = """
+                // This is a single-line comment
+                let x = 10; // This comment explains the variable
+            """.trimIndent(),
+                            afterCodeEplainations = "Anything written after // is treated as a comment and is not executed."
+                        ),
+
+                        Headline(
+                            explaination = "Single-line comments are often used for short explanations or notes in the code.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Comments can also be used to explain complex logic or important steps in a program.",
+                            tip = "Write clear and meaningful comments, but avoid commenting obvious code.",
+                            codeExample = """
+                // Calculate total price
+                let total = price + tax;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Multi-Line Comments",
+                            explaination = "Multi-line comments are used to comment multiple lines at once.",
+                            codeExample = """
+                /*
+                  This is a multi-line comment
+                  It can span multiple lines
+                */
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Disabling Code Using Comments",
+                            explaination = "Comments can be used to temporarily disable code without deleting it.",
+                            codeExample = """
+                // console.log("This line will not run");
+
+                /*
+                alert("This code is disabled");
+                */
+            """.trimIndent()
+                        )
+
+                    )
+                ),
+
+
+                Subtopic(
+                    sutopicId = 7,
+                    questions = listOf(
+                        QuizQuestion("What is the result of 'let x;' if you log x?", listOf("0", "null", "undefined", "Error"), 2),
+                        QuizQuestion("Which operator is used to assign a value to a variable?", listOf("==", "===", "=", ":="), 2),
+                        QuizQuestion("What happens if you try to change a 'const' variable?", listOf("It changes successfully", "It resets to zero", "It causes a runtime error", "It creates a new variable"), 2),
+                        QuizQuestion("Which is a valid variable name?", listOf("1stUser", "user-name", "_totalAmount", "let"), 2),
+                        QuizQuestion("When should you use 'let' instead of 'const'?", listOf("When the value will stay the same", "When the value needs to be updated later", "Only for strings", "Only for numbers"), 1)
+                    ),
+                    subTopicName = "JS Variables",
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Variables",
+                            explaination = "Variables are used to store data values in JavaScript. "
+                                    + "A variable can hold different types of data such as numbers or text.",
+                            codeExample = "let name;",
+                            afterCodeEplainations = "This declares a variable named name without assigning a value."
+                        ),
+
+                        Headline(
+                            explaination = "The assignment operator (=) is used to assign a value to a variable.",
+                            codeExample = """
+                let age = 25;
+                let city = "New York";
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Variables can store different types of data and their values can be used later in the program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Undefined Variable",
+                            explaination = "A variable that is declared but not assigned a value is called an undefined variable.",
+                            codeExample = """
+                let x;
+                console.log(x);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Changing Value",
+                            explaination = "The value of a variable can be changed after it is declared.",
+                            codeExample = """
+                let score = 10;
+                score = 20;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Constant Variables",
+                            explaination = "Constant variables are declared using const and their values cannot be changed.",
+                            codeExample = """
+                const pi = 3.14;
+            """.trimIndent(),
+                            afterCodeEplainations = "Trying to change a const variable will cause an error."
+                        ),
+
+                        Headline(
+                            explaination = "Use let for values that change and const for values that should stay the same.",
+                            tip = "Always prefer const unless you know the value will change.",
+                            codeExample = """
+                let count = 1;
+                const maxLimit = 100;
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Naming Variables",
+                            explaination = "Variable names should be meaningful and describe the data they store."
+                        ),
+
+                        Headline(
+                            headline = "Rules for Naming Variables",
+                            explaination = "Variable names must start with a letter, underscore (_), or dollar sign ($) "
+                                    + "and cannot contain spaces.",
+                            tip = "Use camelCase for variable names, like userName or totalPrice."
+                        )
+
+                    ),
+                ),
+
+
+
+                Subtopic(
+                    sutopicId = 8,
+                    questions = listOf(
+                        QuizQuestion("What keyword is used to create a function?", listOf("method", "function", "def", "routine"), 1),
+                        QuizQuestion("How do you 'call' a function named 'myFunc'?", listOf("call myFunc", "myFunc[]", "myFunc()", "run(myFunc)"), 2),
+                        QuizQuestion("What does the 'return' statement do?", listOf("Restarts the function", "Exits the function and sends back a value", "Repeats the code", "Deletes the variable"), 1),
+                        QuizQuestion("A variable declared inside a function is:", listOf("Global", "Local (Function Scope)", "Shared", "Permanent"), 1),
+                        QuizQuestion("What happens if you define a function but never call it?", listOf("The code runs once", "The browser crashes", "The code inside never executes", "It runs automatically"), 2)
+                    ),
+                    subTopicName = "JS Functions",
+
+                    headlines = listOf(
+
+                        Headline(
+                            headline = "JS Functions",
+                            explaination = "Functions are blocks of code designed to perform a specific task. "
+                                    + "They help organize code and avoid repetition."
+                        ),
+
+                        Headline(
+                            headline = "Function Definition",
+                            explaination = "A function definition creates a function using the function keyword, "
+                                    + "a name, and parentheses.",
+                            tip = "Choose clear and meaningful function names.",
+                            codeExample = """
+                function greet() {
+                    console.log("Hello!");
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This defines a function named greet, but it will not run until called."
+                        ),
+
+                        Headline(
+                            explaination = "Functions can contain one or more statements inside their body.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Functions can be reused many times in a program.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Calling a Function",
+                            explaination = "Calling a function means executing the code inside the function.",
+                            codeExample = """
+                greet();
+            """.trimIndent(),
+                            afterCodeEplainations = "This line runs the greet function."
+                        ),
+
+                        Headline(
+                            explaination = "A function can be called multiple times whenever needed.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "The return Statement",
+                            explaination = "The return statement sends a value back from the function.",
+                            codeExample = """
+                function add(a, b) {
+                    return a + b;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "The function returns the result of a + b."
+                        ),
+
+                        Headline(
+                            explaination = "Returned values can be stored in variables.",
+                            codeExample = """
+                let result = add(5, 3);
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            explaination = "Once return is executed, the function stops running.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            explaination = "Not all functions need to return a value.",
+                            tip = "Use return only when you need a result from the function.",
+                            codeExample = ""
+                        ),
+
+                        Headline(
+                            headline = "Function Scope",
+                            explaination = "Variables declared inside a function can only be used within that function.",
+                            codeExample = """
+                function test() {
+                    let x = 10;
+                    console.log(x);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Global Vaiables",
+                            explaination = "Global variables are declared outside functions and can be accessed anywhere in the code.",
+                            codeExample = """
+                let message = "Hello";
+
+                function showMessage() {
+                    console.log(message);
+                }
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Why Use Functions",
+                            explaination = "Functions make code reusable, organized, and easier to maintain.",
+                            tip = "Break large programs into smaller functions.",
+                            codeExample = """
+                function calculateTotal(price, tax) {
+                    return price + tax;
+                }
+            """.trimIndent(),
+                            afterCodeEplainations = "This function can be reused whenever total calculation is needed."
+                        )
+
+                    )
+                ),
+
+
+
+
+                Subtopic(
+                    sutopicId = 9,
+                    questions = listOf(
+                        QuizQuestion("Which event fires when a user clicks an HTML element?", listOf("onhover", "onclick", "onpress", "onchange"), 1),
+                        QuizQuestion("What is the modern method to attach an event handler?", listOf("on()", "attachEvent()", "addEventListener()", "setEvent()"), 2),
+                        QuizQuestion("How do you prevent a form from refreshing the page on submit?", listOf("e.stop()", "e.preventDefault()", "e.halt()", "e.ignore()"), 1),
+                        QuizQuestion("Which event fires as soon as the HTML is loaded but before images load?", listOf("onload", "DOMReady", "DOMContentLoaded", "onfinish"), 2),
+                        QuizQuestion("What is the difference between 'focus' and 'blur'?", listOf("There is no difference", "Focus is entering a field, blur is leaving it", "Focus is for buttons, blur is for text", "Blur happens only on scroll"), 1),
+                        QuizQuestion("Which event tracks every single keystroke in an input?", listOf("change", "submit", "input", "blur"), 2),
+                        QuizQuestion("What does 'window.scrollY' tell you during a scroll event?", listOf("The width of the page", "The vertical distance scrolled in pixels", "The speed of scrolling", "The number of elements on screen"), 1)
+                    ),
+                    subTopicName = "JS Events",
+                    headlines = listOf(
+                        Headline(
+                            headline = "JS Events",
+                            explaination = "JavaScript events are actions that happen in the browser, such as clicking a button, typing on the keyboard, or loading a page.",
+                            codeExample = """
+                <button onclick="showAlert()">Click Me</button>
+                <script>
+                    function showAlert() {
+                        alert("Button clicked!");
+                    }
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "The function runs when the button is clicked."
+                        ),
+
+                        Headline(
+                            headline = "Inline Event Handlers",
+                            explaination = "Inline event handlers are written directly inside HTML elements using attributes like onclick or onmouseover.",
+                            codeExample = """
+                <button onclick="alert('Hello!')">Click</button>
+            """.trimIndent(),
+                            afterCodeEplainations = "Inline events are easy to use but not recommended for large applications as they mix logic with structure."
+                        ),
+
+                        Headline(
+                            headline = "The addEventListener() Method",
+                            explaination = "addEventListener() is the modern way to attach event handlers. It allows multiple listeners for a single event.",
+                            codeExample = """
+                <button id="btn">Click Me</button>
+                <script>
+                    document.getElementById("btn")
+                        .addEventListener("click", () => {
+                            alert("Modern click handler!");
+                        });
+                </script>
+            """.trimIndent(),
+                            afterCodeEplainations = "This method keeps JavaScript separate from HTML and is easier to maintain."
+                        ),
+
+                        Headline(
+                            headline = "The DOMContentLoaded Event",
+                            explaination = "This event fires when the HTML document has been completely loaded and parsed, without waiting for images or stylesheets.",
+                            codeExample = """
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        console.log("DOM is ready, you can now manipulate elements!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The input Event",
+                            explaination = "Unlike 'change', the 'input' event fires immediately every time the value of an element changes.",
+                            codeExample = """
+                <input type="text" id="myInput">
+                <p id="output"></p>
+                <script>
+                    document.getElementById("myInput").addEventListener("input", (e) => {
+                        document.getElementById("output").innerText = e.target.value;
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "Mouse Events: mousedown & mouseup",
+                            explaination = "These track the exact moments a mouse button is pressed down and then released.",
+                            codeExample = """
+                <button id="holdBtn">Hold Me</button>
+                <script>
+                    const btn = document.getElementById("holdBtn");
+                    btn.addEventListener("mousedown", () => btn.innerText = "Pressed!");
+                    btn.addEventListener("mouseup", () => btn.innerText = "Released!");
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The keydown Event",
+                            explaination = "The keydown event occurs the moment a key is pressed. It is more reliable than keypress for non-character keys.",
+                            codeExample = """
+                <script>
+                    window.addEventListener("keydown", (event) => {
+                        console.log("Key pressed: " + event.key);
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The submit Event",
+                            explaination = "This event occurs when a form is submitted. It is usually used to validate data or prevent the page from refreshing.",
+                            codeExample = """
+                <form id="myForm">
+                    <input type="text" required>
+                    <button type="submit">Send</button>
+                </form>
+                <script>
+                    document.getElementById("myForm").addEventListener("submit", (e) => {
+                        e.preventDefault(); // Stops the page from refreshing
+                        alert("Form submitted safely!");
+                    });
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The focus and blur Events",
+                            explaination = "Focus happens when you enter an input field; blur happens when you leave it.",
+                            codeExample = """
+                <input type="text" id="fld" placeholder="Focus me">
+                <script>
+                    const fld = document.getElementById("fld");
+                    fld.onfocus = () => fld.style.border = "2px solid blue";
+                    fld.onblur = () => fld.style.border = "1px solid gray";
+                </script>
+            """.trimIndent()
+                        ),
+
+                        Headline(
+                            headline = "The scroll Event",
+                            explaination = "The scroll event fires when the document view or an element has been scrolled.",
+                            codeExample = """
+                <script>
+                    window.onscroll = () => {
+                        console.log("You are scrolling at: " + window.scrollY + "px");
+                    };
+                </script>
+            """.trimIndent(),
+                            tip = "Use 'throttling' or 'debouncing' with scroll events to maintain browser performance."
+                        ),
+
+                        Headline(
+                            headline = "The contextmenu Event",
+                            explaination = "This event fires when the user attempts to open a context menu (usually by right-clicking).",
+                            codeExample = """
+                <div style="background: lightgray; height: 50px;">Right-click here</div>
+                <script>
+                    document.addEventListener("contextmenu", (e) => {
+                        e.preventDefault();
+                        alert("Right-click is disabled!");
+                    });
+                </script>
+            """.trimIndent()
+                        )
+                    )
+                )
+
+
+
+
+
+
+
+
+
+            ),
+
+
+
+
+
+
+            ),
+
+
+
     ),
+
+
+
+
 
     NoteModule(
    topic = "JS Basic Data Types",

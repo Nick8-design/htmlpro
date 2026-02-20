@@ -5,7 +5,7 @@ package com.nickdieda.htmlpro.presentation.search
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.nickdieda.htmlpro.data.model.Headline
-import com.nickdieda.htmlpro.data.notes.JavaScriptNotes
+import com.nickdieda.htmlpro.data.notes.HtmlNotes
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 
@@ -21,7 +21,7 @@ class SearchViewModel : ViewModel() {
     val searchResults = _searchText
         .debounce(300L) // Wait for user to stop typing (saves CPU)
         .onEach { _isSearching.update { true } }
-        .combine(flowOf(JavaScriptNotes)) { text, notes ->
+        .combine(flowOf(HtmlNotes)) { text, notes ->
             if (text.isBlank()) {
                 emptyList<SearchMatch>()
             } else {

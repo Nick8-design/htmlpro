@@ -19,7 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.unit.dp
-import com.nickdieda.htmlpro.data.notes.JavaScriptNotes
+import com.nickdieda.htmlpro.data.notes.HtmlNotes
 import com.nickdieda.htmlpro.presentation.components.textComponents.MediumTitle
 import com.nickdieda.htmlpro.presentation.components.textComponents.TextGo
 import com.nickdieda.htmlpro.store.DataStoreManager
@@ -33,7 +33,7 @@ fun TotalProgress(modifier: Modifier = Modifier,
 
 ) {
 
-    val allSubIds = remember { JavaScriptNotes.flatMap { it.subtopics }.map { it.sutopicId } }
+    val allSubIds = remember { HtmlNotes.flatMap { it.subtopics }.map { it.sutopicId } }
     val globalProgress by dataStoreManager.getTotalProgress(allSubIds).collectAsState(initial = 0f)
     val goldGradient = Brush.verticalGradient(
         colors = listOf(

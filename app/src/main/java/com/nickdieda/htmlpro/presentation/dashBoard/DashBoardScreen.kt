@@ -21,7 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.nickdieda.htmlpro.data.notes.JavaScriptNotes
+import com.nickdieda.htmlpro.data.notes.HtmlNotes
 import com.nickdieda.htmlpro.functions.CertificateGenerator
 import com.nickdieda.htmlpro.navigation.ScreenRoutes
 import com.nickdieda.htmlpro.presentation.components.CertCard
@@ -56,13 +56,13 @@ fun Dashboard(nav: NavController,viewModel: DashboardViewModel,dataStoreManager:
     val subtopicName = currentSubtopic?.subTopicName ?: "Start Learning"
 
     val completedTopicsCount by remember {
-        dataStoreManager.getCompletedTopicsCount(JavaScriptNotes)
+        dataStoreManager.getCompletedTopicsCount(HtmlNotes)
     }.collectAsState(initial = 0)
 
-    val totalTopicsCount = remember { JavaScriptNotes.size }
+    val totalTopicsCount = remember { HtmlNotes.size }
 
 
-    val allSubtopicIds = remember { JavaScriptNotes.flatMap { it.subtopics }.map { it.sutopicId } }
+    val allSubtopicIds = remember { HtmlNotes.flatMap { it.subtopics }.map { it.sutopicId } }
     val totalProgress by dataStoreManager.getTotalProgress(allSubtopicIds).collectAsState(initial = 0f)
      val context= LocalContext.current
 

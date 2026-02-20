@@ -17,7 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.nickdieda.htmlpro.data.notes.JavaScriptNotes
+import com.nickdieda.htmlpro.data.notes.HtmlNotes
 import com.nickdieda.htmlpro.presentation.components.TopicComponent
 import com.nickdieda.htmlpro.store.DataStoreManager
 
@@ -36,7 +36,7 @@ fun Notes(nav: NavController,dataStoreManager: DataStoreManager) {
 
     LaunchedEffect(lastVisitedId) {
         lastVisitedId?.let { id ->
-            val topicIndex = JavaScriptNotes.indexOfFirst { topic ->
+            val topicIndex = HtmlNotes.indexOfFirst { topic ->
                 topic.subtopics.any { it.sutopicId == id }
             }
             if (topicIndex != -1) {
@@ -56,7 +56,7 @@ fun Notes(nav: NavController,dataStoreManager: DataStoreManager) {
     {
 
             items(
-                items = JavaScriptNotes,
+                items = HtmlNotes,
                 key = { it.topicId }
             ) { t ->
                 TopicComponent(
