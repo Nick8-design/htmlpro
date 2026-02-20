@@ -33,7 +33,7 @@ fun JsCodeEditor(
                 colorScheme = TextMateColorScheme.create(themeRegistry)
 
                 // 3. This will now find "source.js" because init() finished above
-                setEditorLanguage(TextMateLanguage.create("source.js", true))
+                setEditorLanguage(TextMateLanguage.create("text.html.basic", true))
 
                 editorRef(this)
             }
