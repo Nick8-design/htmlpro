@@ -1,5 +1,6 @@
 package com.nickdieda.htmlpro.presentation.components.textComponents
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.material.icons.Icons
@@ -19,19 +20,21 @@ fun TextGo(text:String,onArrowClicked:()->Unit,styles: TextStyle = MaterialTheme
 
         modifier=modifier,
 
-//        horizontalArrangement = Arrangement.C,
+        horizontalArrangement = Arrangement.Absolute.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
 
     ) {
 
 
         LargeTitle(
+            modifier = Modifier.weight(4f),
             title = text,
             style =styles
         )
         Spacer(modifier = Modifier.weight(1f))
 
         IconButton(
+            modifier = Modifier.weight(0.4f),
             onClick = onArrowClicked
         ) {
             Icon(

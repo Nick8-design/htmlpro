@@ -7,6 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
@@ -14,7 +15,9 @@ fun LargeTitle(modifier: Modifier = Modifier, title: String,style: TextStyle=Mat
     Text(
         text = title,
         style = style,
-        modifier=modifier
+        modifier=modifier,
+        overflow = TextOverflow.Ellipsis,
+        maxLines = 1,
 
     )
 }
