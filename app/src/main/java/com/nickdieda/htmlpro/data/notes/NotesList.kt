@@ -8910,41 +8910,29 @@ function copyCode(){
 
             Subtopic(
                 sutopicId = 410,
-                subTopicName = "HTML Audio (Sound on Web Pages)",
+                subTopicName = "Audio and Sound",
                 headlines = listOf(
 
                     Headline(
                         majorHeadline = "Audio",
                         explaination =
-                            "The **<audio>** element is used to play sound in a web page.\n\n" +
+                            "The <audio> element is used to play sound in a web page.\n\n" +
                                     " Tag used: <audio> ... </audio>\n" +
-                                    "Inside it you usually place **<source>** so the browser can choose the best audio format.\n\n" +
+                                    "Inside it you usually place <source> so the browser can choose the best audio format.\n\n" +
                                     "### Basic idea\n" +
                                     "• <audio> is the player\n" +
                                     "• <source> is the file(s)\n" +
                                     "• controls shows the play/pause UI",
                         tip = "Autoplay is often blocked by browsers unless the audio is muted or the user has interacted with the page.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Audio Basic</title>
-</head>
-<body>
-
-<h2>Audio Basic </h2>
 
 <audio controls>
   <source src="sound.mp3" type="audio/mpeg">
-  <source src="sound.ogg" type="audio/ogg">
   Your browser does not support the audio element.
 </audio>
 
 <p>Tip: Replace <b>sound.mp3</b> with a real file path.</p>
 
-</body>
-</html>
 """.trimIndent()
                     ),
 
@@ -9001,14 +8989,14 @@ function copyCode(){
                         headline = "Audio Attributes (explained in bullets)",
                         explaination =
                             "Common <audio> attributes:\n" +
-                                    "• **controls** → shows play/pause UI\n" +
-                                    "• **autoplay** → starts automatically (often blocked)\n" +
-                                    "• **loop** → repeats when finished\n" +
-                                    "• **muted** → starts muted\n" +
-                                    "• **preload** → tells browser how to load audio\n" +
+                                    "• controls → shows play/pause UI\n" +
+                                    "• autoplay → starts automatically (often blocked)\n" +
+                                    "• loop → repeats when finished\n" +
+                                    "• muted → starts muted\n" +
+                                    "• preload → tells browser how to load audio\n" +
                                     "   - none / metadata / auto\n\n" +
                                     "Also useful:\n" +
-                                    "• **src** → you can put the file directly, but <source> is better for multiple formats.",
+                                    "• src → you can put the file directly, but <source> is better for multiple formats.",
                         codeExample = """
 <!DOCTYPE html>
 <html>
@@ -9058,25 +9046,14 @@ function copyCode(){
                                     "• audio is muted, or\n" +
                                     "• the user clicks something first (user interaction).",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Autoplay Demo</title>
-</head>
-<body>
-
-<h2>Autoplay Demo (Usually Blocked) </h2>
-
-<audio id="myAudio" controls autoplay>
+ id="myAudio" controls autoplay>
   <source src="sound.mp3" type="audio/mpeg">
 </audio>
 
 <p>If it does not autoplay, click the button below:</p>
 <button onclick="document.getElementById('myAudio').play()">Start Audio</button>
 
-</body>
-</html>
+
 """.trimIndent()
                     ),
 
@@ -9084,15 +9061,6 @@ function copyCode(){
                         headline = "Audio loop",
                         explaination = "**loop** makes the audio start again automatically when it finishes.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Loop Demo</title>
-</head>
-<body>
-
-<h2>Loop Demo </h2>
 
 <audio controls loop>
   <source src="sound.mp3" type="audio/mpeg">
@@ -9100,8 +9068,7 @@ function copyCode(){
 
 <p>When the audio ends, it starts again.</p>
 
-</body>
-</html>
+
 """.trimIndent()
                     ),
 
@@ -9109,15 +9076,6 @@ function copyCode(){
                         headline = "Audio muted",
                         explaination = "**muted** starts the audio with sound off. The user can unmute using controls.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Muted Demo</title>
-</head>
-<body>
-
-<h2>Muted Demo 🔇</h2>
 
 <audio controls muted>
   <source src="sound.mp3" type="audio/mpeg">
@@ -9125,8 +9083,6 @@ function copyCode(){
 
 <p>Muted at start, user can unmute.</p>
 
-</body>
-</html>
 """.trimIndent()
                     ),
 
@@ -9134,22 +9090,13 @@ function copyCode(){
                         headline = "Audio controls",
                         explaination = "**controls** shows the default audio UI: play/pause, timeline, volume.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Controls Demo</title>
-</head>
-<body>
 
-<h2>Controls Demo </h2>
 
 <audio controls>
   <source src="sound.mp3" type="audio/mpeg">
 </audio>
 
-</body>
-</html>
+
 """.trimIndent()
                     ),
 
@@ -9162,15 +9109,6 @@ function copyCode(){
                                     "• Browser tries the first it can play.\n\n" +
                                     "Use type= so the browser can quickly decide.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Source Demo</title>
-</head>
-<body>
-
-<h2>Multiple Sources </h2>
 
 <audio controls>
   <source src="sound.ogg" type="audio/ogg">
@@ -9178,8 +9116,7 @@ function copyCode(){
   Sorry, your browser can't play this audio.
 </audio>
 
-</body>
-</html>
+
 """.trimIndent()
                     ),
 
@@ -9291,32 +9228,21 @@ a.addEventListener("timeupdate", () => {
                     Headline(
                         majorHeadline = "Video",
                         explaination =
-                            "The **<video>** element is used to display videos in a web page.\n\n" +
+                            "The <video> element is used to display videos in a web page.\n\n" +
                                     " Tag used: <video> ... </video>\n" +
                                     "Just like audio, we usually use <source> for multiple formats.\n\n" +
                                     "Most used attribute: **controls** (so users can play/pause).",
                         tip = "For autoplay to work on most browsers, use autoplay + muted (same rule as audio).",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Video Basic</title>
-</head>
-<body>
 
-<h2>Video Basic </h2>
 
-<video controls width="420">
-  <source src="video.mp4" type="video/mp4">
+<video controls width="600">
+  <source src="video/v1.mp4" type="video/mp4">
   <source src="video.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
-<p>Replace video.mp4 with a real video file.</p>
 
-</body>
-</html>
 """.trimIndent()
                     ),
 
@@ -9329,7 +9255,7 @@ a.addEventListener("timeupdate", () => {
                                     "• <source> provides video files\n" +
                                     "• fallback text shows if not supported",
                         codeExample = """
-<!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="UTF-8" />
@@ -9344,9 +9270,9 @@ a.addEventListener("timeupdate", () => {
 <h2>Video Architecture </h2>
 
 <div class="card">
-  <video id="v" controls width="520" preload="metadata" poster="poster.jpg">
+  <video id="v" controls width="520" preload="metadata" poster="f2.png">
     <source src="video.webm" type="video/webm">
-    <source src="video.mp4" type="video/mp4">
+    <source src="video/v2.mp4" type="video/mp4">
     Video not supported.
   </video>
 
@@ -9365,35 +9291,24 @@ a.addEventListener("timeupdate", () => {
                         headline = "Video Attributes (explained in bullets)",
                         explaination =
                             "Common video attributes:\n" +
-                                    "• **controls** → show UI\n" +
-                                    "• **autoplay** → start automatically (often needs muted)\n" +
-                                    "• **loop** → repeat forever\n" +
-                                    "• **muted** → start with no sound\n" +
-                                    "• **preload** → none / metadata / auto\n" +
-                                    "• **poster** → image before video starts\n" +
-                                    "• **width / height** → size\n\n" +
+                                    "• controls → show UI\n" +
+                                    "• autoplay → start automatically (often needs muted)\n" +
+                                    "• loop→ repeat forever\n" +
+                                    "• muted → start with no sound\n" +
+                                    "• preload → none / metadata / auto\n" +
+                                    "• poster→ image before video starts\n" +
+                                    "• width / height** → size\n\n" +
                                     "Bonus:\n" +
-                                    "• **playsinline** → prevents full-screen auto on some phones",
+                                    "• playsinline → prevents full-screen auto on some phones",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Video Attributes</title>
-  <style>
-    body{font-family:Arial, sans-serif; padding:16px}
-    .grid{display:flex; gap:14px; flex-wrap:wrap}
-    .box{border:2px solid #ddd; border-radius:14px; padding:12px}
-  </style>
-</head>
-<body>
 
-<h2>Video Attributes ✅</h2>
+
+<h2>Video Attributes </h2>
 
 <div class="grid">
   <div class="box">
     <h3>controls + poster</h3>
-    <video controls width="360" poster="poster.jpg" preload="metadata">
+    <video controls width="360" poster="f1.png" preload="metadata">
       <source src="video.mp4" type="video/mp4">
     </video>
   </div>
@@ -9401,13 +9316,11 @@ a.addEventListener("timeupdate", () => {
   <div class="box">
     <h3>loop + muted</h3>
     <video controls width="360" loop muted preload="auto">
-      <source src="video.mp4" type="video/mp4">
+      <source src="video/v4.mp4" type="video/mp4">
     </video>
   </div>
 </div>
 
-</body>
-</html>
 """.trimIndent(),
                         afterCodeEplainations = "Replace video.mp4 and poster.jpg with real files."
                     ),
@@ -9419,82 +9332,42 @@ a.addEventListener("timeupdate", () => {
                                     " Most browsers block autoplay with sound.\n" +
                                     " Use autoplay + muted to increase the chance it works.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Autoplay Video</title>
-</head>
-<body>
-
-<h2>Autoplay Video (muted) ✅</h2>
 
 <video autoplay muted loop controls width="420">
-  <source src="video.mp4" type="video/mp4">
+  <source src="video/v4.mp4" type="video/mp4">
 </video>
 
-</body>
-</html>
 """.trimIndent()
                     ),
 
                     Headline(
                         headline = "Video loop",
-                        explaination = "**loop** makes the video start again when it ends.",
+                        explaination = "loop makes the video start again when it ends.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Loop Video</title>
-</head>
-<body>
-
-<h2>Loop Video </h2>
 
 <video controls loop width="420">
-  <source src="video.mp4" type="video/mp4">
+  <source src="video/v3.mp4" type="video/mp4">
 </video>
 
-</body>
-</html>
 """.trimIndent()
                     ),
 
                     Headline(
                         headline = "Video muted",
-                        explaination = "**muted** starts the video with sound off (user can unmute).",
+                        explaination = "muted starts the video with sound off (user can unmute).",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Muted Video</title>
-</head>
-<body>
-
-<h2>Muted Video 🔇</h2>
 
 <video controls muted width="420">
-  <source src="video.mp4" type="video/mp4">
+  <source src="video/v2.mp4" type="video/mp4">
 </video>
 
-</body>
-</html>
 """.trimIndent()
                     ),
 
                     Headline(
                         headline = "Video controls",
-                        explaination = "**controls** shows video UI: play/pause, timeline, volume, fullscreen.",
+                        explaination = "controls shows video UI: play/pause, timeline, volume, fullscreen.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Controls Video</title>
-</head>
-<body>
 
 <h2>Controls </h2>
 
@@ -9513,24 +9386,15 @@ a.addEventListener("timeupdate", () => {
                             "Use <source> to provide multiple formats and qualities.\n\n" +
                                     "Browser tries the first one it can play.",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Multiple Sources</title>
-</head>
-<body>
 
 <h2>Multiple Video Sources </h2>
-
 <video controls width="420">
   <source src="video.webm" type="video/webm">
   <source src="video.mp4" type="video/mp4">
   Your browser can't play this video.
 </video>
 
-</body>
-</html>
+
 """.trimIndent()
                     ),
 
@@ -9563,7 +9427,7 @@ a.addEventListener("timeupdate", () => {
 
 <div class="card">
   <video id="vid" width="640" preload="metadata">
-    <source src="video.mp4" type="video/mp4">
+    <source src="video/v4.mp4" type="video/mp4">
   </video>
 
   <div style="margin-top:10px;">
@@ -9610,36 +9474,25 @@ v.addEventListener("timeupdate", () => {
 </body>
 </html>
 """.trimIndent(),
-                        afterCodeEplainations = "Replace video.mp4 with a real video. The progress bar fills as it plays."
-                    ),
+                      ),
 
                     Headline(
                         headline = "Video loading metadata (preload)",
                         explaination =
                             "preload controls how the browser loads the video before play:\n" +
-                                    "• **none** → don’t load until user presses play\n" +
-                                    "• **metadata** → load only duration, size, basic info (recommended)\n" +
-                                    "• **auto** → browser may load more data (uses more internet)\n\n" +
+                                    "• none→ don’t load until user presses play\n" +
+                                    "• metadata → load only duration, size, basic info (recommended)\n" +
+                                    "• auto → browser may load more data (uses more internet)\n\n" +
                                     "If you want to save data, use preload=\"metadata\" or \"none\".",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Preload Demo</title>
-</head>
-<body>
-
-<h2>Preload Metadata ✅</h2>
 
 <video controls width="420" preload="metadata">
-  <source src="video.mp4" type="video/mp4">
+  <source src="video/v1.mp4" type="video/mp4">
 </video>
 
 <p>preload=metadata loads only basic info first (good for saving data).</p>
 
-</body>
-</html>
+
 """.trimIndent()
                     ),
 
@@ -9647,8 +9500,8 @@ v.addEventListener("timeupdate", () => {
                         headline = "Video loading decrease (Multiple Qualities for Slow Internet)",
                         explaination =
                             "To help users on slow internet, you can provide:\n" +
-                                    "• **Low quality** video (smaller file) and\n" +
-                                    "• **High quality** video (bigger file)\n\n" +
+                                    "• Low quality video (smaller file) and\n" +
+                                    "• High quality video (bigger file)\n\n" +
                                     "Then let the user choose.\n\n" +
                                     "This example shows a quality switcher using JS.",
                         codeExample = """
@@ -9728,26 +9581,25 @@ function setQuality(src){
                                     "Tag used: <iframe> ... </iframe>\n\n" +
                                     "### What it’s used for\n" +
                                     "• Embedding YouTube videos\n" +
-                                    "• Embedding Google Maps\n" +
+                                    "• Embedding maps\n" +
                                     "• Showing another HTML file inside a box\n\n" +
-                                    " Important: Some websites block being embedded for security (you will see blank or an error).",
+                                    "Important: Some websites block being embedded for security (you will see blank or an error).",
                         codeExample = """
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Iframe Simple</title>
-</head>
-<body>
 
-<h2>Iframe Simple </h2>
+<h2>Iframe Simple</h2>
+<iframe
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.8549255014327!2d36.921954573237585!3d-1.3225241986649292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f129102505cef%3A0xefc58e7ef0660bf2!2sJomo%20Kenyatta%20International%20Airport!5e1!3m2!1sen!2ske!4v1771882081555!5m2!1sen!2ske" 
+ width="600" 
+ height="450"
+  style="border:0;"
+   allowfullscreen="" 
+   loading="lazy" 
+   referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<iframe src="https://example.com" width="420" height="220" title="Example Site"></iframe>
 
 <p>If a site blocks embedding, try embedding your own page instead.</p>
 
-</body>
-</html>
+
 """.trimIndent(),
                         tip = "For learning, embed **your own HTML page** (like page2.html) so it always works."
                     ),
@@ -9775,7 +9627,7 @@ function setQuality(src){
 </head>
 <body>
 
-<h2>Iframe = Mini Web Page </h2>
+<h2>Iframe = Mini Web Page</h2>
 
 <iframe
   width="520"
@@ -9784,7 +9636,7 @@ function setQuality(src){
   srcdoc="
     <html>
       <body style='font-family:Arial;padding:12px'>
-        <h3>Hi from inside the iframe </h3>
+        <h3>Hi from inside the iframe</h3>
         <p>This content is inside <b>srcdoc</b>.</p>
         <button onclick=&quot;document.body.style.background='lightyellow'&quot;>
           Change background
@@ -9825,7 +9677,7 @@ function setQuality(src){
 </head>
 <body>
 
-<h2>Iframe vs Video ✅</h2>
+<h2>Iframe vs Video</h2>
 
 <div class="grid">
   <div class="box">
@@ -9877,7 +9729,7 @@ function setQuality(src){
 </head>
 <body>
 
-<h2>Iframe Attributes ✅</h2>
+<h2>Iframe Attributes</h2>
 
 <iframe
   title="Sandbox demo"
@@ -9888,7 +9740,7 @@ function setQuality(src){
   srcdoc="
     <html>
       <body style='font-family:Arial;padding:12px'>
-        <h3>Sandboxed iframe 🔒</h3>
+        <h3>Sandboxed iframe</h3>
         <p>Scripts are blocked because sandbox is ON.</p>
         <button onclick=&quot;alert('Hi!')&quot;>Try Script</button>
       </body>
@@ -9930,7 +9782,7 @@ function setQuality(src){
 </head>
 <body>
 
-<h2>Resize Iframe Live </h2>
+<h2>Resize Iframe Live</h2>
 
 <div class="row">
   <label>Width: <span id="wVal">520</span>px</label><br>
@@ -9943,7 +9795,7 @@ function setQuality(src){
 <br>
 
 <iframe id="frame" title="Resizable iframe" width="520" height="260"
-  srcdoc="<html><body style='font-family:Arial;padding:12px'><h3>Resizable iframe ✅</h3><p>Drag the sliders to resize me.</p></body></html>">
+  srcdoc="<html><body style='font-family:Arial;padding:12px'><h3>Resizable iframe</h3><p>Drag the sliders to resize me.</p></body></html>">
 </iframe>
 
 <script>
@@ -9988,7 +9840,7 @@ h.addEventListener("input", update);
 </head>
 <body>
 
-<h2>Iframe src ✅</h2>
+<h2>Iframe src</h2>
 
 <iframe title="Local page example" src="page2.html" width="520" height="240"></iframe>
 
@@ -10019,7 +9871,7 @@ h.addEventListener("input", update);
 </head>
 <body>
 
-<h2>Iframe name + target </h2>
+<h2>Iframe name + target</h2>
 
 <p>Click buttons to load content into the iframe:</p>
 
@@ -10027,12 +9879,12 @@ h.addEventListener("input", update);
 
 <a href="data:text/html,
 <html><body style='font-family:Arial;padding:14px;background:lavender'>
-<h3>Page A ✅</h3><p>This came from a data URL.</p></body></html>"
+<h3>Page A</h3><p>This came from a data URL.</p></body></html>"
 target="box"><button>Load Page A</button></a>
 
 <a href="data:text/html,
 <html><body style='font-family:Arial;padding:14px;background:honeydew'>
-<h3>Page B </h3><p>Same iframe, different content.</p></body></html>"
+<h3>Page B</h3><p>Same iframe, different content.</p></body></html>"
 target="box"><button>Load Page B</button></a>
 
 <iframe name="box" title="Target iframe"></iframe>
@@ -10073,10 +9925,10 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Styled Iframe </h2>
+<h2>Styled Iframe</h2>
 
 <iframe title="Styled iframe"
-  srcdoc="<html><body style='font-family:Arial;padding:14px'><h3>Clean look </h3><p>No border, rounded corners, soft shadow.</p></body></html>">
+  srcdoc="<html><body style='font-family:Arial;padding:14px'><h3>Clean look</h3><p>No border, rounded corners, soft shadow.</p></body></html>">
 </iframe>
 
 </body>
@@ -10088,11 +9940,11 @@ target="box"><button>Load Page B</button></a>
                         headline = "Embedding External Content (Maps + More)",
                         explaination =
                             "Iframes are used to embed external services such as:\n" +
-                                    "• Google Maps\n" +
+                                    "• Maps\n" +
                                     "• YouTube videos\n" +
                                     "• Calendars\n" +
-                                    "• Forms (like Google Forms)\n\n" +
-                                    "This example embeds a real Google Map using a public embed URL.\n" +
+                                    "• Forms\n\n" +
+                                    "This example embeds a real map using an OpenStreetMap embed URL.\n" +
                                     "If it fails, it means the network or embed is blocked where you are testing.",
                         codeExample = """
 <!DOCTYPE html>
@@ -10107,17 +9959,16 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Embedded Map ️</h2>
+<h2>Embedded Map</h2>
 
 <iframe
-  title="Google Map Embed"
+  title="OpenStreetMap Embed"
   loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps?q=Nairobi%20CBD&output=embed">
+  src="https://www.openstreetmap.org/export/embed.html?bbox=36.806%2C-1.296%2C36.832%2C-1.274&layer=mapnik&marker=-1.285%2C36.819">
 </iframe>
 
 <p style="color:#555;font-size:13px">
-  Tip: You can replace the location text in the URL (e.g. Mombasa, Kisumu).
+  Tip: You can change the location by generating a new embed link from OpenStreetMap.
 </p>
 
 </body>
@@ -10150,7 +10001,7 @@ target="box"><button>Load Page B</button></a>
                                     "https://www.youtube.com/embed/VIDEO_ID\n\n" +
                                     "This is different from the normal watch link.\n" +
                                     "watch?v=VIDEO_ID  \n" +
-                                    "embed/VIDEO_ID    ",
+                                    "embed/VIDEO_ID",
                         tip = "Use the YouTube 'Share' → 'Embed' option to get the correct iframe code quickly.",
                         codeExample = """
 <!DOCTYPE html>
@@ -10165,11 +10016,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>YouTube Embed </h2>
+<h2>YouTube Embed</h2>
 
 <iframe
   title="YouTube video"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  src="https://www.youtube.com/embed/Fm-V0a-MXNY"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen>
 </iframe>
@@ -10194,11 +10045,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Fullscreen </h2>
+<h2>Fullscreen</h2>
 
 <iframe width="700" height="400"
   title="Fullscreen demo"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  src="https://www.youtube.com/embed/XCTcVgngFaQ"
   allowfullscreen>
 </iframe>
 
@@ -10232,12 +10083,12 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>YouTube Embed Architecture </h2>
+<h2>YouTube Embed Architecture</h2>
 
 <div class="wrap">
   <iframe
     title="YouTube video"
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    src="https://www.youtube.com/embed/km5hn_U5Upk"
     loading="lazy"
     referrerpolicy="strict-origin-when-cross-origin"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -10256,7 +10107,7 @@ target="box"><button>Load Page B</button></a>
                         headline = "HD Enabling (Quality Note)",
                         explaination =
                             "You don’t force HD purely with HTML.\n\n" +
-                                    "✅ What you *can* do:\n" +
+                                    "What you *can* do:\n" +
                                     "• Use a larger player size (e.g., 720p layout)\n" +
                                     "• Let YouTube choose the best quality automatically based on internet speed\n\n" +
                                     "Quality is mostly controlled by:\n" +
@@ -10276,11 +10127,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Bigger Player (Better Viewing) ✅</h2>
+<h2>Bigger Player (Better Viewing)</h2>
 
 <iframe
   title="Large embed"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  src="https://www.youtube.com/embed/xdglg8yYQRY"
   allowfullscreen>
 </iframe>
 
@@ -10309,11 +10160,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Controls Off (controls=0) ✅</h2>
+<h2>Controls Off (controls=0)</h2>
 
 <iframe
   title="No controls"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+  src="https://www.youtube.com/embed/Fm-V0a-MXNY?controls=0"
   allowfullscreen>
 </iframe>
 
@@ -10341,11 +10192,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Reduce Suggested Videos (rel=0) </h2>
+<h2>Reduce Suggested Videos (rel=0)</h2>
 
 <iframe
   title="rel=0 demo"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
+  src="https://www.youtube.com/embed/XCTcVgngFaQ?rel=0"
   allowfullscreen>
 </iframe>
 
@@ -10374,11 +10225,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Captions On (cc_load_policy=1) ✅</h2>
+<h2>Captions On (cc_load_policy=1)</h2>
 
 <iframe
   title="Captions demo"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ?cc_load_policy=1"
+  src="https://www.youtube.com/embed/km5hn_U5Upk?cc_load_policy=1"
   allowfullscreen>
 </iframe>
 
@@ -10406,11 +10257,11 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Start at 45s </h2>
+<h2>Start at 45s</h2>
 
 <iframe
   title="Start at 45 seconds"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ?start=45"
+  src="https://www.youtube.com/embed/xdglg8yYQRY?start=45"
   allowfullscreen>
 </iframe>
 
@@ -10454,13 +10305,16 @@ target="box"><button>Load Page B</button></a>
 </head>
 <body>
 
-<h2>Responsive YouTube </h2>
+<h2>Responsive YouTube</h2>
 
 <div class="wrap">
   <div class="ratio">
     <iframe
-      title="Responsive video"
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video"
+      src="https://www.youtube.com/embed/Fm-V0a-MXNY?playsinline=1&rel=0"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="autoplay; encrypted-media; picture-in-picture; web-share"
       allowfullscreen>
     </iframe>
   </div>
@@ -10484,16 +10338,16 @@ target="box"><button>Load Page B</button></a>
 
             Subtopic(
                 sutopicId = 48,
-                subTopicName = "HTML File Paths (Finding Files Correctly)",
+                subTopicName = "HTML File Paths",
                 headlines = listOf(
 
                     Headline(
                         majorHeadline = "HTML File Paths",
                         explaination =
-                            "A **file path** tells HTML where to find a file (image, CSS, JS, video...).\n\n" +
+                            "A ile path tells HTML where to find a file (image, CSS, JS, video...).\n\n" +
                                     "Two main types:\n" +
-                                    "• **Absolute paths** → full address\n" +
-                                    "• **Relative paths** → based on your project folder location\n\n" +
+                                    "• Absolute paths → full address\n" +
+                                    "• Relative paths → based on your project folder location\n\n" +
                                     "If paths are wrong, images won’t show and CSS won’t load.",
                         tip = "For beginners, start with relative paths because they work in projects and when you move folders together.",
                         codeExample = """
@@ -10511,9 +10365,9 @@ target="box"><button>Load Page B</button></a>
 <h2>File Paths </h2>
 
 <!-- Relative path to image -->
-<img src="images/logo.png" alt="Logo" width="180">
+<img src="./images/icon.png" alt="Logo" width="180">
 
-<script src="js/app.js"></script>
+<script src="./js/app.js"></script>
 
 </body>
 </html>
@@ -10569,10 +10423,10 @@ target="box"><button>Load Page B</button></a>
 <h2>Relative Paths </h2>
 
 <!-- 1) Same folder -->
-<img src="logo.png" alt="Same folder image">
+<img src="red.png" alt="Same folder image">
 
 <!-- 2) Inside a folder -->
-<img src="images/photo.png" alt="Inside images folder">
+<img src="images/icon.png" alt="Inside images folder">
 
 <!-- 3) Go up one folder -->
 <img src="../shared/banner.png" alt="Up one folder">

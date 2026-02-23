@@ -45,7 +45,7 @@ fun TopicProgress(modifier: Modifier = Modifier,progressPercent: Float,subtopic:
 
         modifier = modifier
             .fillMaxWidth(0.90f)
-            .height(200.dp)
+//            .height(200.dp)
 
     ) {
 
@@ -61,6 +61,7 @@ fun TopicProgress(modifier: Modifier = Modifier,progressPercent: Float,subtopic:
             SmallTitle(
                 title = subtopic
             )
+            Spacer(modifier= Modifier.height(12.dp))
             Row(
 
                 modifier = Modifier,
