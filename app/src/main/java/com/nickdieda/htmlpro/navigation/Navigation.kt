@@ -72,7 +72,7 @@ fun MyApp( mainViewModel: MainViewModel = hiltViewModel()) {
 //
     val title = when {
         currentRoute == ScreenRoutes.DashBoard.route -> ""
-        currentRoute == ScreenRoutes.Notes.route -> "Javascript Notes"
+        currentRoute == ScreenRoutes.Notes.route -> "HTML Notes"
         currentRoute == ScreenRoutes.Projects.route -> "Projects"
         currentRoute == ScreenRoutes.Samples.route -> "Samples"
         // Now this works perfectly because it's a standalone Boolean check

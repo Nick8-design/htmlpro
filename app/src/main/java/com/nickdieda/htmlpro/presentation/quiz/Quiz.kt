@@ -1,5 +1,6 @@
 package com.nickdieda.htmlpro.presentation.quiz
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -9,15 +10,16 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.nickdieda.htmlpro.data.model.QuizQuestion
-
+import com.nickdieda.htmlpro.R
 @Composable
 fun Quiz(
 
     questions: List<QuizQuestion>,
-    onQuizComplete: (Float) -> Unit // returns percentage (0.0 to 1.0)
+    onQuizComplete: (Float) -> Unit
 ) {
     val selectedAnswers = remember { mutableStateMapOf<Int, Int>() }
     var showResultDialog by remember { mutableStateOf(false) }
@@ -75,8 +77,23 @@ fun Quiz(
     if (showResultDialog) {
         AlertDialog(
             onDismissRequest = { },
-            title = { Text("Quiz Results") },
-            text = { Text("You got $finalScore out of ${questions.size} correct!") },
+            title = {
+                Row(verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text("Quiz Results")
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Image(
+                        painter = painterResource(id = if(finalScore==questions.size)  R.drawable.tick else R.drawable.wron ),
+                        contentDescription = "${if(finalScore==questions.size)  "Good" else "Bad"} "
+                    )
+
+                }
+                    },
+
+            text = {
+                Text("You got $finalScore out of ${questions.size} correct!")
+
+                   },
             confirmButton = {
                 TextButton(onClick = {
                     showResultDialog = false

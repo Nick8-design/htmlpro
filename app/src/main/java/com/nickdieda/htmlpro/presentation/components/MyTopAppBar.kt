@@ -185,7 +185,7 @@ fun MyTopAppBar(
                         text = { Text("Save As") },
                         onClick = {
                             menuExpanded = false
-                            saveAsLauncher.launch("new_project.js")
+                            saveAsLauncher.launch("new_project.html")
                         }
                     )
                 }

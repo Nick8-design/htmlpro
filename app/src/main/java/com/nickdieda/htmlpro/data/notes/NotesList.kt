@@ -35,7 +35,7 @@ val HtmlNotes = mutableListOf(
   <title>My First HTML Page</title>
 </head>
 <body>
-  <h1>Hello, HTML! 👋</h1>
+  <h1>Hello, HTML! </h1>
   <p>This is my first web page using this app.</p>
 
   <button onclick="sayHi()">Click Me</button>
@@ -144,7 +144,7 @@ val HtmlNotes = mutableListOf(
   <title>Saved Page</title>
 </head>
 <body>
-  <h1>My Saved HTML File ✅</h1>
+  <h1>My Saved HTML File</h1>
   <p>If you can see this, your file is working!</p>
 
   <ul>
@@ -175,7 +175,7 @@ val HtmlNotes = mutableListOf(
 </head>
 <body>
   <div class="card">
-    <h2>Live Preview 🚀</h2>
+    <h2>Live Preview </h2>
     <p>Change this text and run again to see instant updates!</p>
   </div>
 </body>
@@ -198,7 +198,7 @@ val HtmlNotes = mutableListOf(
   <h1>Check Your Tags</h1>
   <p>Make sure you close tags properly.</p>
 
-  <a href="https://example.com">This is a link</a>
+  <a href="https://facebook.com">This is a link</a>
 </body>
 </html>
 """.trimIndent(),
@@ -288,7 +288,7 @@ val HtmlNotes = mutableListOf(
     <h2>Welcome</h2>
     <p>
       This is a <b>bold</b> word inside a paragraph.
-      Here is a <a href="https://example.com" target="_blank">link</a> too.
+      Here is a <a href="https://play.google.com/store/apps/details?id=com.nickdieda.ludo" target="_blank">link</a> too.
     </p>
 
     <ul>
@@ -321,7 +321,7 @@ val HtmlNotes = mutableListOf(
   <hr>
 
   <p>Below is an image element:</p>
-  <img src="https://via.placeholder.com/200" alt="Sample Image">
+  <img src="f5.png" alt="Sample Image">
 
 </body>
 </html>
@@ -743,12 +743,12 @@ val HtmlNotes = mutableListOf(
   <h2>Debugging Example</h2>
 
   <div class="card">
-    <p>This card is visible ✅</p>
+    <p>This card is visible </p>
 
     <!-- Disable this image if it causes problems -->
     <!-- <img src="broken-link.png" alt="Broken image"> -->
 
-    <p>Even if the image is disabled, the page still works ✅</p>
+    <p>Even if the image is disabled, the page still works </p>
   </div>
 
 </body>
@@ -866,7 +866,7 @@ val HtmlNotes = mutableListOf(
 </head>
 <body>
   <div class="card">
-    <h2>Internal CSS ✅</h2>
+    <h2>Internal CSS </h2>
     <p>This style is written inside &lt;style&gt; in the head.</p>
     <button class="btn">Nice Button</button>
   </div>
@@ -2775,7 +2775,7 @@ Examples:
 <body>
 
 <h2>Image Example</h2>
-<img src="https://via.placeholder.com/250" alt="Sample image">
+<img src="user.png" alt="Sample image">
 
 </body>
 </html>
@@ -2785,13 +2785,13 @@ Examples:
 
                     Headline(
                         headline = "src (Image Source)",
-                        explaination = "src tells the browser where the image is located (local file or web link).",
+                        explaination = "src tells the browser where the image is located (local file or web link).\nIn this it case image  is directly located in the same folder with the html file ",
                         codeExample = """
 <!DOCTYPE html>
 <html>
 <body>
 
-<img src="https://via.placeholder.com/200" alt="Image from web">
+<img src="f1.png" alt="Image from stored locally">
 
 </body>
 </html>
@@ -2806,7 +2806,7 @@ Examples:
 <html>
 <body>
 
-<img src="wrong-link.png" alt="This text appears if image fails">
+<img src="f.png" alt="This text appears if image fails.<br/> rename the f.png to f2.png">
 
 </body>
 </html>
@@ -2821,7 +2821,7 @@ Examples:
 <html>
 <body>
 
-<img src="https://via.placeholder.com/400"
+<img src="f3.png"
      alt="Big image"
      width="200" height="200">
 
@@ -2839,7 +2839,7 @@ Examples:
 <html>
 <body>
 
-<img src="https://via.placeholder.com/220"
+<img src="red.png"
      alt="Styled image"
      style="border:3px solid black; border-radius:20px; box-shadow:0 6px 15px rgba(0,0,0,0.3);">
 
@@ -2856,7 +2856,7 @@ Examples:
 <html>
 <body>
 
-<img src="https://via.placeholder.com/150"
+<img src="ludo.png"
      alt="Float image"
      style="float:left; margin-right:10px;">
 
@@ -2877,7 +2877,7 @@ This text wraps around the image. Floating is used for magazine-style layouts.
 <html>
 <body>
 
-<img src="https://via.placeholder.com/200"
+<img src="f4.png"
      alt="Circle image"
      style="width:200px; height:200px; border-radius:50%;">
 
@@ -2894,8 +2894,8 @@ This text wraps around the image. Floating is used for magazine-style layouts.
 <html>
 <body>
 
-<a href="https://nickdieda.web.app" target="_blank">
-  <img src="https://via.placeholder.com/180" alt="Clickable image">
+<a href="https://nickdieda.web.app" target="_blank" >
+  <img src="me.png" alt="Clickable you need internet image" style="width:200px; height:200px; border-radius:50%;">
 </a>
 
 </body>
@@ -2911,11 +2911,11 @@ This text wraps around the image. Floating is used for magazine-style layouts.
 <html>
 <body>
 
-<img src="https://images.unsplash.com/photos/2LowviVHZ-E?auto=format&fit=crop&w=400&q=60"
+<img src="https://unsplash.com/photos/an-aerial-view-of-a-forest-with-a-sunset-in-the-background-usset0gFU2U"
      alt="Web image"
-     style="width:250px;border-radius:12px;">
+     style="width:180px;border-radius:12px;">
 
-</body>
+</body>https://unsplash.com/photos/an-aerial-view-of-a-forest-with-a-sunset-in-the-background-usset0gFU2U
 </html>
 """.trimIndent()
                     )
@@ -3041,8 +3041,8 @@ Useful styles:
     <th>Topic</th>
     <th>Status</th>
   </tr>
-  <tr><td>Nick</td><td>Tables</td><td>Done ✅</td></tr>
-  <tr><td>Anna</td><td>Images</td><td>Learning 📚</td></tr>
+  <tr><td>Nick</td><td>Tables</td><td>Done </td></tr>
+  <tr><td>Anna</td><td>Images</td><td>Learning </td></tr>
 </table>
 
 </body>
@@ -4319,7 +4319,7 @@ Important input attributes:
 <script>
 function check(e){
   e.preventDefault();
-  result.innerHTML = "Welcome, " + u.value + " ✅";
+  result.innerHTML = "Welcome, " + u.value + " ";
 }
 </script>
 
@@ -5121,7 +5121,7 @@ function show(e){
   e.preventDefault();
   const val = document.getElementById("fb").value;
   document.getElementById("out").innerHTML =
-    "✅ Submitted (" + val.length + " chars):<br>" + val;
+    "Submitted (" + val.length + " chars):<br>" + val;
 }
 </script>
 
@@ -5437,7 +5437,7 @@ function submitForm(e){
   e.preventDefault();
   const value = document.getElementById("course").value;
   document.getElementById("out").innerHTML =
-    "✅ Submitted value: <b>" + value + "</b>";
+    "Submitted value: <b>" + value + "</b>";
 }
 </script>
 
@@ -5818,25 +5818,25 @@ Form attributes are like “rules” and “helpers” you add to inputs to cont
 
 Common attributes (easy list):
 
-✅ Text help
+Text help
 • placeholder → shows a hint text inside input
 • autocomplete → browser suggests saved values
 • autocapitalize → controls automatic capitalization (mostly mobile)
 
-✅ Validation (stops wrong data)
+ Validation (stops wrong data)
 • required → must be filled before submit
 • minlength / maxlength → minimum/maximum characters
 • min / max → minimum/maximum value (number/date/range)
 • pattern → must match a specific format (like phone/email rules)
 
-✅ Behavior / access
+ Behavior / access
 • readonly → user cannot change, but can copy
 • disabled → user cannot use + not submitted
 • autofocus → focuses the input automatically
 • multiple → select many files / many emails (depending on input type)
 • spellcheck → checks spelling (on/off)
 
-✅ Textarea special
+ Textarea special
 • wrap → controls line wrapping when submitted (soft/hard)
 """.trimIndent(),
                    tip = "Use attributes first (HTML validation). Use JavaScript only when you need custom rules.",
@@ -5865,7 +5865,7 @@ Common attributes (easy list):
 <script>
 function send(e){
   e.preventDefault();
-  document.getElementById("out").innerHTML = "✅ Form submitted successfully!";
+  document.getElementById("out").innerHTML = "Form submitted successfully!";
 }
 </script>
 
@@ -5943,7 +5943,7 @@ function info(){
 function go(e){
   e.preventDefault();
   const name = document.getElementById("fullName").value;
-  document.getElementById("out").innerHTML = "✅ Saved: <b>" + name + "</b>";
+  document.getElementById("out").innerHTML = "Saved: <b>" + name + "</b>";
 }
 </script>
 
@@ -6069,7 +6069,7 @@ Use cases:
 function go(e){
   e.preventDefault();
   document.getElementById("out").innerText =
-    "✅ Submitted! (Disabled field was not submitted.)";
+    "Submitted! (Disabled field was not submitted.)";
 }
 </script>
 
@@ -6107,7 +6107,7 @@ Browser will block submission if value is above max.
 function check(e){
   e.preventDefault();
   const v = document.getElementById("age").value;
-  alert("✅ Your age is: " + v);
+  alert(" Your age is: " + v);
 }
 </script>
 
@@ -6215,7 +6215,7 @@ Example:
 <script>
 function go(e){
   e.preventDefault();
-  document.getElementById("out").innerText = "✅ Password accepted (demo).";
+  document.getElementById("out").innerText = " Password accepted (demo).";
 }
 </script>
 
@@ -6258,7 +6258,7 @@ If it does not match, the browser blocks submission.
 <script>
 function go(e){
   e.preventDefault();
-  document.getElementById("out").innerText = "✅ Phone format is valid!";
+  document.getElementById("out").innerText = "Phone format is valid!";
 }
 </script>
 
@@ -6365,7 +6365,7 @@ Browser shows a message automatically.
 <script>
 function go(e){
   e.preventDefault();
-  document.getElementById("out").innerText = "✅ Email provided!";
+  document.getElementById("out").innerText = " Email provided!";
 }
 </script>
 
@@ -6382,8 +6382,8 @@ readonly means:
 • BUT the value IS submitted
 
 Difference:
-• readonly → submitted ✅
-• disabled → not submitted ❌
+• readonly → submitted 
+• disabled → not submitted 
 """.trimIndent(),
                    codeExample = """
 <!DOCTYPE html>
@@ -6408,7 +6408,7 @@ Difference:
 function go(e){
   e.preventDefault();
   document.getElementById("out").innerText =
-    "✅ readonly submits, disabled does not.";
+    " readonly submits, disabled does not.";
 }
 </script>
 
@@ -6441,7 +6441,7 @@ Use placeholder for hints, but still use <label> for the real name.
 
 <script>
 function done(){
-  document.getElementById("out").innerText = "✅ Placeholder is just a hint.";
+  document.getElementById("out").innerText = " Placeholder is just a hint.";
 }
 </script>
 
@@ -6620,13 +6620,13 @@ document.getElementById("f").addEventListener("submit", (e) => {
 Buttons are clickable elements that trigger actions.
 In HTML you can create buttons in TWO common ways:
 
-1) <button>Click</button>   ✅ Best for most cases (can contain text, icons, HTML)
-2) <input type="button|submit|reset">  ✅ Simple button input
+1) <button>Click</button>   Best for most cases (can contain text, icons, HTML)
+2) <input type="button|submit|reset">  Simple button input
 
 Most important idea:
-✅ A button can be used to run JavaScript
-✅ A button can submit a form
-✅ A button can reset a form
+A button can be used to run JavaScript
+A button can submit a form
+A button can reset a form
 """.trimIndent(),
                    tip = "Inside a <form>, always set button type (type='button' / 'submit' / 'reset') to avoid accidental submits.",
                    codeExample = """
@@ -6649,11 +6649,11 @@ Most important idea:
 
 <script>
 function hello(){
-  document.getElementById("out").innerText = "👋 You clicked a button!";
+  document.getElementById("out").innerText = " You clicked a button!";
 }
 function submitForm(e){
   e.preventDefault();
-  document.getElementById("out").innerText = "✅ Form submitted (demo).";
+  document.getElementById("out").innerText = "Form submitted (demo).";
 }
 </script>
 
@@ -6690,9 +6690,9 @@ Below is a simple “save name” mini app using a button + JavaScript.
 function save(){
   const name = document.getElementById("name").value;
   if(name.trim() === ""){
-    document.getElementById("out").innerText = "⚠️ Please type your name first.";
+    document.getElementById("out").innerText = "Please type your name first.";
   } else {
-    document.getElementById("out").innerHTML = "✅ Saved: <b>" + name + "</b>";
+    document.getElementById("out").innerHTML = " Saved: <b>" + name + "</b>";
   }
 }
 </script>
@@ -6733,7 +6733,7 @@ Example: checkbox + button → show result.
 function checkAgree(){
   const ok = document.getElementById("agree").checked;
   document.getElementById("out").innerText =
-    ok ? "✅ Access granted!" : "❌ Please tick the checkbox first.";
+    ok ? "Access granted!" : " Please tick the checkbox first.";
 }
 </script>
 
@@ -6747,30 +6747,30 @@ function checkAgree(){
                    explaination = """
 Common button attributes (easy list):
 
-✅ type (VERY IMPORTANT)
+ type (VERY IMPORTANT)
 • type="button" → normal button (does not submit)
 • type="submit" → submits a form
 • type="reset" → clears form inputs
 
-✅ disabled
+ disabled
 • disables the button (cannot click)
 
-✅ name + value (mostly for forms)
+ name + value (mostly for forms)
 • sent to the server when submitting
 
-✅ id / class
+ id / class
 • used for styling and JavaScript selection
 
-✅ title
+ title
 • tooltip text when you hover
 
-✅ onclick
+ onclick
 • quick way to run JavaScript
 
-✅ form (advanced)
+form (advanced)
 • allows a button to submit a form even if button is outside the form
 
-✅ formaction / formmethod / formtarget (advanced)
+formaction / formmethod / formtarget (advanced)
 • can override the form’s action/method/target for ONE button
 """.trimIndent(),
                    codeExample = """
@@ -6849,7 +6849,7 @@ function fill(){
 function send(e){
   e.preventDefault(); // stop real navigation
   const u = document.getElementById("user").value;
-  document.getElementById("out").innerHTML = "✅ Submitted username: <b>" + u + "</b>";
+  document.getElementById("out").innerHTML = " Submitted username: <b>" + u + "</b>";
 }
 </script>
 
@@ -6962,7 +6962,7 @@ txt.addEventListener("input", () => {
 });
 
 function go(){
-  document.getElementById("out").innerText = "🚀 Button enabled and clicked!";
+  document.getElementById("out").innerText = " Button enabled and clicked!";
 }
 </script>
 
@@ -7024,7 +7024,7 @@ You can still link it using the form="formId" attribute.
 <script>
 function go(e){
   e.preventDefault();
-  document.getElementById("out").innerText = "✅ Submitted using outside button!";
+  document.getElementById("out").innerText = " Submitted using outside button!";
 }
 </script>
 
@@ -7267,7 +7267,7 @@ form{max-width:400px;}
 <script>
 function go(e){
 e.preventDefault();
-msg.innerHTML="Welcome "+n.value+" 🎉";
+msg.innerHTML="Welcome "+n.value+" ";
 }
 </script>
 """
@@ -7361,497 +7361,3274 @@ function clear(){t.value="";}
         subtopics = listOf(
             Subtopic(
                 sutopicId = 45,
-                subTopicName = "Lowered Text (Subscripts)",
+                subTopicName = "Subscript Text (<sub>)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "The <sub> Tag",
-                        explaination = "In HTML, subscript text appears half a character below the normal line and is sometimes rendered in a smaller font. We use the <sub> tag to achieve this. It is perfect for scientific formulas or indicating variable bases in computing.",
-                        codeExample = "<p>The chemical formula for water is H<sub>2</sub>O.</p>\n<p>In binary logic, we might write 101<sub>2</sub>.</p>",
-                        tip = "Think of 'Sub' as 'Submarine'—it goes underwater (below the line)!"
+                        majorHeadline = "Subscript Text",
+                        explaination = "Subscript means small text that sits a little lower than normal text. "
+                                + "In HTML, we use the <sub> tag. It is mostly used in chemistry formulas**, "
+                                + "math, and footnote-style writing.\n\n"
+                                + "Tag used: <sub> ... </sub>",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Subscript Example</h2>
+
+<p>Water is written as H<sub>2</sub>O</p>
+<p>Carbon dioxide is CO<sub>2</sub></p>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Use <sub> for chemistry formulas like H₂O and CO₂. Do NOT use it just to make text small—use CSS for styling."
                     ),
+
                     Headline(
-                        headline = "Subscripts in Linux Documentation",
-                        explaination = "When documenting system performance or hardware specs, you might use subscripts to denote specific versions or chemical components in battery tech (like Li-ion).",
-                        codeExample = "<p>Testing the stability of Lithium<sub>(Li)</sub> batteries in server UPS systems.</p>",
-                        afterCodeEplainations = "The browser takes the text inside <sub> and shifts it downward without breaking the paragraph's line height."
+                        headline = "Subscript in Real Life (Science + Math)",
+                        explaination = "Subscript is common in science formulas and sometimes in **math** to show indexes. "
+                                + "For example: X<sub>1</sub>, X<sub>2</sub> can mean the first and second values.\n\n"
+                                + "This example also shows a tiny JS interaction: click a button and it builds a formula using subscript.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Build a Chemical Formula</h2>
+
+<p id="result">Click to show glucose formula</p>
+<button onclick="showFormula()">Show Formula</button>
+
+<script>
+function showFormula(){
+  document.getElementById("result").innerHTML =
+    "Glucose is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>";
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "We used innerHTML so the <sub> tags can be displayed as real subscript. If we used textContent, it would show the tags as plain text."
+                    ),
+
+                    Headline(
+                        headline = "Subscript + Styling (Clean Look)",
+                        explaination = "You can style subscript using CSS if you want it to look clearer. "
+                                + "This is useful when you want the subscript to be slightly bigger or different color.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  sub{
+    color: green;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<h2>Styled Subscript</h2>
+<p>Nitrogen gas is N<sub>2</sub></p>
+<p>Index values: A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub></p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "By default, browsers make <sub> smaller. Here we changed the color and font size slightly."
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("Which tag is used to create subscript text?", listOf("<sup>", "<sub>", "<down>", "<below>"), 1),
-                    QuizQuestion("Where does subscript text usually appear?", listOf("Above the line", "Same level as text", "Half a character below the line", "In a bold font"), 2),
-                    QuizQuestion("Which is a correct use of <sub>?", listOf("H<sub>2</sub>O", "2<sup>nd</sup> Place", "<b>Bold</b>", "None"), 0),
-                    QuizQuestion("Does the <sub> tag make text larger or smaller?", listOf("Larger", "Smaller", "It stays the same size", "It disappears"), 1),
-                    QuizQuestion("True or False: <sub> is used for mathematical powers like 10 squared.", listOf("True", "False"), 1)
+                    QuizQuestion("Which HTML tag is used for subscript text?", listOf("<small>", "<sub>", "<sup>", "<down>"), 1),
+                    QuizQuestion("Which example correctly writes water using subscript?", listOf("H2O", "H<sub>2</sub>O", "H<sup>2</sup>O", "H_(2)O"), 1),
+                    QuizQuestion("Subscript text usually appears…", listOf("Above normal text", "Below normal text", "On the left side", "Inside a comment"), 1),
+                    QuizQuestion("Where is <sub> commonly used?", listOf("Chemistry formulas", "Making text bold", "Creating links", "Adding images"), 0),
+                    QuizQuestion("Which JS property allows <sub> tags to render as HTML?", listOf("textContent", "innerHTML", "value", "style"), 1),
+                    QuizQuestion("What is a bad use of <sub>?", listOf("H<sub>2</sub>O", "CO<sub>2</sub>", "To shrink any random text", "X<sub>1</sub> in math"), 2)
                 )
-            ) ,
+            ),
             Subtopic(
                 sutopicId = 46,
-                subTopicName = "Raised Text (Superscripts)",
+                subTopicName = "Superscript Text (<sup>)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "The <sup> Tag",
-                        explaination = "Superscript text appears half a character above the normal line. It is created using the <sup> tag. This is essential for mathematical exponents, ordinal numbers (like 1st, 2nd), or footnote references in technical manuals.",
-                        codeExample = "<p>The area of the server room is 500m<sup>2</sup>.</p>\n<p>Einstein's famous equation: E=mc<sup>2</sup>.</p>",
-                        tip = "Think of 'Super' as 'Superman'—he flies up high (above the line)!"
+                        majorHeadline = "Superscript Text",
+                        explaination = "Superscript means small text that sits a little higher than normal text. "
+                                + "In HTML, we use the <sup> tag. It is mostly used for **powers (exponents), "
+                                + "math expressions, and footnote numbers.\n\n"
+                                + "Tag used: <sup> ... </sup>",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Superscript Example</h2>
+
+<p>2<sup>3</sup> = 8</p>
+<p>10<sup>2</sup> = 100</p>
+<p>This is a note<sup>1</sup></p>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Use <sup> for powers like x² or for footnotes like note¹. Avoid using it just for decoration."
                     ),
+
                     Headline(
-                        headline = "Using Superscripts for Ordinals",
-                        explaination = "In Linux terminal tutorials, you might want to rank steps or use dates. Using superscripts makes these look professional and readable.",
-                        codeExample = "<p>This is the 1<sup>st</sup> step in installing Arch Linux.</p>\n<p>Join the 24<sup>th</sup> annual Linux Convention.</p>",
-                        afterCodeEplainations = "The <sup> tag raises the baseline of the text, making it look like a mathematical power or a formal date suffix."
+                        headline = "Superscript for Exponents (Math)",
+                        explaination = "In mathematics, superscript is used to show **powers**. "
+                                + "Example: x<sup>2</sup> means x squared.\n\n"
+                                + "This example includes a small JS calculator for squares and cubes.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Square & Cube Calculator</h2>
+
+<input type="number" id="num" placeholder="Enter a number">
+<button onclick="calc()">Calculate</button>
+
+<p id="out"></p>
+
+<script>
+function calc(){
+  const n = Number(document.getElementById("num").value);
+  const square = n * n;
+  const cube = n * n * n;
+
+  document.getElementById("out").innerHTML =
+    n + "<sup>2</sup> = " + square + "<br>" +
+    n + "<sup>3</sup> = " + cube;
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "We used <sup>2</sup> and <sup>3</sup> to display powers clearly like real math."
+                    ),
+
+                    Headline(
+                        headline = "Superscript for Footnotes (Like Books)",
+                        explaination = "Superscript is also used for **footnote numbers** like in books and articles. "
+                                + "A footnote is extra information shown at the bottom.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Footnote Example</h2>
+
+<p>
+HTML is the language of the web<sup>1</sup>.
+</p>
+
+<hr>
+
+<p>
+<sup>1</sup> HTML means HyperText Markup Language.
+</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "The <sup> tag makes the number look like a real footnote marker."
+                    ),
+
+                    Headline(
+                        headline = "Superscript + Styling (Make it Pop)",
+                        explaination = "You can style superscript using CSS to make it clearer or match your design.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  sup{
+    color: purple;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>Styled Superscript</h2>
+
+<p>Area: m<sup>2</sup></p>
+<p>Volume: m<sup>3</sup></p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Here we changed the color and made the superscript bold."
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("What does the 'p' in <sup> stand for?", listOf("Position", "Paragraph", "Power", "Superscript"), 3),
-                    QuizQuestion("Which tag would you use for '10 to the power of 2'?", listOf("<sub>", "<exp>", "<sup>", "<high>"), 2),
-                    QuizQuestion("Superscript text is rendered ___ the normal line.", listOf("Below", "Inside", "Above", "Behind"), 2),
-                    QuizQuestion("Which of the following is correct?", listOf("5<sup>th</sup>", "5<sub>th</sub>", "<up>5</up>", "None"), 0),
-                    QuizQuestion("Can you nest a <sub> inside a <sup>?", listOf("Yes, but it's rarely used", "No, it's illegal HTML", "It will crash the browser", "Only on Linux"), 0),
-                    QuizQuestion("Which tag makes text look like a footnote reference?", listOf("<footer>", "<sup>", "<small>", "<cite>"), 1)
-                )
-            ) ,
-            Subtopic(
-                sutopicId = 47,
-                subTopicName = "The <pre> Element",
-                headlines = listOf(
-                    Headline(
-                        majorHeadline = "Preserving Layout with <pre>",
-                        explaination = "Normally, HTML collapses multiple spaces and newlines into a single space. The <pre> (Preformatted) tag tells the browser to display the text exactly as it is written in the HTML file, including all spaces and line breaks. It uses a fixed-width (monospace) font by default.",
-                        codeExample = "<pre>\n  Line 1: Root directory\n  Line 2:   /bin\n  Line 3:   /etc\n</pre>",
-                        tip = "Use <pre> when the spacing of your text is part of the information, like ASCII art or folder structures."
-                    ),
-                    Headline(
-                        headline = "Displaying Code Snippets",
-                        explaination = "In Linux tutorials, <pre> is often wrapped around a <code> tag to display multi-line terminal commands or script blocks without losing the indentation.",
-                        codeExample = "<pre>\n<code>\nsudo apt update\nsudo apt upgrade -y\n</code>\n</pre>",
-                        afterCodeEplainations = "The <pre> tag maintains the vertical structure, while <code> tells the browser the content is computer code."
-                    )
-                ),
-                questions = listOf(
-                    QuizQuestion("What does the <pre> tag preserve?", listOf("Only colors", "Spaces and line breaks", "Images", "Links"), 1),
-                    QuizQuestion("What is the default font style for <pre>?", listOf("Cursive", "Bold", "Monospace (fixed-width)", "Italic"), 2),
-                    QuizQuestion("Which tag is often used inside <pre> for code?", listOf("<code>", "<span>", "<bold>", "<cmd>"), 0),
-                    QuizQuestion("How does a browser handle multiple spaces inside a normal <p> tag?", listOf("It keeps them", "It turns them into a single space", "It deletes them", "It adds a line break"), 1),
-                    QuizQuestion("True or False: <pre> is great for displaying ASCII art.", listOf("True", "False"), 0)
-                )
-            ) ,
-            Subtopic(
-                sutopicId = 48,
-                subTopicName = "Self-Contained Figures",
-                headlines = listOf(
-                    Headline(
-                        majorHeadline = "The <figure> and <figcaption> Tags",
-                        explaination = "The <figure> tag is used to mark up self-contained content, like photos, diagrams, or code listings. The <figcaption> tag provides a caption or description for that content.",
-                        codeExample = "<figure>\n  <img src='ubuntu_desktop.png' alt='Ubuntu Desktop'>\n  <figcaption>Fig.1 - The default Ubuntu GNOME interface.</figcaption>\n</figure>",
-                        tip = "The <figcaption> should always be the first or last child inside the <figure> element."
-                    ),
-                    Headline(
-                        headline = "Figures for Code Blocks",
-                        explaination = "You don't just have to use figures for images! You can use them to group a block of code with a clear title or description.",
-                        codeExample = "<figure>\n  <pre><code>grep 'error' /var/log/syslog</code></pre>\n  <figcaption>Listing 4.2: Command to find errors in Linux logs.</figcaption>\n</figure>",
-                        afterCodeEplainations = "This treats the code block as a formal 'figure' in your documentation, making it semantically clear to search engines."
-                    ),
-                    Headline(
-                        headline = "Benefits of Semantic Figures",
-                        explaination = "Using <figure> instead of just a <div> helps accessibility tools (like screen readers) understand that the image and its caption are related.",
-                        codeExample = "<figure>\n  <img src='terminal_icon.png' alt='Terminal'>\n  <figcaption>The gateway to the Linux kernel.</figcaption>\n</figure>",
-                        afterCodeEplainations = "This structure creates a clear relationship between the visual asset and the descriptive text."
-                    )
-                ),
-                questions = listOf(
-                    QuizQuestion("Which tag provides a caption for a figure?", listOf("<title>", "<caption>", "<figcaption>", "<desc>"), 2),
-                    QuizQuestion("Where can <figcaption> be placed inside <figure>?", listOf("Only at the top", "Only at the bottom", "Top or bottom", "Anywhere in the page"), 2),
-                    QuizQuestion("Can a <figure> contain a <table> or <code> block?", listOf("No, only images", "Yes, any self-contained content", "Only if it has a link", "Only in Linux"), 1),
-                    QuizQuestion("Is the <figure> tag a block-level or inline element?", listOf("Block-level", "Inline", "Hidden", "Inline-block"), 0),
-                    QuizQuestion("Does <figure> automatically center your image?", listOf("Yes", "No, you need CSS for that", "Only on mobile", "Sometimes"), 1)
-                )
-            ),
-            Subtopic(
-                sutopicId = 41,
-                subTopicName = "Interactive Editing",
-                headlines = listOf(
-                    Headline(
-                        majorHeadline = "Introduction to Editability",
-                        explaination = "HTML allows you to make almost any element editable by the user without needing a form or a textarea. This is great for building 'In-place' editors or note-taking apps.",
-                        codeExample = "<div contenteditable='true'>\n  Click here to edit this server note!\n</div>",
-                        tip = "Use this for rich-text editing where users need to format text directly on the page."
-                    ),
-                    Headline(
-                        headline = "The contenteditable Attribute",
-                        explaination = "By adding 'contenteditable' to an element, you turn the browser into a text editor. Setting it to 'true' enables editing, while 'false' (the default) disables it.",
-                        codeExample = "\n<p contenteditable='true'>I am a terminal log. Edit me!</p>\n\n<p contenteditable='false'>I am read-only.</p>",
-                        afterCodeEplainations = "This attribute is the foundation for web-based document editors like Google Docs."
-                    ),
-                    Headline(
-                        headline = "Customizing the Caret Color",
-                        explaination = "The 'caret' is the blinking vertical line that shows where you are typing. In CSS, you can use the 'caret-color' property to change its appearance to match your theme (like a classic green Linux terminal).",
-                        codeExample = "<style>\n  .terminal-style {\n    caret-color: #00ff00;\n    background: black;\n    color: white;\n    padding: 10px;\n  }\n</style>\n<div contenteditable='true' class='terminal-style'>\n  Type here... the cursor is green!\n</div>",
-                        afterCodeEplainations = "Caret-color allows for deep customization of the user's typing experience."
-                    ),
-                    Headline(
-                        headline = "Removing the Focus Outline",
-                        explaination = "Browsers usually show a blue border (outline) when an editable element is clicked. You can remove or change this using the CSS 'outline' property.",
-                        codeExample = "<style>\n  .no-outline:focus {\n    outline: none;\n    border-bottom: 2px solid green;\n  }\n</style>\n<div contenteditable='true' class='no-outline'>\n  Clean editing experience with no blue box.\n</div>",
-                        afterCodeEplainations = "Removing the outline is common in UI design, but always ensure you provide a different visual cue for accessibility."
-                    ),
-                    Headline(
-                        headline = "Real-world Linux App Use Case",
-                        explaination = "Imagine building a web-based Bash script editor. You would combine these attributes to make the interface feel like a real terminal.",
-                        codeExample = "<div contenteditable='true' spellcheck='false' style='font-family: monospace;'>\n  #!/bin/bash\n  echo \"Hello User\"\n</div>",
-                        afterCodeEplainations = "Setting spellcheck='false' is important for code editors so the browser doesn't underline commands in red."
-                    )
-                ),
-                questions = listOf(
-                    QuizQuestion("Which attribute makes an element editable?", listOf("editable='yes'", "contenteditable='true'", "mode='write'", "can-edit"), 1),
-                    QuizQuestion("What is the 'caret'?", listOf("A type of tag", "The blinking text cursor", "A background color", "A Linux command"), 1),
-                    QuizQuestion("How do you change the cursor color in CSS?", listOf("cursor-color", "pointer-color", "caret-color", "line-color"), 2),
-                    QuizQuestion("What happens when 'contenteditable' is set to 'false'?", listOf("The text disappears", "The text becomes bold", "The text cannot be edited", "The text turns red"), 2),
-                    QuizQuestion("Why might you set spellcheck='false' on an editable element?", listOf("To save battery", "To stop red underlines on code", "To make it load faster", "To hide the text"), 1),
-                    QuizQuestion("Which CSS pseudo-class is used to style the element being edited?", listOf(":hover", ":active", ":focus", ":visited"), 2)
-                )
-            ),
-            Subtopic(
-                sutopicId = 42,
-                subTopicName = "HTML Meta",
-                headlines = listOf(
-                    Headline(
-                        majorHeadline = "The <meta> Tag",
-                        majorHeadileExplanation = "The <meta> tag provides 'metadata' about your HTML document. It is placed inside the <head> section. Metadata isn't displayed on the page but is used by browsers, search engines (SEO), and OS kernels to understand how to handle your site.",
-                        codeExample = "<head>\n  <meta charset='UTF-8'>\n  <meta name='description' content='Linux Tutorial Site'>\n</head>",
-                        tip = "Always include <meta charset='UTF-8'> to ensure your code handles special characters correctly!"
-                    ),
-                    Headline(
-                        headline = "The http-equiv Attribute",
-                        explaination = "This attribute simulates an HTTP response header. It is often used to refresh the page automatically or set security policies.",
-                        codeExample = "<meta http-equiv='refresh' content='30'>\n"
-                    ),
-                    Headline(
-                        headline = "The 'name' Attribute",
-                        explaination = "The 'name' attribute defines the *type* of metadata you are providing, such as the author, description, or keywords.",
-                        codeExample = "<meta name='author' content='SysAdmin-Linus'>"
-                    ),
-                    Headline(
-                        headline = "The 'content' Attribute",
-                        explaination = "The 'content' attribute provides the actual value for the 'name' or 'http-equiv' attribute.",
-                        codeExample = "<meta name='keywords' content='Linux, Ubuntu, Bash, Terminal'>"
-                    ),
-                    Headline(
-                        headline = "Responsive Design: The Viewport",
-                        explaination = "To make your site look good on mobile phones, you must use the Viewport meta tag. It tells the browser how to scale the page to fit the screen size.",
-                        codeExample = "<meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>"
-                    ),
-                    Headline(
-                        explaination = "Try this: Create a page with a large 1000px wide <div>. View it on a mobile emulator. Now remove the viewport meta tag below. You'll notice the page looks tiny or requires horizontal scrolling!",
-                        codeExample = "<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n<div style='width: 100%; background: green;'>Full Width Header</div>"
-                    ),
-                    Headline(
-                        headline = "SEO (Search Engine Optimization)",
-                        explaination = "Search engines use meta descriptions to show a summary of your site in search results. Without this, your Linux blog might just show random text from the header.",
-                        codeExample = "<meta name='description' content='Master the Linux Command Line with our interactive HTML guides.'>"
-                    )
-                ),
-                questions = listOf(
-                    QuizQuestion("Where is the <meta> tag placed?", listOf("Inside <body>", "Inside <head>", "After </html>", "Inside <title>"), 1),
-                    QuizQuestion("Which attribute is used for the character set?", listOf("name", "http-equiv", "charset", "content"), 2),
-                    QuizQuestion("What does the 'viewport' meta tag help with?", listOf("Page speed", "Responsive design (mobile)", "Background colors", "Setting the font"), 1),
-                    QuizQuestion("Is the <meta> tag visible to the website visitor?", listOf("Yes", "No, only to the browser/search engines", "Only on Linux", "Only when clicked"), 1),
-                    QuizQuestion("Which meta tag can refresh the page automatically?", listOf("name='refresh'", "http-equiv='refresh'", "charset='refresh'", "type='refresh'"), 1)
-                )
-            ),
-            Subtopic(
-                sutopicId = 43,
-                subTopicName = "Quoting Content",
-                headlines = listOf(
-                    Headline(
-                        majorHeadline = "The <blockquote> Element",
-                        majorHeadileExplanation = "Use <blockquote> for long sections of text quoted from another source. Browsers usually indent this text to set it apart. We've added background colors here to show how you can style them for a terminal-themed quote.",
-                        codeExample = "<blockquote style='background-color: #f0f0f0; border-left: 5px solid #2ecc71; padding: 10px;'>\n  'Linux is only free if your time has no value.' - Jamie Zawinski\n</blockquote>",
-                        tip = "Use blockquote for multi-line quotes; use the <q> tag for short, inline quotes."
-                    ),
-                    Headline(
-                        headline = "Citing Your Sources",
-                        explaination = "The 'cite' attribute (inside the tag) is for a URL to the source. The <cite> element (text) is used to show the name of the work/author to the user.",
-                        codeExample = "<blockquote cite='https://www.kernel.org'>\n  <p>The Linux kernel is a free and open-source, monolithic, Unix-like operating system kernel.</p>\n</blockquote>\n<p>Source: <cite>Wikipedia</cite></p>"
-                    ),
-                    Headline(
-                        headline = "Styling Quotes like a Terminal",
-                        explaination = "You can make quotes look like a system message by using a monospace font and a dark background.",
-                        codeExample = "<blockquote style='background: #333; color: #0f0; font-family: monospace; padding: 15px;'>\n  FATAL ERROR: System failure imminent.\n</blockquote>",
-                        afterCodeEplainations = "This uses standard CSS styles applied directly to the blockquote tag."
-                    )
-                ),
-                questions = listOf(
-                    QuizQuestion("Which tag is used for long quotations?", listOf("<quote>", "<q>", "<blockquote>", "<cite>"), 2),
-                    QuizQuestion("What is the default visual style of a blockquote?", listOf("It is bolded", "It is italicized", "It is usually indented", "It is centered"), 2),
-                    QuizQuestion("The <cite> tag is used to define:", listOf("The price", "The title of a work/author", "The font size", "A link"), 1),
-                    QuizQuestion("Where do you put the URL of the source in a blockquote?", listOf("In the 'href' attribute", "In the 'cite' attribute", "In the 'src' attribute", "In a comment"), 1),
-                    QuizQuestion("Is <blockquote> a block-level or inline element?", listOf("Block-level", "Inline", "Hidden", "None of the above"), 0)
-                )
-            ),
-            Subtopic(
-                sutopicId = 44,
-                subTopicName = "The Non-Breaking Space",
-                headlines = listOf(
-                    Headline(
-                        majorHeadline = "The &nbsp; Entity",
-                        majorHeadileExplanation = "In HTML, multiple spaces are collapsed into one. If you want to force extra spaces or prevent two words from being separated by a line break, you use the entity '&nbsp;' (Non-Breaking Space).",
-                        tip = "Don't use &nbsp; to create layout padding; use CSS margins instead. Only use it for text spacing!",
-                        codeExample = "<p>Standard: 10 GB</p>\n<p>Forced Space: 10&nbsp;&nbsp;&nbsp;&nbsp;GB</p>"
-                    ),
-                    Headline(
-                        headline = "Preventing Line Breaks",
-                        explaination = "Sometimes you don't want the browser to split a value and its unit (like 100 MB) onto two different lines. &nbsp; glues them together.",
-                        codeExample = "<p>Your server has 64&nbsp;GB of RAM.</p>",
-                        afterCodeEplainations = "Even if the screen is small, '64' and 'GB' will always stay on the same line."
-                    ),
-                    Headline(
-                        headline = "ASCII Visuals with nbsp",
-                        explaination = "In technical writing, you might use it to manually align text in a way that regular spaces won't allow in standard HTML tags.",
-                        codeExample = "<p>User:&nbsp;&nbsp;&nbsp;root</p>\n<p>Pass:&nbsp;&nbsp;&nbsp;****</p>",
-                        afterCodeEplainations = "The browser renders exactly three spaces because of the entities."
-                    )
-                ),
-                questions = listOf(
-                    QuizQuestion("What does &nbsp; stand for?", listOf("New Block Space", "Non-Breaking Space", "Next Binary Space", "Normal Base Space"), 1),
-                    QuizQuestion("How many spaces does one &nbsp; create?", listOf("One", "Two", "Five", "Ten"), 0),
-                    QuizQuestion("What happens to five regular spaces in HTML code?", listOf("They stay as five", "They turn into one space", "They cause an error", "They disappear"), 1),
-                    QuizQuestion("Why use &nbsp; between a number and a unit (like 5kg)?", listOf("To make it bold", "To prevent a line break between them", "To change the font", "To save memory"), 1),
-                    QuizQuestion("Which character starts the nbsp entity?", listOf("$", "@", "&", "#"), 2)
+                    QuizQuestion("Which HTML tag is used for superscript text?", listOf("<small>", "<sub>", "<sup>", "<up>"), 2),
+                    QuizQuestion("Which example correctly writes 2 squared using superscript?", listOf("2^2", "2<sub>2</sub>", "2<sup>2</sup>", "2**2"), 2),
+                    QuizQuestion("Superscript text usually appears…", listOf("Below normal text", "Above normal text", "Inside a button", "At the bottom of the page"), 1),
+                    QuizQuestion("Where is <sup> commonly used?", listOf("Exponents and footnotes", "Images and videos", "Tables only", "Forms only"), 0),
+                    QuizQuestion("What is a common real-life use of superscript?", listOf("H<sub>2</sub>O", "x<sup>2</sup>", "<p> tags", "<div> tags"), 1),
+                    QuizQuestion("Which JS property allows <sup> tags to render as HTML?", listOf("textContent", "innerHTML", "value", "checked"), 1)
                 )
             ),
 
             Subtopic(
-                sutopicId = 49,
-                subTopicName = "Character Entities",
+                sutopicId = 47,
+                subTopicName = "Preformatted Text (<pre>)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "The Secret Code of Symbols",
-                        explaination = "In HTML, some characters are 'reserved.' For example, if you use '<', the browser thinks you are starting a tag. To display these characters correctly, we use 'Entities'. \n\n* They always start with an ampersand (&).\n* They always end with a semicolon (;).\n* They are case-sensitive.",
-                        codeExample = "<p>To show a tag in HTML, use &lt;p&gt; instead of <p>.</p>",
-                        tip = "Use entities to avoid 'confusing' the browser's HTML parser."
+                        majorHeadline = "Pre Element",
+                        explaination = "The **<pre>** tag means **preformatted text**. It keeps:\n"
+                                + "• spaces\n"
+                                + "• tabs\n"
+                                + "• line breaks\n\n"
+                                + "So whatever you type inside <pre> appears **exactly the same** in the browser. "
+                                + "It’s perfect for **code snippets**, **ASCII art**, and **logs**.\n\n"
+                                + "Tag used: <pre> ... </pre>",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Pre Element (Keeps spacing)</h2>
+
+<pre>
+Name:     Nick
+Course:   HTML
+Status:   Learning 
+
+This line stays on a new line.
+And    extra    spaces    remain!
+</pre>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Use <pre> when you want to display text exactly as typed (like code, terminal output, or ASCII art)."
                     ),
+
                     Headline(
-                        explaination = "Here are 10 common entities used in technical documentation:\n\n* &lt; : Less than (<)\n* &gt; : Greater than (>)\n* &amp; : Ampersand (&)\n* &quot; : Double quote (\")\n* &apos; : Single quote (')\n* &copy; : Copyright symbol (©)\n* &reg; : Registered trademark (®)\n* &euro; : Euro currency (€)\n* &trade; : Trademark (™)\n* &times; : Multiplication (×)",
-                        codeExample = "<footer>\n  <p>Linux OS &reg; &amp; Bash Scripting &copy; 2026</p>\n  <p>Price: &euro;10 &times; 2 licenses</p>\n</footer>",
-                        afterCodeEplainations = "This ensures symbols render perfectly across all Linux distributions and browsers."
+                        headline = "Pre for Code Display (Nice Look + Copy)",
+                        explaination = "A common use of <pre> is showing code in a readable way. "
+                                + "Usually we combine **<pre> + <code>** and add a little CSS to look like a real code editor.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  pre {
+    background: #111;
+    color: #00ff88;
+    padding: 12px;
+    border-radius: 10px;
+    overflow: auto;
+    font-family: Consolas, monospace;
+  }
+</style>
+</head>
+<body>
+
+<h2>Code Block using &lt;pre&gt; + &lt;code&gt;</h2>
+
+<pre><code>
+function greet(name){
+  return "Hello " + name + "today is Feb 23 2025";
+}
+
+console.log(greet("Nick"));
+</code></pre>
+
+<p>Tip: This is how many tutorial websites show code.</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "The <pre> keeps spacing and line breaks. The <code> tag tells the browser this content is code (semantic meaning)."
                     ),
+
                     Headline(
-                        headline = "The Advantage of Entities",
-                        explaination = "Entities ensure your code remains 'valid' even if you are writing about HTML itself. Without &lt;, you couldn't easily write a tutorial about tags!",
-                        codeExample = "<code>if (CPU_usage &gt; 90) { alert('Warning!'); }</code>",
-                        afterCodeEplainations = "Notice how &gt; prevents the browser from thinking you are starting a tag named '90'."
+                        headline = "Amazing Example: Mini Terminal Output (Interactive)",
+                        explaination = "This example makes <pre> feel like a **terminal**. "
+                                + "Type a command and it prints output inside <pre>. (Works in any browser)",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { font-family: Arial, sans-serif; }
+  #terminal {
+    background: #0b0b0b;
+    color: #00ff55;
+    padding: 12px;
+    border-radius: 10px;
+    height: 200px;
+    overflow-y: auto;
+    font-family: Consolas, monospace;
+  }
+  input {
+    width: 260px;
+    padding: 8px;
+  }
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<h2>Mini Terminal (Using &lt;pre&gt;)</h2>
+
+<pre id="terminal">$ welcome
+Type: help</pre>
+
+<input id="cmd" placeholder="Type command e.g. help">
+<button onclick="run()">Run</button>
+
+<script>
+function writeLine(text){
+  const t = document.getElementById("terminal");
+  t.textContent += "\\n" + text;
+  t.scrollTop = t.scrollHeight;
+}
+
+function run(){
+  const input = document.getElementById("cmd");
+  const command = input.value.trim().toLowerCase();
+  if(!command) return;
+
+  writeLine("$ " + command);
+
+  if(command === "help"){
+    writeLine("Commands: help, date, clear, about");
+  } else if(command === "date"){
+    writeLine("Today: " + new Date().toString());
+  } else if(command === "about"){
+    writeLine("This terminal is built with <pre> ✅");
+  } else if(command === "clear"){
+    document.getElementById("terminal").textContent = "$ cleared";
+  } else {
+    writeLine("Unknown command ❌");
+  }
+
+  input.value = "";
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "We used textContent to keep it safe and show plain terminal text. <pre> keeps new lines exactly like a terminal."
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("How do all HTML entities start?", listOf("#", "$", "&", "%"), 2),
-                    QuizQuestion("What is the entity for the 'Less Than' symbol (<)?", listOf("&less;", "&lt;", "&lower;", "<"), 1),
-                    QuizQuestion("Which entity should you use for the Copyright symbol?", listOf("&copy;", "&copyright;", "&c;", "&copy"), 0),
-                    QuizQuestion("Why do we use &amp; instead of just &?", listOf("It makes it bold", "To prevent errors in HTML validation", "To save memory", "It's required by Linux"), 1),
-                    QuizQuestion("True or False: Entities must end with a semicolon (;).", listOf("True", "False"), 0)
+                    QuizQuestion("What does the <pre> tag do?", listOf("Makes text bold", "Keeps spaces and line breaks", "Adds an image", "Creates a link"), 1),
+                    QuizQuestion("Which is a common use of <pre>?", listOf("Tables", "Code snippets", "Buttons", "Audio"), 1),
+                    QuizQuestion("Inside <pre>, multiple spaces are…", listOf("Removed", "Converted to one space", "Kept exactly", "Turned into tabs"), 2),
+                    QuizQuestion("Which combination is best for showing code?", listOf("<pre><code>", "<pre><img>", "<pre><a>", "<pre><b>"), 0),
+                    QuizQuestion("Which tag gives semantic meaning that content is code?", listOf("<code>", "<pre>", "<p>", "<span>"), 0),
+                    QuizQuestion("Why do tutorials style <pre> blocks?", listOf("To hide content", "To make code easier to read", "To break HTML", "To remove spaces"), 1)
                 )
             ),
+
+            Subtopic(
+                sutopicId = 48,
+                subTopicName = "Figures & Captions (<figure> + <figcaption>)",
+                headlines = listOf(
+
+                    Headline(
+                        majorHeadline = "HTML Figures",
+                        explaination = "The **<figure>** tag is used to wrap content like:\n"
+                                + "• images\n"
+                                + "• diagrams\n"
+                                + "• code samples\n"
+                                + "• charts\n\n"
+                                + "Then **<figcaption>** gives a caption (small explanation) for that figure.\n\n"
+                                + "✅ Tags used: <figure>, <figcaption>",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  figure{
+    width: 320px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+  }
+  figcaption{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  .photo{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h2>Figure Example</h2>
+
+<figure>
+  <div class="photo">Image Placeholder</div>
+  <figcaption>Figure 1: A sample “image” with a caption.</figcaption>
+</figure>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Use <figure> when the media can stand alone (like an image + caption). It improves page meaning and SEO."
+                    ),
+
+                    Headline(
+                        headline = "Figure with a Real Image + Caption",
+                        explaination = "Here is a real image example. If the image fails to load, the caption still explains what it was.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  figure{
+    width: 340px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  figcaption{
+    margin-top: 8px;
+    color: #555;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<h2>Figure + Image</h2>
+
+<figure>
+  <img src="https://picsum.photos/600/400" alt="Random landscape">
+  <figcaption>Figure 2: Random image loaded from the internet + caption.</figcaption>
+</figure>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "The <alt> text is for accessibility. The <figcaption> explains the figure in normal reading."
+                    ),
+
+                    Headline(
+                        headline = "Where Else Can Figure Be Used? (Code as a Figure)",
+                        explaination = "Figure is not only for images. You can also use it for **code samples** with a caption.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  figure{ max-width: 520px; font-family: Arial, sans-serif; }
+  pre{
+    background: #111;
+    color: #00ff99;
+    padding: 12px;
+    border-radius: 12px;
+    overflow: auto;
+  }
+  figcaption{ margin-top: 6px; color: #666; }
+</style>
+</head>
+<body>
+
+<h2>Figure used for Code Sample</h2>
+
+<figure>
+  <pre><code>
+let score = 90;
+if(score >= 50){
+  console.log("Pass ✅");
+}else{
+  console.log("Fail ❌");
+}
+  </code></pre>
+  <figcaption>Figure 3: A JavaScript code example with a caption.</figcaption>
+</figure>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "This is great for tutorials: learners see a code block and a caption explaining what it does."
+                    ),
+
+                    Headline(
+                        headline = "Amazing Example: Click-to-Change Caption (Interactive)",
+                        explaination = "This example uses JS to change the caption when you click the figure.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  figure{
+    width: 340px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    user-select: none;
+  }
+  .box{
+    height: 180px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, orange, purple);
+  }
+  figcaption{ margin-top: 8px; color: #333; }
+</style>
+</head>
+<body>
+
+<h2>Interactive Figure</h2>
+
+<figure id="fig">
+  <div class="box"></div>
+  <figcaption id="cap">Click the figure to change this caption 👇</figcaption>
+</figure>
+
+<script>
+let state = 0;
+document.getElementById("fig").addEventListener("click", () => {
+  const cap = document.getElementById("cap");
+  state++;
+  if(state % 3 === 1){
+    cap.textContent = "Nice! Captions can describe images clearly ";
+  }else if(state % 3 === 2){
+    cap.textContent = "Figures can also hold code blocks or diagrams ";
+  }else{
+    cap.textContent = "Click again to cycle captions ";
+  }
+});
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "A figure can be interactive too. Here we attached a click event to the <figure> element."
+                    )
+                ),
+
+                questions = listOf(
+                    QuizQuestion("Which tag is used to wrap media + caption?", listOf("<img>", "<figure>", "<section>", "<caption>"), 1),
+                    QuizQuestion("Which tag is used to write the caption of a figure?", listOf("<caption>", "<figcaption>", "<legend>", "<label>"), 1),
+                    QuizQuestion("Figure is only for images. True or False?", listOf("True", "False"), 1),
+                    QuizQuestion("Why is <figure> useful?", listOf("It makes images download faster", "It groups media with a description", "It removes the need for CSS", "It replaces <div> everywhere"), 1),
+                    QuizQuestion("Which is a good use of <figcaption>?", listOf("A caption explaining a chart", "A button click event", "A video codec", "A form method"), 0),
+                    QuizQuestion("What should an <img> inside a figure also have?", listOf("method", "alt text", "href", "target"), 1)
+                )
+            ),
+
+            Subtopic(
+                sutopicId = 41,
+                subTopicName = "Editable Content (contenteditable)",
+                headlines = listOf(
+
+                    Headline(
+                        majorHeadline = "Editable",
+                        explaination = "Normally, text on a webpage cannot be edited by the user. "
+                                + "But HTML gives us **contenteditable** which makes an element editable like a mini text editor.\n\n"
+                                + "✅ Attribute used: contenteditable=\"true\"\n"
+                                + "You can use it on: <div>, <p>, <h1>, <span>, and more.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Editable Text</h2>
+
+<p contenteditable="true">
+  Click here and start typing... 
+</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Great for notes apps, comment boxes, and simple editors. But for real forms, still use <input> and <textarea>."
+                    ),
+
+                    Headline(
+                        headline = "Attribute contenteditable (With vs Without)",
+                        explaination = "This example shows the difference between a normal paragraph and an editable one.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .box{
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<h2>With and Without contenteditable</h2>
+
+<div class="box">
+  <b>Normal:</b>
+  <p>This text cannot be edited.</p>
+</div>
+
+<div class="box">
+  <b>Editable:</b>
+  <p contenteditable="true">Edit me! Try typing here </p>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Only the second paragraph is editable because it has contenteditable=\"true\"."
+                    ),
+
+                    Headline(
+                        headline = "Caret Color (Cursor Color)",
+                        explaination = "The blinking text cursor is called the **caret**. "
+                                + "You can change its color using CSS property: **caret-color**.\n\n"
+                                + "This makes your editable area look more professional.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .editor{
+    border: 2px solid #ccc;
+    padding: 12px;
+    border-radius: 12px;
+    min-height: 80px;
+    font-family: Arial, sans-serif;
+    caret-color: red;   /* caret color */
+  }
+
+  .editor:focus{
+    border-color: #0077ff;
+  }
+</style>
+</head>
+<body>
+
+<h2>Caret Color Example</h2>
+
+<div class="editor" contenteditable="true">
+  Click here... the cursor will be RED 🔴
+</div>
+
+<hr>
+
+<div class="editor" style="caret-color: green;" contenteditable="true">
+  This one has a GREEN cursor 🟢
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "caret-color changes only the blinking cursor color, not the text color."
+                    ),
+
+                    Headline(
+                        headline = "Remove Outline (Cleaner Focus Look)",
+                        explaination = "When an element is focused, browsers often show an outline. "
+                                + "You can remove it with CSS. But be careful: outlines help keyboard users.\n\n"
+                                + "Best practice: remove the outline, then add a nice border or shadow on focus.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .editor{
+    border: 2px solid #bbb;
+    padding: 12px;
+    border-radius: 12px;
+    min-height: 80px;
+    outline: none; /* remove default outline */
+    font-family: Arial, sans-serif;
+  }
+
+  .editor:focus{
+    border-color: #00aa88;
+    box-shadow: 0 0 0 4px rgba(0,170,136,0.2);
+  }
+</style>
+</head>
+<body>
+
+<h2>Remove Outline + Nice Focus Style</h2>
+
+<div class="editor" contenteditable="true">
+  Click here. No ugly outline — but still a clear focus effect 
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "We removed the outline, but added a focus border + shadow so users still know where they are typing."
+                    ),
+
+                    Headline(
+                        headline = "Amazing Example: Mini Notes App (Save + Clear)",
+                        explaination = "This is an interactive mini notes app using contenteditable. "
+                                + "It can **save** your text in the browser (localStorage) and restore it when you reload.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{ font-family: Arial, sans-serif; }
+  .editor{
+    border: 2px solid #ddd;
+    padding: 12px;
+    border-radius: 12px;
+    min-height: 120px;
+    outline: none;
+    caret-color: #0077ff;
+  }
+  button{
+    padding: 10px 12px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  .hint{ color: #666; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h2>Mini Notes App (contenteditable)</h2>
+
+<div id="note" class="editor" contenteditable="true"></div>
+<p class="hint">Tip: Write something, click Save, refresh the page — it will still be there </p>
+
+<button onclick="saveNote()">Save</button>
+<button onclick="clearNote()">Clear</button>
+
+<p id="msg"></p>
+
+<script>
+const note = document.getElementById("note");
+const msg = document.getElementById("msg");
+
+// Load saved note
+note.innerHTML = localStorage.getItem("myNote") || "Start typing your notes here... ";
+
+function saveNote(){
+  localStorage.setItem("myNote", note.innerHTML);
+  msg.textContent = "Saved ";
+}
+
+function clearNote(){
+  note.innerHTML = "";
+  localStorage.removeItem("myNote");
+  msg.textContent = "Cleared ";
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "localStorage saves data in the browser. This makes your editable text stay even after refreshing."
+                    ),
+
+                    Headline(
+                        headline = "Extra Tip: Make It Read-Only Again",
+                        explaination = "You can turn editing ON and OFF using JavaScript by changing contentEditable.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Toggle Editable Mode</h2>
+
+<div id="box" contenteditable="true" style="border:2px solid #ccc; padding:10px; border-radius:10px;">
+  You can edit me now...
+</div>
+
+<button onclick="toggleEdit()">Toggle Edit</button>
+
+<script>
+let editable = true;
+
+function toggleEdit(){
+  editable = !editable;
+  const box = document.getElementById("box");
+  box.contentEditable = editable;
+  box.style.background = editable ? "#ffffff" : "#f2f2f2";
+  box.innerText = editable ? "Editing ON " : "Editing OFF ";
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "contentEditable can be changed at runtime. Great for “Edit / Save” style features."
+                    )
+                ),
+
+                questions = listOf(
+                    QuizQuestion("What does contenteditable do?", listOf("Makes text bold", "Makes an element editable", "Adds a caption", "Creates a link"), 1),
+                    QuizQuestion("Which is correct to make a <div> editable?", listOf("editable=true", "contenteditable=true", "contenteditable=\"true\"", "edit=\"on\""), 2),
+                    QuizQuestion("What is the caret?", listOf("A button style", "The blinking text cursor", "A form method", "A tag"), 1),
+                    QuizQuestion("Which CSS property changes cursor color in typing areas?", listOf("cursor-color", "caret-color", "text-caret", "pointer-color"), 1),
+                    QuizQuestion("If you remove outline, what is best practice?", listOf("Do nothing", "Add a nice focus border/shadow", "Remove all borders too", "Disable the element"), 1),
+                    QuizQuestion("Which feature can save notes even after refresh?", listOf("alert()", "localStorage", "console.log()", "href"), 1),
+                    QuizQuestion("contenteditable is best replacement for <input> always. True/False?", listOf("True", "False"), 1)
+                )
+            ),
+
+            Subtopic(
+                sutopicId = 42,
+                subTopicName = "HTML Meta Tag (Page Info & Settings)",
+                headlines = listOf(
+
+                    Headline(
+                        majorHeadline = "HTML Meta",
+                        majorHeadileExplanation = "The **<meta>** tag gives the browser (and search engines) **information about the page**.\n\n"
+                                + " **Tag used:** <meta>\n"
+                                + " **Where it is placed:** inside the **<head>** section (not inside <body>)\n\n"
+                                + "### Why we use meta\n"
+                                + "• Set character encoding (UTF-8)\n"
+                                + "• Make pages responsive (viewport)\n"
+                                + "• Add SEO info (description)\n"
+                                + "• Control some browser behaviors (http-equiv)\n\n"
+                                + " Meta tags usually don’t show on the page, but they affect how the page works.",
+                        tip = "Always include: charset + viewport. They prevent many weird display issues on phones.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Basics</title>
+</head>
+<body>
+  <h1>Meta Tag Example </h1>
+  <p>This page uses charset + viewport meta tags.</p>
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Attribute http-equiv",
+                        explaination = "**http-equiv** tells the browser to treat a meta tag like a mini HTTP header.\n\n"
+                                + "Common beginner-friendly examples:\n"
+                                + "• **refresh** → auto reload / redirect after seconds\n"
+                                + "• **content-security-policy (CSP)** → security rules (advanced)\n\n"
+                                + "  Format:\n"
+                                + "<meta http-equiv=\"...\" content=\"...\">",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- Refresh page every 5 seconds -->
+  <meta http-equiv="refresh" content="5">
+  <title>http-equiv Refresh</title>
+</head>
+<body>
+  <h2>Auto Refresh Demo </h2>
+  <p>This page refreshes every <b>5 seconds</b>.</p>
+  <p>Try changing 5 to 2 or 10.</p>
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Attribute name",
+                        explaination = "The **name** attribute tells what type of information the meta tag is about.\n\n"
+                                + "Common **name** values:\n"
+                                + "• description\n"
+                                + "• author\n"
+                                + "• keywords (not very important today, but still seen)\n"
+                                + "• theme-color (changes browser top color on mobile)\n\n"
+                                + "  Format:\n"
+                                + "<meta name=\"description\" content=\"...\">",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A simple HTML learning page about meta tags.">
+  <meta name="author" content="Nick">
+  <meta name="theme-color" content="#00aa88">
+  <title>Meta name Example</title>
+</head>
+<body>
+  <h2>Meta name Demo </h2>
+  <p>Open page source to see the meta tags in the head.</p>
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Attribute content",
+                        explaination = "**content** holds the actual value/details for the meta tag.\n\n"
+                                + "Examples:\n"
+                                + "• For description → content is the description text\n"
+                                + "• For refresh → content is seconds (or seconds;url=...)\n"
+                                + "• For viewport → content is responsive rules\n\n"
+                                + "  Think of it like: **content = the data**",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Here 'content' is the real info -->
+  <meta name="description" content="Learn HTML meta tags with simple examples.">
+  <meta http-equiv="refresh" content="10">
+  <title>Meta content Example</title>
+</head>
+<body>
+  <h2>Meta content Demo </h2>
+  <p>This page refreshes after 10 seconds because of the meta content value.</p>
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Making a Web Page Adaptable to Screen Sizes (Viewport)",
+                        explaination = "This is the MOST important meta tag for phones.\n\n"
+                                + "  Without viewport: the phone may pretend your page is very wide, making text tiny.\n"
+                                + "  With viewport: the page fits the real device width.\n\n"
+                                + "Use this in almost every website:\n"
+                                + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viewport Demo</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 16px; }
+    .card { border: 2px solid #ddd; border-radius: 12px; padding: 14px; }
+    .row { display: flex; gap: 12px; }
+    .box { flex: 1; padding: 16px; border-radius: 10px; background: #f3f3f3; }
+
+    /* This changes layout on small screens */
+    @media (max-width: 600px) {
+      .row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<h2>Responsive Layout ✅</h2>
+<div class="card">
+  <p>Resize the browser window (or open on phone).</p>
+  <div class="row">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+  </div>
+</div>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        explaination = " Test it yourself:\n"
+                                + "1) Run the code below\n"
+                                + "2) Then **remove the viewport meta line**\n"
+                                + "3) Open on phone (or use DevTools device mode) and see the difference.\n\n"
+                                + "With viewport: text fits nicely.\n"
+                                + "Without viewport: layout may look zoomed out / tiny.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!--  COMMENT THIS LINE OUT to see the difference -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Viewport Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 16px; }
+    .banner {
+      padding: 14px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      font-weight: bold;
+    }
+    .big {
+      margin-top: 12px;
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="banner">Viewport ON  (try removing it!)</div>
+<p class="big">This text should be readable on mobile.</p>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "SEO / Search Engine Optimization (Meta Description)",
+                        explaination = "Meta tags help search engines understand your page.\n\n"
+                                + "The most useful for beginners:\n"
+                                + "• **title** (not meta, but super important)\n"
+                                + "• **meta description** (often shown in search results)\n\n"
+                                + "Tip: keep description clear and not too long.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Learn HTML Meta Tags</title>
+
+  <meta name="description" content="Learn HTML meta tags with easy examples: charset, viewport, SEO description, and more.">
+  <meta name="author" content="Nick">
+</head>
+<body>
+  <h2>SEO Meta Example </h2>
+  <p>The description is for search engines, not for showing on the page.</p>
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Extra: Social Sharing Preview (Open Graph)",
+                        explaination = "When you share a link on WhatsApp, Facebook, Twitter/X, etc. a preview can appear.\n\n"
+                                + "Open Graph meta tags help control that preview (title, image, description).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Open Graph Demo</title>
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="My HTML Learning App">
+  <meta property="og:description" content="Simple lessons + runnable examples inside the app.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <h2>Open Graph Meta ✅</h2>
+  <p>These tags are used when sharing links on social platforms.</p>
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Some platforms use these tags to build the link preview card."
+                    )
+                ),
+
+                questions = listOf(
+                    QuizQuestion("Where is the <meta> tag placed?", listOf("Inside <body>", "Inside <head>", "Inside <footer>", "Inside <section>"), 1),
+                    QuizQuestion("Which meta tag makes a page responsive on phones?", listOf("charset", "viewport", "author", "refresh"), 1),
+                    QuizQuestion("What does the content attribute hold?", listOf("The tag name", "The main value/information", "A CSS style", "A JavaScript function"), 1),
+                    QuizQuestion("http-equiv is used to…", listOf("Add a button", "Act like an HTTP header instruction", "Create a link", "Style text"), 1),
+                    QuizQuestion("Which meta name is commonly used for SEO snippet text?", listOf("description", "refresh", "viewport", "charset"), 0),
+                    QuizQuestion("What is a common charset value?", listOf("UTF-8", "HTML-5", "CSS-3", "HTTP-2"), 0)
+                )
+            ),
+
+            Subtopic(
+                sutopicId = 43,
+                subTopicName = "HTML Blockquote (Quotations)",
+                headlines = listOf(
+
+                    Headline(
+                        majorHeadline = "HTML Blockquote",
+                        majorHeadileExplanation = "The **<blockquote>** tag is for quoting a **long section of text** from another source.\n\n"
+                                + "Tag used: <blockquote> ... </blockquote>\n"
+                                + "It usually displays as an indented block.\n\n"
+                                + "For short quotes inside a sentence, use **<q>** instead.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Blockquote Demo</title>
+  <style>
+    blockquote{
+      border-left: 5px solid #0077ff;
+      padding: 10px 14px;
+      margin: 12px 0;
+      background: #f3f7ff;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Blockquote Example</h2>
+
+<blockquote>
+  Learning HTML is like building a house: start with structure, then style, then add logic.
+</blockquote>
+
+<p>That quote is inside a <b>blockquote</b>.</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Use blockquote only for real quotes. Don’t use it just to indent text."
+                    ),
+
+                    Headline(
+                        headline = "Attribute cite and <cite> element",
+                        explaination = "• **cite attribute**: stores the source URL (not shown on the page by default)\n"
+                                + "• **<cite> element**: shows the name of a work/source (book, website, article)\n\n"
+                                + "  You can show the source nicely using <cite> below the quote.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cite Demo</title>
+  <style>
+    blockquote{
+      border-left: 5px solid #00aa88;
+      padding: 10px 14px;
+      background: #f2fffb;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .source{ margin-top: 6px; color: #444; font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+
+<h2>Blockquote + cite + &lt;cite&gt;</h2>
+
+<blockquote cite="https://example.com/article">
+  “Good code is written for humans first, computers second.”
+</blockquote>
+
+<div class="source">— Source: <cite>Example Article</cite></div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "The cite attribute holds the source link, while <cite> is visible to the user."
+                    ),
+
+                    Headline(
+                        headline = "Extra: Inline Quote (<q>) vs Blockquote",
+                        explaination = "Use **<q>** for short quotes inside a sentence. The browser often adds quotation marks automatically.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>q vs blockquote</title>
+</head>
+<body>
+
+<p>Teacher said: <q>Practice daily</q> and you will improve.</p>
+
+<blockquote>
+  This is a longer quote that deserves its own block.
+</blockquote>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "<q> is inline (inside text). <blockquote> is a block (new section)."
+                    )
+                ),
+
+                questions = listOf(
+                    QuizQuestion("Which tag is used for a long quote block?", listOf("<q>", "<blockquote>", "<quote>", "<p>"), 1),
+                    QuizQuestion("Which tag is used for short inline quotes?", listOf("<q>", "<blockquote>", "<cite>", "<em>"), 0),
+                    QuizQuestion("What is the cite attribute used for?", listOf("Text color", "Storing the quote source URL", "Adding a title", "Making text bold"), 1),
+                    QuizQuestion("What does the <cite> tag usually represent?", listOf("A button", "A work/source name", "A form field", "An image"), 1),
+                    QuizQuestion("Blockquote is best used for…", listOf("Indenting random text", "Quoting content from a source", "Making headings", "Creating links"), 1)
+                )
+            ),
+
+            Subtopic(
+                sutopicId = 44,
+                subTopicName = "Non-Breaking Space (&nbsp;)",
+                headlines = listOf(
+
+                    Headline(
+                        majorHeadline = "HTML nbsp",
+                        majorHeadileExplanation = "**&nbsp;** means **Non-Breaking Space**.\n\n"
+                                + "In HTML, extra spaces are normally **collapsed** into one space.\n"
+                                + "&nbsp; helps when you want:\n"
+                                + "• extra visible spacing (small)\n"
+                                + "• to stop a line break between words\n\n"
+                                + " It is written as: &nbsp;",
+                        tip = "Don’t use &nbsp; for big layout spacing. Use CSS (margin/padding) instead.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>nbsp Demo</title>
+</head>
+<body>
+
+<h2>Space Collapsing vs &amp;nbsp;</h2>
+
+<p>Normal spaces: A     B     C (looks like A B C)</p>
+
+<p>With &amp;nbsp;: A&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;C (spaces stay visible)</p>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Prevent Line Breaks (Very Useful!)",
+                        explaination = "&nbsp; is often used to keep two words together on the same line.\n\n"
+                                + "Example: names, titles, phone numbers, or “KSh 1,000”.\n"
+                                + "Without &nbsp;, the browser may break the line in the middle on small screens.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>No Break Demo</title>
+  <style>
+    .box{
+      width: 180px; /* small box to force wrapping */
+      border: 2px solid #ddd;
+      padding: 10px;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Line Break Test</h2>
+
+<div class="box">
+  <p>Normal: John Doe</p>
+  <p>With &amp;nbsp;: John&nbsp;Doe</p>
+
+  <p>Normal price: KSh 1,000</p>
+  <p>No break price: KSh&nbsp;1,000</p>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "In the small box, the normal text might wrap, but the &nbsp; version tries to stay together."
+                    ),
+
+                    Headline(
+                        headline = "Better Alternative for Spacing (Use CSS)",
+                        explaination = "If your goal is spacing for layout, **CSS is the correct tool**.\n\n"
+                                + "Use margin, padding, gap, or flexbox instead of many &nbsp; characters.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Spacing</title>
+  <style>
+    .row{
+      display: flex;
+      gap: 14px; /* clean spacing */
+      font-family: Arial, sans-serif;
+      align-items: center;
+    }
+    .tag{
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #f2f2f2;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<h2>CSS spacing (recommended ✅)</h2>
+
+<div class="row">
+  <span class="tag">HTML</span>
+  <span class="tag">CSS</span>
+  <span class="tag">JavaScript</span>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "This is cleaner, responsive, and easier to maintain than using many &nbsp; spaces."
+                    )
+                ),
+
+                questions = listOf(
+                    QuizQuestion("What does &nbsp; stand for?", listOf("New bold spacing", "Non-Breaking Space", "Next button space", "No border spacing"), 1),
+                    QuizQuestion("What happens to many normal spaces in HTML?", listOf("They stay visible", "They collapse into one space", "They turn into tabs", "They become new lines"), 1),
+                    QuizQuestion("&nbsp; is useful when you want to…", listOf("Force a line break", "Prevent a line break", "Create an image", "Run JavaScript"), 1),
+                    QuizQuestion("Best tool for big spacing/layout is…", listOf("&nbsp;", "CSS (margin/padding/gap)", "<br>", "<hr>"), 1),
+                    QuizQuestion("Which is safer for keeping a name together on small screens?", listOf("John Doe", "John&nbsp;Doe", "John<br>Doe", "John<hr>Doe"), 1)
+                )
+            ),
+
+
+
+
+            Subtopic(
+                sutopicId = 49,
+                subTopicName = "HTML Character Entities (Special Symbols)",
+                headlines = listOf(
+
+                    Headline(
+                        majorHeadline = "HTML Character Entity",
+                        explaination =
+                            "HTML character entities are **special codes** that let you display characters that:\n" +
+                                    "• have special meaning in HTML (like < and >)\n" +
+                                    "• are hard to type (©, €, ✓)\n" +
+                                    "• are invisible but useful (non-breaking space)\n\n" +
+                                    "### Why entities exist\n" +
+                                    "• The browser might think **<tag>** is HTML, not text\n" +
+                                    "• Some symbols are not on the keyboard\n\n" +
+                                    "### 3 ways to write a special character\n" +
+                                    "• **Named**: &lt;  (starts with & ends with ;)\n" +
+                                    "• **Decimal**: &#60;\n" +
+                                    "• **Hex**: &#x3C;\n\n" +
+                                    "### Important rules (bullets)\n" +
+                                    "• Entities always start with **&** and end with **;**\n" +
+                                    "• Named entities are easier to read (like &amp;copy;)\n" +
+                                    "• Numbers work even if you don’t remember the name",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Entities Basics</title>
+</head>
+<body>
+  <h2>Entities Basics ✅</h2>
+
+  <p>We must write &amp;lt; to show: &lt;</p>
+  <p>We must write &amp;gt; to show: &gt;</p>
+  <p>We must write &amp;amp; to show: &amp;</p>
+
+  <p>Decimal form of &lt; is: &#60;</p>
+  <p>Hex form of &lt; is: &#x3C;</p>
+</body>
+</html>
+""".trimIndent(),
+                        tip = "If you want to literally show HTML tags as text (like <h1>), always use &lt; and &gt;."
+                    ),
+
+                    Headline(
+                        explaination = "Commonly used entities (10):\n" +
+                                "• <  → &lt;  (less than)\n" +
+                                "• >  → &gt;  (greater than)\n" +
+                                "• &  → &amp; (ampersand)\n" +
+                                "• \" → &quot; (double quote)\n" +
+                                "• '  → &apos; (apostrophe) *(works in HTML5)*\n" +
+                                "• non-breaking space → &nbsp;\n" +
+                                "• ©  → &copy;\n" +
+                                "• ®  → &reg;\n" +
+                                "• €  → &euro;\n" +
+                                "• ✓  → &check; (check mark)\n\n" +
+                                "Below is a runnable demo that shows them nicely.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>10 Common Entities</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    table{border-collapse:collapse; width:100%; max-width:800px}
+    th,td{border:1px solid #ddd; padding:10px; text-align:left}
+    th{background:#f3f3f3}
+    code{background:#f7f7ff; padding:2px 6px; border-radius:6px}
+  </style>
+</head>
+<body>
+
+<h2>10 Common HTML Entities </h2>
+
+<table>
+  <tr>
+    <th>Symbol</th>
+    <th>Entity</th>
+    <th>What it means</th>
+  </tr>
+
+  <tr><td>&lt;</td><td><code>&amp;lt;</code></td><td>Less-than sign</td></tr>
+  <tr><td>&gt;</td><td><code>&amp;gt;</code></td><td>Greater-than sign</td></tr>
+  <tr><td>&amp;</td><td><code>&amp;amp;</code></td><td>Ampersand</td></tr>
+  <tr><td>&quot;</td><td><code>&amp;quot;</code></td><td>Double quote</td></tr>
+  <tr><td>&apos;</td><td><code>&amp;apos;</code></td><td>Apostrophe</td></tr>
+  <tr><td>(space)</td><td><code>&amp;nbsp;</code></td><td>Non-breaking space</td></tr>
+  <tr><td>&copy;</td><td><code>&amp;copy;</code></td><td>Copyright</td></tr>
+  <tr><td>&reg;</td><td><code>&amp;reg;</code></td><td>Registered trademark</td></tr>
+  <tr><td>&euro;</td><td><code>&amp;euro;</code></td><td>Euro currency</td></tr>
+  <tr><td>&check;</td><td><code>&amp;check;</code></td><td>Check mark</td></tr>
+</table>
+
+<p>Notice: multiple spaces normally collapse, but A&nbsp;&nbsp;&nbsp;B stays spaced.</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "Entities help you safely display special characters. The most important three are: &lt; &gt; &amp; because they prevent HTML from breaking."
+                    ),
+
+                    Headline(
+                        headline = "Amazing Example: Safe “Mini Code Viewer” (Entities + Styling)",
+                        explaination =
+                            "This example shows a cool real-world use: displaying code on a webpage.\n\n" +
+                                    "If you try to paste HTML code directly, the browser will treat it as real HTML.\n" +
+                                    "So we use entities to show it as text (like in tutorials).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Code Viewer</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .card{
+      max-width:850px;
+      border:2px solid #e6e6e6;
+      border-radius:14px;
+      padding:14px;
+      background:#fff;
+    }
+    pre{
+      background:#0b1020;
+      color:#e7e7ff;
+      padding:14px;
+      border-radius:12px;
+      overflow:auto;
+      line-height:1.4;
+    }
+    .tag{color:#7ee787}
+    .attr{color:#79c0ff}
+    .str{color:#ffa657}
+    .btn{
+      margin-top:10px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:0;
+      background:#0072ff;
+      color:white;
+      font-weight:bold;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Mini Code Viewer </h2>
+
+<div class="card">
+  <p>This block shows HTML code safely using entities:</p>
+
+  <pre id="codeBox">
+&lt;<span class="tag">form</span> <span class="attr">action</span>=<span class="str">"/submit"</span>&gt;
+  &lt;<span class="tag">label</span>&gt;Name:&lt;/<span class="tag">label</span>&gt;
+  &lt;<span class="tag">input</span> <span class="attr">type</span>=<span class="str">"text"</span> <span class="attr">required</span>&gt;
+  &lt;<span class="tag">button</span> <span class="attr">type</span>=<span class="str">"submit"</span>&gt;Send&lt;/<span class="tag">button</span>&gt;
+&lt;/<span class="tag">form</span>&gt;
+  </pre>
+
+  <button class="btn" onclick="copyCode()">Copy Code</button>
+  <p id="msg"></p>
+</div>
+
+<script>
+function copyCode(){
+  // Convert entities back to real text for copying
+  const el = document.getElementById("codeBox");
+  const temp = document.createElement("textarea");
+  temp.value = el.innerText;
+  document.body.appendChild(temp);
+  temp.select();
+  document.execCommand("copy");
+  document.body.removeChild(temp);
+
+  document.getElementById("msg").innerText = "Copied ✅ Now paste it anywhere!";
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "This is exactly how many tutorial sites show code: they convert < and > into entities so it doesn’t break the page."
+                    )
+                ),
+
+                questions = listOf(
+                    QuizQuestion("Why do we use HTML entities?", listOf("To make HTML slower", "To display special characters safely", "To delete tags", "To run CSS"), 1),
+                    QuizQuestion("Which entity displays an ampersand (&)?", listOf("&amp;lt;", "&amp;amp;", "&amp;gt;", "&amp;copy;"), 1),
+                    QuizQuestion("What is the entity for the less-than sign (<)?", listOf("&amp;lt;", "&amp;gt;", "&amp;nbsp;", "&amp;quot;"), 0),
+                    QuizQuestion("Which is the correct format of a named entity?", listOf("lt;", "&lt", "&lt;", "#lt;"), 2),
+                    QuizQuestion("What does &nbsp; do?", listOf("Creates a new line", "Adds a non-breaking space", "Makes text bold", "Plays audio"), 1),
+                    QuizQuestion("If you want to display <h1> as text, you should write:", listOf("<h1>", "&amp;h1;", "&amp;lt;h1&amp;gt;", "&amp;tag;h1"), 2)
+                )
+            ),
+
             Subtopic(
                 sutopicId = 410,
-                subTopicName = "Working with Audio",
+                subTopicName = "HTML Audio (Sound on Web Pages)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "The <audio> Tag",
-                        explaination = "The <audio> element is used to play sound files on a webpage. It supports formats like MP3, WAV, and OGG.",
-                        codeExample = "<audio src='system_startup.mp3' controls></audio>",
-                        tip = "Always include the 'controls' attribute, or the audio player will be invisible!"
+                        majorHeadline = "Audio",
+                        explaination =
+                            "The **<audio>** element is used to play sound in a web page.\n\n" +
+                                    " Tag used: <audio> ... </audio>\n" +
+                                    "Inside it you usually place **<source>** so the browser can choose the best audio format.\n\n" +
+                                    "### Basic idea\n" +
+                                    "• <audio> is the player\n" +
+                                    "• <source> is the file(s)\n" +
+                                    "• controls shows the play/pause UI",
+                        tip = "Autoplay is often blocked by browsers unless the audio is muted or the user has interacted with the page.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Audio Basic</title>
+</head>
+<body>
+
+<h2>Audio Basic </h2>
+
+<audio controls>
+  <source src="sound.mp3" type="audio/mpeg">
+  <source src="sound.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Tip: Replace <b>sound.mp3</b> with a real file path.</p>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "The Audio Element Structure",
-                        explaination = "The best way to use audio is to wrap the <source> tag inside the <audio> tag. This allows the browser to choose the best file format for the system.",
-                        codeExample = "<audio controls>\n  <source src='alert.ogg' type='audio/ogg'>\n  <source src='alert.mp3' type='audio/mpeg'>\n  Your browser does not support the audio element.\n</audio>",
-                        afterCodeEplainations = "The text at the bottom only shows if the user's browser is very old."
+                        headline = "Architecture of the Audio Element",
+                        explaination =
+                            "Think of it like this:\n" +
+                                    "• <audio> wraps everything (the player)\n" +
+                                    "• attributes control behavior (controls, autoplay, loop...)\n" +
+                                    "• <source> provides one or more audio files\n" +
+                                    "• fallback text is shown if audio is not supported\n\n" +
+                                    "Browsers try the first <source>. If it can’t play it, it tries the next.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Audio Architecture</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .card{max-width:700px; border:2px solid #e6e6e6; border-radius:14px; padding:14px}
+    code{background:#f2f2ff; padding:2px 6px; border-radius:6px}
+  </style>
+</head>
+<body>
+
+<h2>Audio Architecture </h2>
+
+<div class="card">
+  <p><b>Player:</b> <code>&lt;audio&gt;</code></p>
+  <p><b>Files:</b> <code>&lt;source&gt;</code></p>
+
+  <audio controls preload="metadata">
+    <source src="sound.mp3" type="audio/mpeg">
+    <source src="sound.ogg" type="audio/ogg">
+    Your browser does not support audio.
+  </audio>
+
+  <p style="margin-top:10px;">Open DevTools Console to see events:</p>
+  <button onclick="document.getElementById('a').play()">Play (JS)</button>
+</div>
+
+<audio id="a" controls style="display:none">
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "This shows the structure and that you can also control audio from JavaScript."
                     ),
+
                     Headline(
-                        headline = "Essential Audio Attributes",
-                        explaination = "Control how your sound behaves:\n\n* **controls**: Adds play/pause and volume buttons.\n* **autoplay**: Starts playing as soon as the page loads.\n* **loop**: Plays the sound over and over again.\n* **muted**: Starts the audio with no sound.",
-                        codeExample = "<audio src='ambient_data_center.mp3' controls loop muted></audio>",
-                        afterCodeEplainations = "Loop and Muted are often used together for background atmosphere."
+                        headline = "Audio Attributes (explained in bullets)",
+                        explaination =
+                            "Common <audio> attributes:\n" +
+                                    "• **controls** → shows play/pause UI\n" +
+                                    "• **autoplay** → starts automatically (often blocked)\n" +
+                                    "• **loop** → repeats when finished\n" +
+                                    "• **muted** → starts muted\n" +
+                                    "• **preload** → tells browser how to load audio\n" +
+                                    "   - none / metadata / auto\n\n" +
+                                    "Also useful:\n" +
+                                    "• **src** → you can put the file directly, but <source> is better for multiple formats.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Audio Attributes</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .row{display:flex; gap:14px; flex-wrap:wrap}
+    .box{border:2px solid #ddd; border-radius:14px; padding:12px; width:320px}
+    button{padding:10px 12px; border-radius:12px; border:0; background:#0072ff; color:#fff; cursor:pointer}
+  </style>
+</head>
+<body>
+
+<h2>Audio Attributes </h2>
+
+<div class="row">
+  <div class="box">
+    <h3>1) controls</h3>
+    <audio controls>
+      <source src="sound.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <div class="box">
+    <h3>2) loop + muted</h3>
+    <audio controls loop muted>
+      <source src="sound.mp3" type="audio/mpeg">
+    </audio>
+    <p style="font-size:13px;">Muted helps autoplay rules sometimes.</p>
+  </div>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Replace sound.mp3 with a real file. The second player loops forever."
                     ),
+
                     Headline(
-                        headline = "The <source> Tag for Compatibility",
-                        explaination = "Different browsers (like Firefox on Linux vs Safari on Mac) prefer different audio formats. <source> lets you provide all of them.",
-                        codeExample = "<source src='sound.wav' type='audio/wav'>"
+                        headline = "Audio autoplay",
+                        explaination =
+                            "autoplay tries to start audio automatically.\n\n" +
+                                    "  Most browsers block autoplay with sound to protect users.\n" +
+                                    "  Autoplay is more likely to work if:\n" +
+                                    "• audio is muted, or\n" +
+                                    "• the user clicks something first (user interaction).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Autoplay Demo</title>
+</head>
+<body>
+
+<h2>Autoplay Demo (Usually Blocked) </h2>
+
+<audio id="myAudio" controls autoplay>
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+<p>If it does not autoplay, click the button below:</p>
+<button onclick="document.getElementById('myAudio').play()">Start Audio</button>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "Advanced Audio: Preload",
-                        explaination = "The 'preload' attribute tells the browser how much data to download. Options are 'none' (don't download until clicked), 'metadata' (only get the length/info), or 'auto' (download the whole file).",
-                        codeExample = "<audio src='podcast.mp3' preload='metadata' controls></audio>"
+                        headline = "Audio loop",
+                        explaination = "**loop** makes the audio start again automatically when it finishes.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Loop Demo</title>
+</head>
+<body>
+
+<h2>Loop Demo </h2>
+
+<audio controls loop>
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+<p>When the audio ends, it starts again.</p>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Audio muted",
+                        explaination = "**muted** starts the audio with sound off. The user can unmute using controls.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Muted Demo</title>
+</head>
+<body>
+
+<h2>Muted Demo 🔇</h2>
+
+<audio controls muted>
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+<p>Muted at start, user can unmute.</p>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Audio controls",
+                        explaination = "**controls** shows the default audio UI: play/pause, timeline, volume.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Controls Demo</title>
+</head>
+<body>
+
+<h2>Controls Demo </h2>
+
+<audio controls>
+  <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "<source>",
+                        explaination =
+                            "<source> lets you provide multiple formats.\n\n" +
+                                    "Why?\n" +
+                                    "• Some browsers support different formats.\n" +
+                                    "• Browser tries the first it can play.\n\n" +
+                                    "Use type= so the browser can quickly decide.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Source Demo</title>
+</head>
+<body>
+
+<h2>Multiple Sources </h2>
+
+<audio controls>
+  <source src="sound.ogg" type="audio/ogg">
+  <source src="sound.mp3" type="audio/mpeg">
+  Sorry, your browser can't play this audio.
+</audio>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Advance Audio (Play/Pause + Volume + Progress with JS)",
+                        explaination =
+                            "This example shows an amazing custom mini-player.\n\n" +
+                                    "It uses JavaScript to:\n" +
+                                    "• Play / Pause\n" +
+                                    "• Change volume\n" +
+                                    "• Show progress %",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced Audio</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .player{max-width:520px; border:2px solid #e6e6e6; border-radius:16px; padding:14px}
+    button{padding:10px 12px; border-radius:12px; border:0; background:#0072ff; color:#fff; cursor:pointer}
+    input[type="range"]{width:100%}
+    .row{display:flex; gap:10px; align-items:center}
+    .small{color:#555; font-size:13px}
+    .bar{height:10px; border-radius:999px; background:#eee; overflow:hidden}
+    .fill{height:10px; width:0%; background:#00aa88}
+  </style>
+</head>
+<body>
+
+<h2>Advanced Audio Player </h2>
+
+<div class="player">
+  <audio id="aud" preload="metadata">
+    <source src="sound.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="row">
+    <button id="btn">Play</button>
+    <span id="time" class="small">0:00</span>
+  </div>
+
+  <p class="small">Volume</p>
+  <input id="vol" type="range" min="0" max="1" step="0.05" value="1">
+
+  <p class="small">Progress</p>
+  <div class="bar"><div id="fill" class="fill"></div></div>
+  <p id="pct" class="small">0%</p>
+</div>
+
+<script>
+const a = document.getElementById("aud");
+const btn = document.getElementById("btn");
+const vol = document.getElementById("vol");
+const fill = document.getElementById("fill");
+const pct = document.getElementById("pct");
+const time = document.getElementById("time");
+
+btn.addEventListener("click", async () => {
+  if (a.paused) {
+    try {
+      await a.play();
+      btn.textContent = "Pause";
+    } catch (e) {
+      alert("Autoplay blocked. Click play again after interacting.");
+    }
+  } else {
+    a.pause();
+    btn.textContent = "Play";
+  }
+});
+
+vol.addEventListener("input", () => a.volume = vol.value);
+
+a.addEventListener("timeupdate", () => {
+  if (!a.duration) return;
+  const p = (a.currentTime / a.duration) * 100;
+  fill.style.width = p.toFixed(0) + "%";
+  pct.textContent = p.toFixed(0) + "%";
+
+  const mins = Math.floor(a.currentTime / 60);
+  const secs = Math.floor(a.currentTime % 60).toString().padStart(2, "0");
+  time.textContent = mins + ":" + secs;
+});
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Replace sound.mp3 with a real file. The progress bar fills as the audio plays."
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("Which attribute makes the audio player visible?", listOf("show", "visible", "controls", "play"), 2),
-                    QuizQuestion("What does the 'loop' attribute do?", listOf("Stops the audio", "Plays it once", "Plays it repeatedly", "Changes the volume"), 2),
-                    QuizQuestion("Which tag is used inside <audio> to define file paths?", listOf("<link>", "<src>", "<source>", "<file>"), 2),
-                    QuizQuestion("Why would you use 'muted' with 'autoplay'?", listOf("To save data", "Most browsers block autoplay with sound", "To hide the player", "To speed up the audio"), 1),
-                    QuizQuestion("Which of these is a common audio format for web?", listOf("PNG", "MP3", "EXE", "TXT"), 1)
+                    QuizQuestion("Which tag is used to play audio in HTML?", listOf("<sound>", "<audio>", "<music>", "<mp3>"), 1),
+                    QuizQuestion("Which attribute shows play controls?", listOf("show", "controls", "ui", "panel"), 1),
+                    QuizQuestion("Why do we use <source> inside <audio>?", listOf("To add CSS", "To provide multiple audio formats", "To create buttons", "To set the background"), 1),
+                    QuizQuestion("What does loop do?", listOf("Stops audio", "Repeats audio when it ends", "Makes audio faster", "Downloads audio"), 1),
+                    QuizQuestion("Why is autoplay often blocked?", listOf("Because HTML is old", "Because browsers protect users from unexpected sound", "Because audio is not supported", "Because controls is missing"), 1),
+                    QuizQuestion("What does muted do?", listOf("Makes audio louder", "Starts audio with sound off", "Deletes audio", "Adds captions"), 1)
                 )
             ),
+
             Subtopic(
                 sutopicId = 411,
-                subTopicName = "Working with Video",
+                subTopicName = "HTML Video (Video on Web Pages)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "The <video> Tag",
-                        explaination = "The <video> tag allows you to embed movie clips directly in your site. Just like audio, it needs a source and usually controls.",
-                        codeExample = "<video src='linux_tutorial.mp4' width='320' height='240' controls></video>",
-                        tip = "Always define 'width' and 'height' to prevent the page from jumping while the video loads."
+                        majorHeadline = "Video",
+                        explaination =
+                            "The **<video>** element is used to display videos in a web page.\n\n" +
+                                    " Tag used: <video> ... </video>\n" +
+                                    "Just like audio, we usually use <source> for multiple formats.\n\n" +
+                                    "Most used attribute: **controls** (so users can play/pause).",
+                        tip = "For autoplay to work on most browsers, use autoplay + muted (same rule as audio).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Basic</title>
+</head>
+<body>
+
+<h2>Video Basic </h2>
+
+<video controls width="420">
+  <source src="video.mp4" type="video/mp4">
+  <source src="video.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
+<p>Replace video.mp4 with a real video file.</p>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "Video Attributes Explained",
-                        explaination = "* **poster**: Shows an image while the video is downloading.\n* **controls**: Standard playback buttons.\n* **autoplay**: Starts automatically (usually requires 'muted').\n* **loop**: Restarts the video when it ends.",
-                        codeExample = "<video src='server_rack.mp4' poster='thumbnail.jpg' controls width='400'></video>",
-                        afterCodeEplainations = "The poster attribute acts like a 'cover' for your video."
+                        headline = "Architecture of the Video Element",
+                        explaination =
+                            "Structure:\n" +
+                                    "• <video> is the player\n" +
+                                    "• attributes control behavior (controls, autoplay, loop...)\n" +
+                                    "• <source> provides video files\n" +
+                                    "• fallback text shows if not supported",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Architecture</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .card{max-width:720px; border:2px solid #e6e6e6; border-radius:14px; padding:14px}
+  </style>
+</head>
+<body>
+
+<h2>Video Architecture </h2>
+
+<div class="card">
+  <video id="v" controls width="520" preload="metadata" poster="poster.jpg">
+    <source src="video.webm" type="video/webm">
+    <source src="video.mp4" type="video/mp4">
+    Video not supported.
+  </video>
+
+  <p>Poster shows before play (replace poster.jpg).</p>
+  <button onclick="document.getElementById('v').play()">Play with JS</button>
+  <button onclick="document.getElementById('v').pause()">Pause with JS</button>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "poster is the thumbnail image. preload=metadata loads only basic info first."
                     ),
+
                     Headline(
-                        headline = "Advanced: Loading Metadata",
-                        explaination = "Using preload='metadata' is efficient because it only fetches the video duration and dimensions without downloading the whole movie yet.",
-                        codeExample = "<video src='demo.mp4' preload='metadata' controls></video>"
+                        headline = "Video Attributes (explained in bullets)",
+                        explaination =
+                            "Common video attributes:\n" +
+                                    "• **controls** → show UI\n" +
+                                    "• **autoplay** → start automatically (often needs muted)\n" +
+                                    "• **loop** → repeat forever\n" +
+                                    "• **muted** → start with no sound\n" +
+                                    "• **preload** → none / metadata / auto\n" +
+                                    "• **poster** → image before video starts\n" +
+                                    "• **width / height** → size\n\n" +
+                                    "Bonus:\n" +
+                                    "• **playsinline** → prevents full-screen auto on some phones",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Video Attributes</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .grid{display:flex; gap:14px; flex-wrap:wrap}
+    .box{border:2px solid #ddd; border-radius:14px; padding:12px}
+  </style>
+</head>
+<body>
+
+<h2>Video Attributes ✅</h2>
+
+<div class="grid">
+  <div class="box">
+    <h3>controls + poster</h3>
+    <video controls width="360" poster="poster.jpg" preload="metadata">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="box">
+    <h3>loop + muted</h3>
+    <video controls width="360" loop muted preload="auto">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Replace video.mp4 and poster.jpg with real files."
                     ),
+
                     Headline(
-                        headline = "Handling Different Internet Speeds",
-                        explaination = "To help users with slow connections (like remote SSH users), you can list multiple sources. The browser will pick the first one it can play.",
-                        codeExample = "<video controls>\n  <source src='tutorial_1080p.mp4' type='video/mp4'>\n  <source src='tutorial_480p.mp4' type='video/mp4'>\n</video>",
-                        afterCodeEplainations = "In professional apps, we provide lower resolution versions to ensure everyone can watch without buffering."
+                        headline = "Video autoplay",
+                        explaination =
+                            "autoplay attempts to play the video automatically.\n\n" +
+                                    " Most browsers block autoplay with sound.\n" +
+                                    " Use autoplay + muted to increase the chance it works.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Autoplay Video</title>
+</head>
+<body>
+
+<h2>Autoplay Video (muted) ✅</h2>
+
+<video autoplay muted loop controls width="420">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Video loop",
+                        explaination = "**loop** makes the video start again when it ends.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Loop Video</title>
+</head>
+<body>
+
+<h2>Loop Video </h2>
+
+<video controls loop width="420">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Video muted",
+                        explaination = "**muted** starts the video with sound off (user can unmute).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Muted Video</title>
+</head>
+<body>
+
+<h2>Muted Video 🔇</h2>
+
+<video controls muted width="420">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Video controls",
+                        explaination = "**controls** shows video UI: play/pause, timeline, volume, fullscreen.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Controls Video</title>
+</head>
+<body>
+
+<h2>Controls </h2>
+
+<video controls width="420">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "<source>",
+                        explaination =
+                            "Use <source> to provide multiple formats and qualities.\n\n" +
+                                    "Browser tries the first one it can play.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Multiple Sources</title>
+</head>
+<body>
+
+<h2>Multiple Video Sources </h2>
+
+<video controls width="420">
+  <source src="video.webm" type="video/webm">
+  <source src="video.mp4" type="video/mp4">
+  Your browser can't play this video.
+</video>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Advance Video (Custom Buttons + Progress with JS)",
+                        explaination =
+                            "This is a mini custom controller:\n" +
+                                    "• Play / Pause\n" +
+                                    "• Jump forward 10 seconds\n" +
+                                    "• Show progress %\n\n" +
+                                    "Great for teaching how video and JS connect.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Advanced Video</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    .card{max-width:700px; border:2px solid #e6e6e6; border-radius:16px; padding:14px}
+    button{padding:10px 12px; border-radius:12px; border:0; background:#0072ff; color:#fff; cursor:pointer; margin-right:8px}
+    .bar{height:10px; border-radius:999px; background:#eee; overflow:hidden; margin-top:10px}
+    .fill{height:10px; width:0%; background:#00aa88}
+    .small{color:#555; font-size:13px}
+  </style>
+</head>
+<body>
+
+<h2>Advanced Video </h2>
+
+<div class="card">
+  <video id="vid" width="640" preload="metadata">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div style="margin-top:10px;">
+    <button id="playBtn">Play</button>
+    <button onclick="skip10()">+10s</button>
+    <span id="status" class="small">0%</span>
+  </div>
+
+  <div class="bar"><div id="fill" class="fill"></div></div>
+</div>
+
+<script>
+const v = document.getElementById("vid");
+const playBtn = document.getElementById("playBtn");
+const fill = document.getElementById("fill");
+const status = document.getElementById("status");
+
+playBtn.addEventListener("click", async () => {
+  if (v.paused) {
+    try {
+      await v.play();
+      playBtn.textContent = "Pause";
+    } catch (e) {
+      alert("Playback blocked until user interacts. Try again.");
+    }
+  } else {
+    v.pause();
+    playBtn.textContent = "Play";
+  }
+});
+
+function skip10(){
+  v.currentTime = Math.min(v.currentTime + 10, v.duration || v.currentTime + 10);
+}
+
+v.addEventListener("timeupdate", () => {
+  if (!v.duration) return;
+  const p = (v.currentTime / v.duration) * 100;
+  fill.style.width = p.toFixed(0) + "%";
+  status.textContent = p.toFixed(0) + "%";
+});
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "Replace video.mp4 with a real video. The progress bar fills as it plays."
+                    ),
+
+                    Headline(
+                        headline = "Video loading metadata (preload)",
+                        explaination =
+                            "preload controls how the browser loads the video before play:\n" +
+                                    "• **none** → don’t load until user presses play\n" +
+                                    "• **metadata** → load only duration, size, basic info (recommended)\n" +
+                                    "• **auto** → browser may load more data (uses more internet)\n\n" +
+                                    "If you want to save data, use preload=\"metadata\" or \"none\".",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Preload Demo</title>
+</head>
+<body>
+
+<h2>Preload Metadata ✅</h2>
+
+<video controls width="420" preload="metadata">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+<p>preload=metadata loads only basic info first (good for saving data).</p>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Video loading decrease (Multiple Qualities for Slow Internet)",
+                        explaination =
+                            "To help users on slow internet, you can provide:\n" +
+                                    "• **Low quality** video (smaller file) and\n" +
+                                    "• **High quality** video (bigger file)\n\n" +
+                                    "Then let the user choose.\n\n" +
+                                    "This example shows a quality switcher using JS.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Quality Switch</title>
+  <style>
+    body{font-family:Arial, sans-serif; padding:16px}
+    button{padding:10px 12px; border-radius:12px; border:0; background:#222; color:#fff; cursor:pointer; margin-right:8px}
+    .hint{color:#555; font-size:13px}
+  </style>
+</head>
+<body>
+
+<h2>Video Quality Switch </h2>
+
+<video id="video" controls width="520" preload="metadata">
+  <source src="video-480p.mp4" type="video/mp4">
+</video>
+
+<p class="hint">
+  Replace the file names with your real videos (example: video-480p.mp4 and video-1080p.mp4).
+</p>
+
+<button onclick="setQuality('video-480p.mp4')">480p (fast)</button>
+<button onclick="setQuality('video-1080p.mp4')">1080p (clear)</button>
+
+<script>
+function setQuality(src){
+  const v = document.getElementById("video");
+  const wasPlaying = !v.paused;
+  const time = v.currentTime;
+
+  v.pause();
+  v.src = src;      // switch file
+  v.load();
+
+  v.onloadedmetadata = async () => {
+    v.currentTime = time;  // continue where user was
+    if (wasPlaying) {
+      try { await v.play(); } catch(e) {}
+    }
+  };
+}
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "This technique is simple and effective: users choose 480p for speed, or 1080p for quality. The code even tries to continue from the same time."
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("Which attribute displays an image before the video plays?", listOf("image", "thumbnail", "poster", "preview"), 2),
-                    QuizQuestion("What is the benefit of the 'preload' attribute?", listOf("Changes video color", "Saves battery", "Controls how much data is downloaded early", "Makes video louder"), 2),
-                    QuizQuestion("Most browsers only allow 'autoplay' if the video is:", listOf("Short", "High quality", "Muted", "Paused"), 2),
-                    QuizQuestion("Which tag provides different file formats for video?", listOf("<source>", "<file>", "<type>", "<video_src>"), 0),
-                    QuizQuestion("Which attribute prevents the video from stopping at the end?", listOf("restart", "loop", "repeat", "infinite"), 1)
+                    QuizQuestion("Which tag is used to play video in HTML?", listOf("<movie>", "<media>", "<video>", "<clip>"), 2),
+                    QuizQuestion("Which attribute shows the video controls?", listOf("controls", "visible", "showUI", "panel"), 0),
+                    QuizQuestion("Which attribute sets an image before playing?", listOf("poster", "cover", "thumb", "icon"), 0),
+                    QuizQuestion("Which preload value is best for saving data?", listOf("auto", "metadata", "full", "loadAll"), 1),
+                    QuizQuestion("Why does autoplay often need muted?", listOf("Because muted makes video smaller", "Because browsers block autoplay with sound", "Because controls is missing", "Because of CSS"), 1),
+                    QuizQuestion("What is the main reason to provide 480p and 1080p versions?", listOf("To change colors", "To support slow internet and fast internet users", "To remove controls", "To add subtitles"), 1)
                 )
-            ) ,
+            ),
+
+
             Subtopic(
                 sutopicId = 412,
-                subTopicName = "Windows within Windows (Iframes)",
+                subTopicName = "Iframes (Embedding Content)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "The <iframe> Tag",
-                        explaination = "An <iframe> is used to display a web page within a web page. Think of it like a terminal window running a sub-shell; it is a nested browsing context.",
-                        codeExample = "<iframe src='https://www.wikipedia.org' title='Wiki Window'></iframe>",
-                        tip = "Always include a 'title' attribute for accessibility so screen readers know what the frame contains."
+                        majorHeadline = "Iframe",
+                        explaination =
+                            "An **iframe** (inline frame) is used to **display another page inside your page**.\n\n" +
+                                    "Tag used: <iframe> ... </iframe>\n\n" +
+                                    "### What it’s used for\n" +
+                                    "• Embedding YouTube videos\n" +
+                                    "• Embedding Google Maps\n" +
+                                    "• Showing another HTML file inside a box\n\n" +
+                                    " Important: Some websites block being embedded for security (you will see blank or an error).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe Simple</title>
+</head>
+<body>
+
+<h2>Iframe Simple </h2>
+
+<iframe src="https://example.com" width="420" height="220" title="Example Site"></iframe>
+
+<p>If a site blocks embedding, try embedding your own page instead.</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "For learning, embed **your own HTML page** (like page2.html) so it always works."
                     ),
+
                     Headline(
-                        headline = "Architecture of the Iframe",
-                        explaination = "An iframe acts as a 'hole' in your page that looks into another file. It has its own history and document object, separate from the main page.",
-                        codeExample = "<iframe src='local_server_stats.html' width='100%' height='300'></iframe>",
-                        afterCodeEplainations = "The browser creates a separate process for the iframe to keep it isolated from the main site."
+                        headline = "Architecture of the Iframe Element",
+                        explaination =
+                            "Think of an iframe like a **mini browser window** inside your page.\n\n" +
+                                    "Structure:\n" +
+                                    "• <iframe> is the container\n" +
+                                    "• **src** = what to load inside it\n" +
+                                    "• **width/height** = size\n" +
+                                    "• **title** = accessibility (important!)\n\n" +
+                                    "This example loads content using srcdoc (HTML written directly inside the iframe).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe Architecture</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border-radius:14px}
+  </style>
+</head>
+<body>
+
+<h2>Iframe = Mini Web Page </h2>
+
+<iframe
+  width="520"
+  height="260"
+  title="Mini page inside iframe"
+  srcdoc="
+    <html>
+      <body style='font-family:Arial;padding:12px'>
+        <h3>Hi from inside the iframe </h3>
+        <p>This content is inside <b>srcdoc</b>.</p>
+        <button onclick=&quot;document.body.style.background='lightyellow'&quot;>
+          Change background
+        </button>
+      </body>
+    </html>
+  ">
+</iframe>
+
+<p>srcdoc lets you embed HTML directly without another file.</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "The iframe loads a full mini HTML page using srcdoc. Clicking the button changes the iframe page background only."
                     ),
+
                     Headline(
-                        headline = "Iframe Attributes",
-                        explaination = "Key attributes to control the frame:\n\n* **src**: The URL of the page to embed.\n* **loading**: Use 'lazy' to wait until the user scrolls to it.\n* **sandbox**: Adds extra security restrictions to the frame (like a jail or container).",
-                        codeExample = "<iframe src='dashboard.html' loading='lazy' sandbox></iframe>"
+                        headline = "Iframe vs Video Tag (Don’t Confuse Them)",
+                        explaination =
+                            "People often confuse **<iframe>** and **<video>**:\n\n" +
+                                    "• **<video>** plays video files you own (mp4/webm).\n" +
+                                    "• **<iframe>** embeds another website/app player (like YouTube).\n\n" +
+                                    "This example shows them side-by-side.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe vs Video</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    .grid{display:flex;gap:14px;flex-wrap:wrap}
+    .box{border:2px solid #ddd;border-radius:14px;padding:12px;width:420px}
+    iframe, video{width:100%;height:240px;border-radius:12px}
+  </style>
+</head>
+<body>
+
+<h2>Iframe vs Video ✅</h2>
+
+<div class="grid">
+  <div class="box">
+    <h3>Iframe (embeds another page)</h3>
+    <iframe title="Example embed" src="https://example.com"></iframe>
+  </div>
+
+  <div class="box">
+    <h3>Video (plays your file)</h3>
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="font-size:13px;color:#555">Replace video.mp4 with a real file.</p>
+  </div>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "Iframe shows another website/player. Video plays your own media file."
                     ),
+
                     Headline(
-                        headline = "Sizing: Height and Width",
-                        explaination = "You can set the size in pixels or percentages. By default, iframes are quite small, so you usually want to define these.",
-                        codeExample = "<iframe src='map.html' width='600' height='400'></iframe>",
-                        afterCodeEplainations = "Using width='100%' is great for responsive Linux dashboards."
+                        headline = "Iframe Attributes (Explained in Bullets)",
+                        explaination =
+                            "Common iframe attributes:\n" +
+                                    "• **src** → URL or file path to load inside\n" +
+                                    "• **srcdoc** → HTML string to show inside (no external file)\n" +
+                                    "• **width / height** → size of iframe\n" +
+                                    "• **title** → accessibility label (recommended)\n" +
+                                    "• **name** → allows links/buttons to target this iframe\n" +
+                                    "• **loading** → lazy / eager (lazy loads later)\n" +
+                                    "• **allow** → permission rules (camera, autoplay, fullscreen)\n" +
+                                    "• **sandbox** → security restrictions (very important)\n" +
+                                    "   - e.g. sandbox blocks scripts unless you allow them\n\n" +
+                                    "Below is a demo using loading and sandbox.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe Attributes</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:2px solid #ddd;border-radius:14px}
+  </style>
+</head>
+<body>
+
+<h2>Iframe Attributes ✅</h2>
+
+<iframe
+  title="Sandbox demo"
+  width="520"
+  height="220"
+  loading="lazy"
+  sandbox
+  srcdoc="
+    <html>
+      <body style='font-family:Arial;padding:12px'>
+        <h3>Sandboxed iframe 🔒</h3>
+        <p>Scripts are blocked because sandbox is ON.</p>
+        <button onclick=&quot;alert('Hi!')&quot;>Try Script</button>
+      </body>
+    </html>
+  ">
+</iframe>
+
+<p style="color:#555;font-size:13px">
+  With <b>sandbox</b>, the alert button won’t work because scripts are blocked.
+</p>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "sandbox improves security. It blocks scripts and some actions unless you allow them."
                     ),
+
                     Headline(
-                        headline = "Targeting by Name",
-                        explaination = "If you give an iframe a 'name', you can open links inside it from elsewhere on the page! This is how old-school documentation sidebars worked.",
-                        codeExample = "<a href='https://linux.org' target='view_frame'>Click to load Linux.org</a>\n<iframe name='view_frame' height='300' width='500'></iframe>"
+                        headline = "Iframe height and width Attributes",
+                        explaination =
+                            "• **width** controls how wide the iframe is\n" +
+                                    "• **height** controls how tall it is\n\n" +
+                                    "You can set them in:\n" +
+                                    "• HTML attributes (width/height)\n" +
+                                    "• CSS styles (recommended for responsive design)\n\n" +
+                                    "This example includes a slider that changes size live.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe Size Control</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:2px solid #ddd;border-radius:14px;display:block}
+    .row{max-width:600px}
+  </style>
+</head>
+<body>
+
+<h2>Resize Iframe Live </h2>
+
+<div class="row">
+  <label>Width: <span id="wVal">520</span>px</label><br>
+  <input id="w" type="range" min="250" max="800" value="520" />
+  <br><br>
+  <label>Height: <span id="hVal">260</span>px</label><br>
+  <input id="h" type="range" min="150" max="500" value="260" />
+</div>
+
+<br>
+
+<iframe id="frame" title="Resizable iframe" width="520" height="260"
+  srcdoc="<html><body style='font-family:Arial;padding:12px'><h3>Resizable iframe ✅</h3><p>Drag the sliders to resize me.</p></body></html>">
+</iframe>
+
+<script>
+const frame = document.getElementById("frame");
+const w = document.getElementById("w");
+const h = document.getElementById("h");
+const wVal = document.getElementById("wVal");
+const hVal = document.getElementById("hVal");
+
+function update(){
+  frame.width = w.value;
+  frame.height = h.value;
+  wVal.textContent = w.value;
+  hVal.textContent = h.value;
+}
+
+w.addEventListener("input", update);
+h.addEventListener("input", update);
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "This is a fun way to understand width and height. The iframe resizes instantly."
                     ),
+
                     Headline(
-                        headline = "Iframe Styling & Borders",
-                        explaination = "Iframes have a default border that looks like an old 90s window. Most modern devs remove this using CSS 'border: none;'.",
-                        codeExample = "<iframe src='notes.txt' style='border: none; box-shadow: 2px 2px 10px gray;'></iframe>"
+                        headline = "Iframe src",
+                        explaination =
+                            "**src** is the URL (or file path) that the iframe loads.\n\n" +
+                                    "Examples:\n" +
+                                    "• src=\"page2.html\" (your local file)\n" +
+                                    "• src=\"https://example.com\" (website)\n\n" +
+                                    "If the website blocks embedding, use your own file.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe src</title>
+</head>
+<body>
+
+<h2>Iframe src ✅</h2>
+
+<iframe title="Local page example" src="page2.html" width="520" height="240"></iframe>
+
+<p>Create a file named <b>page2.html</b> in the same folder to test.</p>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "Embedding External Tools",
-                        explaination = "Iframes are perfect for embedding Google Maps, YouTube videos, or live code editors.",
-                        codeExample = "\n<iframe width='425' height='350' src='https://www.openstreetmap.org/export/embed.html?bbox=-0.1,51.5,-0.08,51.51'></iframe>"
+                        headline = "Iframe name",
+                        explaination =
+                            "**name** gives the iframe an identity.\n\n" +
+                                    "Then links or forms can open inside that iframe using **target=\"iframeName\"**.\n\n" +
+                                    "This is an amazing demo: buttons load different mini-pages inside the same iframe.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe name + target</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    button{padding:10px 12px;border-radius:12px;border:0;background:#0072ff;color:#fff;cursor:pointer;margin-right:8px}
+    iframe{border:2px solid #ddd;border-radius:14px;width:100%;max-width:700px;height:280px;margin-top:12px}
+  </style>
+</head>
+<body>
+
+<h2>Iframe name + target </h2>
+
+<p>Click buttons to load content into the iframe:</p>
+
+<a href="https://example.com" target="box"><button>Load example.com</button></a>
+
+<a href="data:text/html,
+<html><body style='font-family:Arial;padding:14px;background:lavender'>
+<h3>Page A ✅</h3><p>This came from a data URL.</p></body></html>"
+target="box"><button>Load Page A</button></a>
+
+<a href="data:text/html,
+<html><body style='font-family:Arial;padding:14px;background:honeydew'>
+<h3>Page B </h3><p>Same iframe, different content.</p></body></html>"
+target="box"><button>Load Page B</button></a>
+
+<iframe name="box" title="Target iframe"></iframe>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "The iframe name is 'box'. Every link with target='box' opens inside it."
+                    ),
+
+                    Headline(
+                        headline = "Iframe styling (Remove Border + Rounded Corners)",
+                        explaination =
+                            "By default, iframes may show borders depending on browser.\n\n" +
+                                    "To remove border:\n" +
+                                    "• CSS: iframe { border: none; }\n\n" +
+                                    "You can also add:\n" +
+                                    "• border-radius for rounded corners\n" +
+                                    "• box-shadow for a modern look",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Iframe Styling</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{
+      width:100%;
+      max-width:700px;
+      height:280px;
+      border:none;              /* remove border */
+      border-radius:16px;       /* round corners */
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    }
+  </style>
+</head>
+<body>
+
+<h2>Styled Iframe </h2>
+
+<iframe title="Styled iframe"
+  srcdoc="<html><body style='font-family:Arial;padding:14px'><h3>Clean look </h3><p>No border, rounded corners, soft shadow.</p></body></html>">
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Embedding External Content (Maps + More)",
+                        explaination =
+                            "Iframes are used to embed external services such as:\n" +
+                                    "• Google Maps\n" +
+                                    "• YouTube videos\n" +
+                                    "• Calendars\n" +
+                                    "• Forms (like Google Forms)\n\n" +
+                                    "This example embeds a real Google Map using a public embed URL.\n" +
+                                    "If it fails, it means the network or embed is blocked where you are testing.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Embed a Map</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:800px;height:420px}
+  </style>
+</head>
+<body>
+
+<h2>Embedded Map ️</h2>
+
+<iframe
+  title="Google Map Embed"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps?q=Nairobi%20CBD&output=embed">
+</iframe>
+
+<p style="color:#555;font-size:13px">
+  Tip: You can replace the location text in the URL (e.g. Mombasa, Kisumu).
+</p>
+
+</body>
+</html>
+""".trimIndent()
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("What does <iframe> stand for?", listOf("Internal Frame", "Inline Frame", "Indexed Frame", "Integrated Frame"), 1),
-                    QuizQuestion("Which attribute specifies the URL of the page to embed?", listOf("href", "link", "src", "url"), 2),
-                    QuizQuestion("How do you remove the default border of an iframe?", listOf("border='0'", "style='border:none;'", "frame='hide'", "No way to remove it"), 1),
-                    QuizQuestion("What does the 'sandbox' attribute do?", listOf("Changes the color", "Adds security restrictions", "Makes it play games", "Saves it to the cloud"), 1),
-                    QuizQuestion("Which attribute is used to make a link open inside a specific iframe?", listOf("id", "class", "name", "type"), 2)
+                    QuizQuestion("What is an iframe used for?", listOf("Making text bold", "Embedding another page inside your page", "Creating tables", "Playing audio only"), 1),
+                    QuizQuestion("Which attribute loads a URL inside an iframe?", listOf("href", "src", "target", "link"), 1),
+                    QuizQuestion("Why do some websites fail to show inside an iframe?", listOf("Because HTML is old", "Because they block embedding for security", "Because CSS is missing", "Because iframes need Java"), 1),
+                    QuizQuestion("What does the 'name' attribute help with?", listOf("It changes color", "It lets links target that iframe", "It makes it fullscreen", "It removes borders"), 1),
+                    QuizQuestion("Which attribute improves security by restricting iframe actions?", listOf("sandbox", "secure", "lock", "deny"), 0),
+                    QuizQuestion("Which CSS removes an iframe border?", listOf("border: 2px;", "border: none;", "frame: off;", "outline: iframe;"), 1),
+                    QuizQuestion("What does srcdoc do?", listOf("Adds captions", "Loads HTML directly inside the iframe", "Downloads a video", "Sets width and height"), 1)
                 )
             ),
+
             Subtopic(
                 sutopicId = 413,
-                subTopicName = "YouTube & Advanced Iframes",
+                subTopicName = "YouTube in Iframes (Embedding Videos)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "YouTube in Iframes",
-                        explaination = "YouTube uses iframes as the primary way to embed videos. Instead of a standard file path, you use their 'embed' URL format.",
-                        codeExample = "<iframe width='560' height='315' src='https://www.youtube.com/embed/dQw4w9WgXcQ'></iframe>",
-                        tip = "Notice the URL uses '/embed/' instead of '/watch?v='. A standard watch link won't work in an iframe!"
+                        majorHeadline = "YouTube videos in iframe",
+                        explaination =
+                            "To embed a YouTube video, you use an **iframe** with a special URL format:\n\n" +
+                                    "Format:\n" +
+                                    "https://www.youtube.com/embed/VIDEO_ID\n\n" +
+                                    "This is different from the normal watch link.\n" +
+                                    "watch?v=VIDEO_ID  \n" +
+                                    "embed/VIDEO_ID    ",
+                        tip = "Use the YouTube 'Share' → 'Embed' option to get the correct iframe code quickly.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Embed</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:800px;height:450px}
+  </style>
+</head>
+<body>
+
+<h2>YouTube Embed </h2>
+
+<iframe
+  title="YouTube video"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "The allowfullscreen Attribute",
-                        explaination = "Without this attribute, the 'Full Screen' button on the YouTube player will be disabled. It's a boolean attribute.",
-                        codeExample = "<iframe src='...' allowfullscreen></iframe>"
+                        headline = "Full Screen",
+                        explaination =
+                            "To allow fullscreen in YouTube embeds, add:\n" +
+                                    "• **allowfullscreen**\n\n" +
+                                    "Without it, the fullscreen button may not work.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Fullscreen Example</title>
+</head>
+<body>
+
+<h2>Fullscreen </h2>
+
+<iframe width="700" height="400"
+  title="Fullscreen demo"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "allowfullscreen enables the fullscreen button in the player."
                     ),
+
                     Headline(
-                        headline = "YouTube Parameters (HD & Controls)",
-                        explaination = "You can add parameters to the end of the URL to change behavior:\n\n* **controls=0**: Hides the play/pause bar.\n* **rel=0**: Stops showing suggested videos from other channels.\n* **vq=hd1080**: Suggests High Definition playback.",
-                        codeExample = "<iframe src='https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&rel=0'></iframe>"
+                        headline = "Architecture of YouTube Embed",
+                        explaination =
+                            "Parts of a YouTube iframe embed:\n" +
+                                    "• **src** = embed URL (+ options)\n" +
+                                    "• **allow** = permissions (autoplay, fullscreen, etc)\n" +
+                                    "• **allowfullscreen** = fullscreen support\n" +
+                                    "• **width/height** or CSS = size\n\n" +
+                                    "This example shows a clean, modern embed with good attributes.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Architecture</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    .wrap{max-width:860px;border:2px solid #e6e6e6;border-radius:18px;padding:12px}
+    iframe{border:0;border-radius:14px;width:100%;height:480px}
+    .small{font-size:13px;color:#555}
+  </style>
+</head>
+<body>
+
+<h2>YouTube Embed Architecture </h2>
+
+<div class="wrap">
+  <iframe
+    title="YouTube video"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+  <p class="small">loading=lazy delays loading until needed (faster page load).</p>
+</div>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations = "This is a clean embed setup: lazy loading, good permissions, and responsive sizing."
                     ),
+
                     Headline(
-                        headline = "Setting a Starting Point",
-                        explaination = "Want to show a specific part of a Linux tutorial? Use the 'start' parameter (in seconds).",
-                        codeExample = "<iframe src='https://www.youtube.com/embed/dQw4w9WgXcQ?start=60'></iframe>",
-                        afterCodeEplainations = "This video will start playing at the 1-minute mark."
+                        headline = "HD Enabling (Quality Note)",
+                        explaination =
+                            "You don’t force HD purely with HTML.\n\n" +
+                                    "✅ What you *can* do:\n" +
+                                    "• Use a larger player size (e.g., 720p layout)\n" +
+                                    "• Let YouTube choose the best quality automatically based on internet speed\n\n" +
+                                    "Quality is mostly controlled by:\n" +
+                                    "• user settings\n" +
+                                    "• internet speed\n" +
+                                    "• YouTube’s adaptive streaming",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Bigger Player</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:1000px;height:560px}
+  </style>
+</head>
+<body>
+
+<h2>Bigger Player (Better Viewing) ✅</h2>
+
+<iframe
+  title="Large embed"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "Adding Captions Automatically",
-                        explaination = "You can force the video to show closed captions immediately using 'cc_load_policy=1'.",
-                        codeExample = "<iframe src='https://www.youtube.com/embed/dQw4w9WgXcQ?cc_load_policy=1'></iframe>"
+                        headline = "Removing Video Controls",
+                        explaination =
+                            "You can hide controls using a URL parameter:\n" +
+                                    "• **controls=0** (hide)\n" +
+                                    "• **controls=1** (show)\n\n" +
+                                    "Note: YouTube may still show some controls depending on policy/updates.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>No Controls</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:900px;height:480px}
+  </style>
+</head>
+<body>
+
+<h2>Controls Off (controls=0) ✅</h2>
+
+<iframe
+  title="No controls"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Removing Suggested Videos",
+                        explaination =
+                            "People used to use **rel=0** to reduce related videos.\n\n" +
+                                    "Today, YouTube mostly shows related videos from the same channel, but behavior can change.\n\n" +
+                                    "Still, this parameter is commonly used in tutorials.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Related Videos</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:900px;height:480px}
+  </style>
+</head>
+<body>
+
+<h2>Reduce Suggested Videos (rel=0) </h2>
+
+<iframe
+  title="rel=0 demo"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Adding Captions",
+                        explaination =
+                            "You can request captions using URL parameters.\n\n" +
+                                    "Common parameters:\n" +
+                                    "• **cc_load_policy=1** → try to show captions\n\n" +
+                                    "Captions appear only if available for that video.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Captions</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:900px;height:480px}
+  </style>
+</head>
+<body>
+
+<h2>Captions On (cc_load_policy=1) ✅</h2>
+
+<iframe
+  title="Captions demo"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ?cc_load_policy=1"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Setting Starting Point",
+                        explaination =
+                            "To start the video at a specific time, use:\n" +
+                                    "• **start=SECONDS**\n\n" +
+                                    "Example: start=45 starts at 45 seconds.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Start Time</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    iframe{border:0;border-radius:16px;width:100%;max-width:900px;height:480px}
+  </style>
+</head>
+<body>
+
+<h2>Start at 45s </h2>
+
+<iframe
+  title="Start at 45 seconds"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ?start=45"
+  allowfullscreen>
+</iframe>
+
+</body>
+</html>
+""".trimIndent()
+                    ),
+
+                    Headline(
+                        headline = "Iframe Styling (No Border + Responsive Trick)",
+                        explaination =
+                            "To make the YouTube iframe responsive (fit phones), use a wrapper with aspect ratio.\n\n" +
+                                    "This is a clean modern approach.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive YouTube</title>
+  <style>
+    body{font-family:Arial,sans-serif;padding:16px}
+    .wrap{
+      max-width:900px;
+      border-radius:18px;
+      overflow:hidden; /* hides corners nicely */
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    }
+    .ratio{
+      position:relative;
+      width:100%;
+      padding-top:56.25%; /* 16:9 */
+    }
+    .ratio iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      border:0;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Responsive YouTube </h2>
+
+<div class="wrap">
+  <div class="ratio">
+    <iframe
+      title="Responsive video"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+</body>
+</html>
+""".trimIndent()
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("Which URL segment is required for YouTube iframes?", listOf("/watch", "/embed/", "/video/", "/link/"), 1),
-                    QuizQuestion("What does 'allowfullscreen' enable?", listOf("Higher volume", "The ability to expand video to full screen", "Automatic play", "Subtitles"), 1),
-                    QuizQuestion("How do you start a video at 30 seconds?", listOf("?time=30", "?start=30", "?begin=30", "?at=30"), 1),
-                    QuizQuestion("Which parameter hides the YouTube play/pause buttons?", listOf("buttons=0", "controls=0", "ui=none", "hide=1"), 1),
-                    QuizQuestion("What does 'rel=0' do?", listOf("Speeds up the video", "Prevents suggested videos from other channels", "Mutes the audio", "Enables HD"), 1)
+                    QuizQuestion("Which URL format is correct for embedding YouTube?", listOf("youtube.com/watch?v=ID", "youtube.com/embed/ID", "youtube.com/play/ID", "youtube.com/iframe/ID"), 1),
+                    QuizQuestion("Which attribute allows fullscreen?", listOf("fullscreen=1", "allowfullscreen", "full=on", "screenfull"), 1),
+                    QuizQuestion("What does controls=0 try to do?", listOf("Mute video", "Hide player controls", "Speed up video", "Add captions"), 1),
+                    QuizQuestion("What does start=60 do?", listOf("Starts at 60 seconds", "Stops at 60 seconds", "Plays 60 videos", "Sets volume to 60"), 0),
+                    QuizQuestion("What does cc_load_policy=1 try to do?", listOf("Remove ads", "Show captions", "Loop video", "Change quality"), 1),
+                    QuizQuestion("Why is the responsive wrapper used?", listOf("To block the video", "To keep 16:9 ratio on all screens", "To remove sound", "To increase download speed"), 1)
                 )
             ),
+
             Subtopic(
-                sutopicId = 414,
-                subTopicName = "Navigating File Paths",
+                sutopicId = 48,
+                subTopicName = "HTML File Paths (Finding Files Correctly)",
                 headlines = listOf(
+
                     Headline(
-                        majorHeadline = "Understanding File Paths",
-                        explaination = "A file path describes where a file is located in the folder structure. In HTML, we use these to link images, scripts, and other pages. Just like the Linux terminal, these can be Absolute or Relative.",
-                        codeExample = "<img src='images/tux.png' alt='Linux Penguin'>",
-                        tip = "Always use forward slashes (/) in web paths, even if you are developing on Windows!"
+                        majorHeadline = "HTML File Paths",
+                        explaination =
+                            "A **file path** tells HTML where to find a file (image, CSS, JS, video...).\n\n" +
+                                    "Two main types:\n" +
+                                    "• **Absolute paths** → full address\n" +
+                                    "• **Relative paths** → based on your project folder location\n\n" +
+                                    "If paths are wrong, images won’t show and CSS won’t load.",
+                        tip = "For beginners, start with relative paths because they work in projects and when you move folders together.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>File Paths</title>
+
+  <!-- Relative path to CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<h2>File Paths </h2>
+
+<!-- Relative path to image -->
+<img src="images/logo.png" alt="Logo" width="180">
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
                         headline = "Absolute File Paths",
-                        explaination = "An absolute path is the full URL to a file on the internet. It always includes the protocol (http:// or https://).",
-                        codeExample = "<img src='https://www.linux.org/images/logo.png'>",
-                        afterCodeEplainations = "It works regardless of where your current HTML file is saved because it points to a specific global address."
+                        explaination =
+                            "Absolute paths give the full location.\n\n" +
+                                    "Examples:\n" +
+                                    "• Absolute URL: https://mysite.com/images/logo.png\n" +
+                                    "• Absolute local path (not recommended on websites): C:\\Users\\...\n\n" +
+                                    "  Best use: when linking to files on another website/CDN.",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Absolute Paths</title>
+</head>
+<body>
+
+<h2>Absolute Path </h2>
+
+<img src="https://via.placeholder.com/300x120.png?text=Absolute+URL+Image" alt="Absolute image">
+
+<p>This image is loaded from a full web URL.</p>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
                         headline = "Relative File Paths",
-                        explaination = "A relative path points to a file relative to the current page. \n\n* **file.jpg**: Same folder.\n* **images/file.jpg**: In the 'images' sub-folder.\n* **../file.jpg**: One folder 'up' (parent directory).",
-                        codeExample = "<link rel='stylesheet' href='../css/styles.css'>",
-                        afterCodeEplainations = "Relative paths are best for local development because they won't break if you move the whole project folder."
+                        explaination =
+                            "Relative paths depend on where your HTML file is.\n\n" +
+                                    "Common symbols:\n" +
+                                    "• **file.png** → same folder\n" +
+                                    "• **images/pic.png** → inside images folder\n" +
+                                    "• **../pic.png** → go up one folder\n\n" +
+                                    "This example shows common patterns (read comments).",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Relative Paths</title>
+</head>
+<body>
+
+<h2>Relative Paths </h2>
+
+<!-- 1) Same folder -->
+<img src="logo.png" alt="Same folder image">
+
+<!-- 2) Inside a folder -->
+<img src="images/photo.png" alt="Inside images folder">
+
+<!-- 3) Go up one folder -->
+<img src="../shared/banner.png" alt="Up one folder">
+
+<p>These work only if your folder structure matches.</p>
+
+</body>
+</html>
+""".trimIndent()
                     ),
+
                     Headline(
-                        headline = "The Root-Relative Path",
-                        explaination = "Starting a path with a slash (/) refers to the root directory of the website. This is similar to the '/' (root) directory in Linux.",
-                        codeExample = "<a href='/contact.html'>Home</a>"
+                        headline = "Amazing Tip: Build a Folder Map (So You Never Get Lost)",
+                        explaination =
+                            "Many beginners fail because they don’t picture the folder structure.\n\n" +
+                                    "Here is a clean example structure:\n" +
+                                    "• project/\n" +
+                                    "  • index.html\n" +
+                                    "  • pages/about.html\n" +
+                                    "  • images/logo.png\n" +
+                                    "  • css/style.css\n\n" +
+                                    "From pages/about.html to logo.png, the path is:\n" +
+                                    "• **../images/logo.png**",
+                        codeExample = """
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Path Example</title>
+</head>
+<body>
+
+<h2>Folder Map Idea </h2>
+
+<p>Imagine this file is: <b>pages/about.html</b></p>
+<p>To reach <b>images/logo.png</b> we use:</p>
+
+<pre style="background:#f4f4f4;padding:12px;border-radius:12px;">
+&lt;img src="../images/logo.png" alt="Logo"&gt;
+</pre>
+
+</body>
+</html>
+""".trimIndent(),
+                        afterCodeEplainations =
+                            "Once learners understand ../ (go up), file paths become easy."
                     )
                 ),
+
                 questions = listOf(
-                    QuizQuestion("What does a path starting with 'https://' represent?", listOf("Relative path", "Absolute path", "Root path", "Folder path"), 1),
-                    QuizQuestion("Which symbol is used to move up one folder in a relative path?", listOf("./", "/", "../", ".../"), 2),
-                    QuizQuestion("If an image is in the same folder as the HTML file, what is the path?", listOf("/image.jpg", "image.jpg", "../image.jpg", "folder/image.jpg"), 1),
-                    QuizQuestion("Why are relative paths better for website projects?", listOf("They are faster", "They work even if you move the project to a new server", "They are more secure", "They look better"), 1),
-                    QuizQuestion("In 'images/logo.png', where is the 'logo.png' file?", listOf("In the parent folder", "In the same folder", "In a sub-folder named 'images'", "On another website"), 2)
+                    QuizQuestion("What is a file path used for?", listOf("To style buttons", "To locate files like images/CSS/JS", "To create tables", "To run Python"), 1),
+                    QuizQuestion("Which is an absolute URL path?", listOf("images/logo.png", "../images/logo.png", "https://site.com/logo.png", "logo.png"), 2),
+                    QuizQuestion("What does ../ mean in a relative path?", listOf("Go to next folder", "Go up one folder", "Reload page", "Make file bigger"), 1),
+                    QuizQuestion("If index.html and photo.png are in the same folder, the path is:", listOf("/photo.png", "images/photo.png", "photo.png", "../photo.png"), 2),
+                    QuizQuestion("Which is best for files inside your own project?", listOf("Relative paths", "Only absolute paths", "No paths needed", "Random paths"), 0),
+                    QuizQuestion("If your HTML is in pages/about.html and image is in images/logo.png, correct path is:", listOf("images/logo.png", "../images/logo.png", "../../images/logo.png", "pages/images/logo.png"), 1)
                 )
             ),
 
@@ -7863,50 +10640,268 @@ function clear(){t.value="";}
         topic = "Common HTML Practices",
         topicId=5,
         subtopics = listOf(
+
+
             Subtopic(
-                sutopicId = 51,
-                subTopicName = "Semantic Layouts",
+                sutopicId = 501,
+                subTopicName = "Header, Nav, Main, Footer",
                 headlines = listOf(
                     Headline(
-                        majorHeadline = "Beyond the <div> Tag",
-                        explaination = "In the past, developers used <div> for everything. Today, we use 'Semantic' tags like <header>, <nav>, <main>, and <footer>. These tell Search Engines and Screen Readers exactly what part of the page they are looking at.",
+                        majorHeadline = "Semantic Layout (Best Practice)",
+                        explaination =
+                            "Semantic HTML means using tags that clearly describe their purpose.\n\n" +
+                                    "Common semantic layout tags:\n" +
+                                    "• <header> page top area (logo, title)\n" +
+                                    "• <nav> navigation links\n" +
+                                    "• <main> main content (only one per page)\n" +
+                                    "• <section> grouped content\n" +
+                                    "• <article> independent content (post, card)\n" +
+                                    "• <footer> page bottom info\n\n" +
+                                    "Why people prefer this:\n" +
+                                    "• Better accessibility (screen readers understand structure)\n" +
+                                    "• Better SEO (search engines understand content sections)\n" +
+                                    "• Cleaner, easier to maintain code\n" +
+                                    "• Works well with CSS layout systems",
                         codeExample = """
 <!DOCTYPE html>
 <html lang="en">
-<style>
-  body { font-family: sans-serif; margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
-  header { background: #333; color: white; padding: 1rem; text-align: center; }
-  nav { background: #444; color: white; padding: 0.5rem; }
-  main { flex: 1; padding: 20px; }
-  footer { background: #222; color: #888; text-align: center; padding: 10px; }
-</style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic Layout</title>
+  <style>
+    :root{--bg:#0b1220;--card:#121c31;--text:#e8ecf5;--muted:#a6b1c6;--accent:#4aa3ff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
+    header{padding:18px 16px;border-bottom:1px solid rgba(255,255,255,.08)}
+    header .row{max-width:1050px;margin:0 auto;display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c5cff)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:14px}
+    nav a:hover{color:var(--text)}
+    main{max-width:1050px;margin:0 auto;padding:18px 16px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:14px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px}
+    .pill{display:inline-block;background:rgba(74,163,255,.14);border:1px solid rgba(74,163,255,.25);
+      color:var(--text);padding:6px 10px;border-radius:999px;font-size:12px}
+    button{border:0;background:var(--accent);color:#06101d;padding:10px 12px;border-radius:14px;cursor:pointer;font-weight:700}
+    button:hover{filter:brightness(1.05)}
+    .muted{color:var(--muted);font-size:14px;line-height:1.5}
+    footer{padding:16px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
+    footer .row{max-width:1050px;margin:0 auto;padding:0 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
 <body>
-    <header><h1>Linux Academy</h1></header>
-    <nav>Home | Tutorials | Commands</nav>
-    <main>
-        <article>
-            <h2>Understanding Sudo</h2>
-            <p>Sudo allows users to run programs with security privileges...</p>
-        </article>
-    </main>
-    <footer>&copy; 2026 Linux Academy</footer>
+
+<header>
+  <div class="row">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <div style="font-weight:800">Learn HTML</div>
+        <div class="muted" style="font-size:12px">Semantic layout demo</div>
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#lessons">Lessons</a>
+      <a href="#tips">Tips</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="grid" id="home">
+    <article class="card">
+      <span class="pill">Best practice: Semantic tags</span>
+      <h2 style="margin:10px 0 8px">Clean structure = easier projects</h2>
+      <p class="muted">
+        Semantic tags make the page easier to understand for humans, screen readers, and search engines.
+        This page uses header, nav, main, section, article and footer.
+      </p>
+      <button id="btn">Show a quick tip</button>
+      <p id="tipOut" class="muted" style="margin:12px 0 0"></p>
+    </article>
+
+    <aside class="card" id="tips">
+      <h3 style="margin:0 0 8px">Quick checklist</h3>
+      <ul class="muted" style="margin:0;padding-left:18px">
+        <li>Only one &lt;main&gt; per page</li>
+        <li>Use headings in order (h1, h2, h3...)</li>
+        <li>Give nav an aria-label</li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <div class="row">
+    <div>Practice page: Semantic Layout</div>
+    <div id="time"></div>
+  </div>
+</footer>
+
+<script>
+  const tips = [
+    "Use semantic tags first, then style with CSS.",
+    "If you can describe a section with a tag (nav, main, article), do it.",
+    "Screen readers love good structure."
+  ];
+
+  document.getElementById("btn").addEventListener("click", () => {
+    const pick = tips[Math.floor(Math.random() * tips.length)];
+    document.getElementById("tipOut").textContent = pick;
+  });
+
+  function tick(){
+    document.getElementById("time").textContent = "Local time: " + new Date().toLocaleTimeString();
+  }
+  tick();
+  setInterval(tick, 1000);
+</script>
+
 </body>
 </html>
-            """.trimIndent(),
-                        tip = "Use <main> only once per page to represent the unique content of that page."
-                    )
+""".trimIndent(),
+                        tip = "When your HTML structure is clear, CSS becomes simpler and your site feels professional."
+                    ),
+
+                    Headline(
+                        headline = "Why Semantic HTML is preferred",
+                        explaination =
+                            "Reasons developers prefer semantic HTML:\n" +
+                                    "• It improves accessibility (assistive tools understand regions)\n" +
+                                    "• It improves SEO (search engines understand your important content)\n" +
+                                    "• It reduces confusion in big projects\n" +
+                                    "• It helps team members work faster because the structure is obvious",
+                        codeExample = """
+<!-- Bad (div soup) -->
+<div class="top"></div>
+<div class="menu"></div>
+<div class="content"></div>
+
+<!-- Better (semantic) -->
+<header></header>
+<nav></nav>
+<main></main>
+""".trimIndent(),
+                        afterCodeEplainations = "You can still style semantic tags just like divs, but the meaning becomes clearer."
+                    ),
                 ),
-                questions = listOf(
-                    QuizQuestion("Which tag is best for the website navigation links?", listOf("<section>", "<footer>", "<nav>", "<aside>"), 2),
-                    QuizQuestion("What is the benefit of Semantic HTML?", listOf("Faster CPU usage", "Better Accessibility and SEO", "It adds automatic colors", "It prevents hacking"), 1),
-                    QuizQuestion("How many <main> tags should a page have?", listOf("One", "Two", "Unlimited", "Zero"), 0),
-                    QuizQuestion("Which tag usually contains the copyright notice?", listOf("<header>", "<article>", "<footer>", "<main>"), 2)
-                )
+                    questions = listOf(
+                        QuizQuestion("Which tag should contain the main content of a page?", listOf("<nav>", "<main>", "<header>", "<footer>"), 1),
+                        QuizQuestion("Why use semantic tags?", listOf("They make JavaScript faster", "They improve structure and accessibility", "They replace CSS", "They stop errors"), 1),
+                        QuizQuestion("How many <main> tags should a page have?", listOf("0", "1", "3", "Unlimited"), 1),
+                        QuizQuestion("Which tag is best for navigation links?", listOf("<section>", "<nav>", "<article>", "<aside>"), 1),
+                        QuizQuestion("Which tag is best for independent content like a blog post?", listOf("<article>", "<nav>", "<footer>", "<span>"), 0)
+                    )
+
             ),
+
             Subtopic(
-                sutopicId = 52,
-                subTopicName = "Responsive Web Standards",
+                sutopicId = 502,
+                subTopicName = "Responsive Design",
                 headlines = listOf(
+                    Headline(
+                        majorHeadline = "Mobile-First Responsive Design",
+                        explaination =
+                            "Mobile-first means designing for small screens first, then improving layout for bigger screens.\n\n" +
+                                    "Why people prefer this:\n" +
+                                    "• Most users are on phones\n" +
+                                    "• Easier to scale up than to shrink down\n" +
+                                    "• Better performance mindset (simple first)\n\n" +
+                                    "This full page changes layout automatically and has a small JS screen indicator.",
+                        codeExample = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile First</title>
+  <style>
+    :root{--bg:#0c1020;--card:#111a34;--text:#f2f4ff;--muted:#a4afc6;--accent:#7c5cff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text)}
+    header{padding:16px}
+    .wrap{max-width:1050px;margin:0 auto;padding:0 16px 16px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px} /* mobile-first */
+    .muted{color:var(--muted);line-height:1.5}
+    .badge{display:inline-block;border:1px solid rgba(124,92,255,.35);background:rgba(124,92,255,.14);
+      padding:6px 10px;border-radius:999px;font-size:12px}
+    button{border:0;background:var(--accent);color:#0c1020;padding:10px 12px;border-radius:14px;cursor:pointer;font-weight:800}
+    .bar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    input{width:100%;padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--text)}
+    @media (min-width:900px){
+      .grid{grid-template-columns:1.2fr .8fr} /* upgrade for big screens */
+      header{padding:20px 16px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="bar">
+    <div>
+      <div style="font-weight:900;font-size:20px">Mobile-First Practice</div>
+      <div class="muted" style="font-size:13px">Resize your browser to see the layout switch.</div>
+    </div>
+    <span class="badge" id="sizeInfo">Loading...</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="grid">
+    <div class="card">
+      <h3 style="margin:0 0 8px">Search demo</h3>
+      <p class="muted" style="margin:0 0 10px">A tiny JS feature: type and see live preview.</p>
+      <input id="q" placeholder="Type something..." />
+      <p class="muted" style="margin:10px 0 0">Preview: <b id="out"></b></p>
+    </div>
+
+    <aside class="card">
+      <h3 style="margin:0 0 8px">Why mobile-first?</h3>
+      <ul class="muted" style="margin:0;padding-left:18px">
+        <li>Phones are most common</li>
+        <li>Less layout bugs</li>
+        <li>Better user experience</li>
+      </ul>
+      <button id="random" style="margin-top:12px">Show a responsive tip</button>
+      <p id="rtip" class="muted" style="margin:10px 0 0"></p>
+    </aside>
+  </section>
+</main>
+
+<script>
+  const sizeInfo = document.getElementById("sizeInfo");
+  function updateSize(){
+    const w = window.innerWidth;
+    const mode = w >= 900 ? "Desktop layout" : "Mobile layout";
+    sizeInfo.textContent = mode + " (" + w + "px)";
+  }
+  window.addEventListener("resize", updateSize);
+  updateSize();
+
+  document.getElementById("q").addEventListener("input", (e) => {
+    document.getElementById("out").textContent = e.target.value;
+  });
+
+  const tips = [
+    "Start small: one column, then add columns for big screens.",
+    "Use max-width to avoid super wide text.",
+    "Test on a phone emulator or device before releasing."
+  ];
+  document.getElementById("random").addEventListener("click", () => {
+    document.getElementById("rtip").textContent = tips[Math.floor(Math.random() * tips.length)];
+  });
+</script>
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Build one clean layout for mobile first, then add @media queries for larger screens."
+                    ),
                     Headline(
                         majorHeadline = "The Viewport & Fluidity",
                         explaination = "Most web traffic comes from mobile. Professional practice involves setting the 'Viewport' and using 'Responsive' CSS to ensure the site works on everything from a 4-inch phone to a 27-inch monitor.",
@@ -7934,77 +10929,336 @@ function clear(){t.value="";}
                         tip = "Try resizing your browser window to see the 'Media Query' change the background color!"
                     )
                 ),
-                questions = listOf(
-                    QuizQuestion("Which meta tag is required for responsive sites?", listOf("charset", "viewport", "author", "refresh"), 1),
-                    QuizQuestion("What does 'width=device-width' do?", listOf("Sets the site to 1000px", "Matches the site width to the screen width", "Zooms in 200%", "Downloads more RAM"), 1),
-                    QuizQuestion("In CSS, what is '@media' used for?", listOf("Playing videos", "Adding social media icons", "Applying styles based on screen size", "Linking images"), 2)
-                )
+                    questions = listOf(
+                        QuizQuestion("What does mobile-first mean?", listOf("Design for desktop only", "Design for phones first, then improve for bigger screens", "Use only images", "Avoid CSS"), 1),
+                        QuizQuestion("Which CSS feature changes layout based on screen size?", listOf("class", "media queries", "href", "title"), 1),
+                        QuizQuestion("Why do many developers prefer mobile-first?", listOf("Phones are common", "It removes JavaScript", "It blocks ads", "It makes HTML shorter always"), 0),
+                        QuizQuestion("What is the purpose of meta viewport?", listOf("Add audio", "Help page scale properly on phones", "Make SEO only", "Change fonts"), 1),
+                        QuizQuestion("A common mobile-first layout starts with:", listOf("Three columns", "One column", "Ten columns", "No layout"), 1)
+                    )
+
             ),
+
             Subtopic(
-                sutopicId = 53,
-                subTopicName = "Optimized Script Loading",
+                sutopicId = 503,
+                subTopicName = "HTML + CSS + JS",
                 headlines = listOf(
                     Headline(
-                        majorHeadline = "The 'End of Body' Rule",
-                        explaination = "Browsers stop loading the page when they see a <script> tag. To prevent a blank screen while the JS loads, professionals place scripts at the very end of the <body> or use the 'defer' keyword.",
+                        majorHeadline = "Separation of Concerns",
+                        explaination =
+                            "Separation of concerns means:\n" +
+                                    "• HTML = structure\n" +
+                                    "• CSS = design\n" +
+                                    "• JavaScript = behavior\n\n" +
+                                    "Why people prefer this:\n" +
+                                    "• Easy to maintain\n" +
+                                    "• Teams work faster (designer edits CSS, dev edits JS)\n" +
+                                    "• Less messy files\n\n" +
+                                    "This single-file demo still separates sections clearly (style in <style>, logic in <script>).",
                         codeExample = """
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Separation of Concerns</title>
+  <style>
+    :root{--bg:#0f1220;--card:#151a2f;--text:#eef2ff;--muted:#a7b0c8;--accent:#4aa3ff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:980px;margin:0 auto}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:14px}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .row > *{flex:1;min-width:260px}
+    .muted{color:var(--muted);line-height:1.5}
+    button{border:0;background:var(--accent);color:#071321;padding:10px 12px;border-radius:14px;cursor:pointer;font-weight:800}
+    button:hover{filter:brightness(1.05)}
+    .tag{display:inline-block;border:1px solid rgba(74,163,255,.3);background:rgba(74,163,255,.14);
+      padding:6px 10px;border-radius:999px;font-size:12px}
+    .done{text-decoration:line-through;opacity:.75}
+    ul{margin:10px 0 0;padding-left:18px}
+    li{margin:8px 0}
+  </style>
+</head>
 <body>
-    <h1 id="header">Loading System...</h1>
-    
-    <p>The page structure is loaded before the heavy script starts.</p>
+  <main class="wrap">
+    <div class="card">
+      <span class="tag">HTML = structure • CSS = style • JS = behavior</span>
+      <h2 style="margin:10px 0 6px">Mini To-Do (Clean structure)</h2>
+      <p class="muted" style="margin:0">
+        This page is one file, but it follows separation of concerns by keeping style in CSS and logic in JS.
+      </p>
+    </div>
 
-    <script>
-        // The script can safely find 'header' because it was created above
-        document.getElementById('header').innerText = "System Ready!";
-        console.log("Script executed after HTML parsing.");
-    </script>
+    <div class="row" style="margin-top:12px">
+      <section class="card">
+        <h3 style="margin:0 0 8px">Add a task</h3>
+        <input id="task" placeholder="e.g. Learn semantic HTML" style="width:100%;padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--text)">
+        <button id="add" style="margin-top:10px">Add</button>
+        <p class="muted" id="msg" style="margin:10px 0 0"></p>
+      </section>
+
+      <section class="card">
+        <h3 style="margin:0 0 8px">Tasks</h3>
+        <ul id="list" class="muted"></ul>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const input = document.getElementById("task");
+    const list = document.getElementById("list");
+    const msg = document.getElementById("msg");
+
+    function addTask(text){
+      const li = document.createElement("li");
+      li.textContent = text;
+
+      li.addEventListener("click", () => {
+        li.classList.toggle("done");
+      });
+
+      list.appendChild(li);
+    }
+
+    document.getElementById("add").addEventListener("click", () => {
+      const text = input.value.trim();
+      if(!text){
+        msg.textContent = "Type a task first.";
+        return;
+      }
+      addTask(text);
+      msg.textContent = "Tip: click a task to mark it done.";
+      input.value = "";
+      input.focus();
+    });
+
+    addTask("Click me to mark done");
+    addTask("Build clean HTML structure");
+  </script>
 </body>
 </html>
-            """.trimIndent(),
-                        afterCodeEplainations = "If the script were in the <head>, it would try to change 'header' before it even existed, causing an error."
-                    )
+""".trimIndent(),
+                        tip = "Even in a single HTML file, you can keep your code clean by organizing CSS and JS sections."
+                    ),
                 ),
-                questions = listOf(
-                    QuizQuestion("Why put scripts at the end of the body?", listOf("To hide the code", "To allow the HTML to load first", "To make the text bold", "It is required by Linux"), 1),
-                    QuizQuestion("What happens if a script in the <head> looks for a <body> element?", listOf("It works fine", "It will likely return 'null' or an error", "The browser crashes", "The computer restarts"), 1),
-                    QuizQuestion("What modern attribute allows scripts in the <head> to run safely after loading?", listOf("wait", "slow", "defer", "stop"), 2)
+                    questions = listOf(
+                        QuizQuestion("What does separation of concerns mean?", listOf("Mix everything in one line", "Keep HTML, CSS, JS responsibilities clear", "Avoid CSS", "Avoid JS"), 1),
+                        QuizQuestion("What should CSS handle?", listOf("Structure", "Design/Styling", "Database", "SEO only"), 1),
+                        QuizQuestion("What should JavaScript handle?", listOf("Behavior/Interactivity", "Only colors", "Only headings", "Only images"), 0),
+                        QuizQuestion("Why is this practice preferred?", listOf("Harder debugging", "Easier maintenance and teamwork", "More errors", "Slower websites"), 1),
+                        QuizQuestion("In a team, separation helps because:", listOf("Everyone edits the same line", "Different people can focus on different parts", "It removes HTML", "It blocks users"), 1)
+
                 )
             ),
+
             Subtopic(
-                sutopicId = 54,
-                subTopicName = "Documentation & Indentation",
+                sutopicId = 504,
+                subTopicName = "Accessibility Basics ",
                 headlines = listOf(
                     Headline(
-                        majorHeadline = "Writing Human-Readable Code",
-                        explaination = "Computers don't care about spaces, but humans do! Clean code uses consistent indentation (2 or 4 spaces) and comments to explain *why* something was done, not just *what* was done.",
+                        majorHeadline = "Accessibility (A11y) Basics",
+                        explaination =
+                            "Accessibility means your website works for everyone, including users with assistive tools.\n\n" +
+                                    "Common best practices:\n" +
+                                    "• Use <label> for inputs\n" +
+                                    "• Use alt text for images\n" +
+                                    "• Buttons should be real <button>\n" +
+                                    "• Use aria-label when needed\n\n" +
+                                    "Why people prefer this:\n" +
+                                    "• More users can use your site\n" +
+                                    "• Better UX\n" +
+                                    "• Often improves SEO too\n\n" +
+                                    "This page includes a form with labels and a live status message.",
                         codeExample = """
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="docs.html">Documentation</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility Basics</title>
+  <style>
+    :root{--bg:#0c1220;--card:#121c31;--text:#eef2ff;--muted:#a6b1c6;--accent:#4aa3ff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:950px;margin:0 auto}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:14px}
+    label{display:block;margin-top:10px;margin-bottom:6px;font-weight:700}
+    input{width:100%;padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--text)}
+    button{border:0;background:var(--accent);color:#071321;padding:10px 12px;border-radius:14px;cursor:pointer;font-weight:900;margin-top:12px}
+    .muted{color:var(--muted);line-height:1.5}
+    .status{margin-top:12px;border-radius:14px;padding:10px 12px;border:1px solid rgba(255,255,255,.12)}
+    img{max-width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.08)}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h2 style="margin:0 0 6px">Accessible Form </h2>
+      <p class="muted" style="margin:0">Labels connect text to inputs, helping screen readers and improving usability.</p>
+
+      <form id="f">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" placeholder="e.g. Nick" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+
+        <button type="submit" aria-label="Submit the form">Submit</button>
+      </form>
+
+      <div id="status" class="status muted" role="status" aria-live="polite">
+        Waiting for submission...
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:12px">
+      <h3 style="margin:0 0 6px">Alt text example</h3>
+      <p class="muted" style="margin:0 0 10px">
+        Alt text describes images for users who can’t see them.
+      </p>
+      <img src="f6.png" alt="A placeholder banner that says Accessible Image Demo">
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("f").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      document.getElementById("status").textContent =
+        "Submitted. Name: " + name + " | Email: " + email + " (This status is announced politely)";
+    });
+  </script>
+</body>
+</html>
+""".trimIndent(),
+                        tip = "Use real labels and buttons. Avoid clickable divs when a <button> can do the job."
+                    ),
+                ),
+                    questions = listOf(
+                        QuizQuestion("Why use <label> with inputs?", listOf("To make inputs bigger", "To connect text with inputs for usability and screen readers", "To replace CSS", "To hide the input"), 1),
+                        QuizQuestion("What is alt text for?", listOf("To speed up JavaScript", "To describe images for accessibility", "To change background", "To create links"), 1),
+                        QuizQuestion("What does aria-label do?", listOf("Adds color", "Provides a readable name for assistive tech", "Blocks clicks", "Loads fonts"), 1),
+                        QuizQuestion("Which is better for a clickable action?", listOf("<div onclick>", "<button>", "<span>", "<p>"), 1),
+                        QuizQuestion("What does role='status' help with?", listOf("Music", "Announcing updates to assistive tools", "SEO only", "Changing layouts"), 1)
+
+                )
+            ),
+
+            Subtopic(
+                sutopicId = 505,
+                subTopicName = "Performance Basics",
+                headlines = listOf(
+                    Headline(
+                        majorHeadline = "Performance Basics (Fast Pages)",
+                        explaination =
+                            "Performance best practices make a site feel quick and smooth.\n\n" +
+                                    "Common habits:\n" +
+                                    "• Use <script defer> so HTML loads first\n" +
+                                    "• Use loading='lazy' for images/iframes\n" +
+                                    "• Avoid huge CSS/JS for simple pages\n" +
+                                    "• Use simple layouts and compress media\n\n" +
+                                    "Why people prefer this:\n" +
+                                    "• Better user experience\n" +
+                                    "• Faster load on slow networks\n" +
+                                    "• Often improves SEO\n\n" +
+                                    "This page demonstrates defer + lazy image + a tiny JS performance timer.",
+                        codeExample = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Performance Basics</title>
+  <style>
+    :root{--bg:#0b1220;--card:#121c31;--text:#eef2ff;--muted:#a6b1c6;--accent:#4aa3ff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text);padding:18px}
+    .wrap{max-width:980px;margin:0 auto}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:14px}
+    .muted{color:var(--muted);line-height:1.5}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    .row > *{flex:1;min-width:260px}
+    img{width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.08);display:block}
+    button{border:0;background:var(--accent);color:#071321;padding:10px 12px;border-radius:14px;cursor:pointer;font-weight:900}
+    .tag{display:inline-block;border:1px solid rgba(74,163,255,.3);background:rgba(74,163,255,.14);
+      padding:6px 10px;border-radius:999px;font-size:12px}
+  </style>
+
+  <!-- In real projects, put external scripts with defer -->
+  <script defer>
+    // This runs after HTML is parsed
+    document.addEventListener("DOMContentLoaded", () => {
+      const start = performance.now();
+      const out = document.getElementById("perf");
+      out.textContent = "DOM ready. Measuring...";
+      setTimeout(() => {
+        const end = performance.now();
+        out.textContent = "Page interactive. Approx time since DOM ready: " + (end - start).toFixed(1) + "ms";
+      }, 300);
+    });
+  </script>
+</head>
+<body>
+
+<main class="wrap">
+  <section class="card">
+    <span class="tag">defer + lazy loading</span>
+    <h2 style="margin:10px 0 6px">Fast Page Habits </h2>
+    <p class="muted" style="margin:0">
+      This page uses a small script in the head with <b>defer</b>-style behavior (DOMContentLoaded).
+      It also lazy loads an image below.
+    </p>
+    <p id="perf" class="muted" style="margin:10px 0 0"></p>
+  </section>
+
+  <section class="row" style="margin-top:12px">
+    <div class="card">
+      <h3 style="margin:0 0 8px">Lazy image</h3>
+      <p class="muted" style="margin:0 0 10px">
+        loading="lazy" loads the image later (when close to view), saving data and time.
+      </p>
+      <img loading="lazy" src="ludo.png" alt="Lazy loaded placeholder image">
+    </div>
+
+    <div class="card">
+      <h3 style="margin:0 0 8px">Tiny interaction</h3>
+      <p class="muted" style="margin:0 0 10px">Small JS features are fine. Avoid huge scripts for simple pages.</p>
+      <button id="btn">Generate a quick fact</button>
+      <p id="fact" class="muted" style="margin:10px 0 0"></p>
+    </div>
+  </section>
+</main>
 
 <script>
-  /* Fetch server data every 5 seconds.
-     Using a short interval for real-time monitoring.
-  */
-  setInterval(() => {
-    // console.log("Fetching..."); 
-  }, 5000);
+  const facts = [
+    "Lazy loading helps on slow networks because media loads later.",
+    "Defer prevents scripts from blocking HTML rendering.",
+    "Small pages can feel fast even without heavy frameworks."
+  ];
+  document.getElementById("btn").addEventListener("click", () => {
+    document.getElementById("fact").textContent = facts[Math.floor(Math.random() * facts.length)];
+  });
 </script>
-            """.trimIndent(),
-                        tip = "Treat your code like a README file; make it easy for the next developer to read."
-                    )
+
+</body>
+</html>
+""".trimIndent(),
+                        tip = "If a page feels slow, first check: huge images, blocking scripts, and unnecessary libraries."
+                    ),
                 ),
-                questions = listOf(
-                    QuizQuestion("Why do we use indentation?", listOf("To make the file smaller", "To make code readable for humans", "To satisfy the compiler", "To hide errors"), 1),
-                    QuizQuestion("How do you write a comment in HTML?", listOf("// Comment", "/* Comment */", "", "# Comment"), 2),
-                    QuizQuestion("What is the purpose of a 'TODO' comment?", listOf("To run a function", "To mark code that needs to be finished later", "To delete the file", "To show the date"), 1)
-                )
+                    questions = listOf(
+                        QuizQuestion("Why use script defer?", listOf("To block HTML", "To let HTML load first then run JS", "To remove CSS", "To add audio"), 1),
+                        QuizQuestion("What does loading='lazy' do?", listOf("Loads images faster always", "Delays loading until needed", "Stops images", "Makes images smaller"), 1),
+                        QuizQuestion("A common cause of slow pages is:", listOf("Too many headings", "Huge images and heavy scripts", "Using <main>", "Using <nav>"), 1),
+                        QuizQuestion("What is the benefit of lightweight UI?", listOf("More bugs", "Faster load and smoother feel", "More ads", "Less SEO"), 1),
+                        QuizQuestion("Which is a good practice for performance?", listOf("Load everything immediately", "Compress media and avoid huge libraries for small pages", "Use inline styles only always", "Disable caching"), 1)
+                    )
+
             )
+
+
 
             )
     ),
