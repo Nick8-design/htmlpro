@@ -20,6 +20,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Javascript"
+rootProject.name = "Html Pro"
 include(":app")
  

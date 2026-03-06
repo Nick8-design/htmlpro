@@ -40,14 +40,14 @@ fun AboutUs(modifier: Modifier = Modifier) {
     ) {
 
         Text(
-            text = "JS",
+            text = "HTML PRO",
             fontSize = 32.sp,
             fontWeight = FontWeight.ExtraBold,
             color = Color(0xFFFFD600)
         )
 
         Text(
-            text = "Memorize JavaScript",
+            text = "Understand HTML5",
             fontSize = 14.sp,
             textAlign = TextAlign.Center
         )
@@ -71,17 +71,17 @@ fun AboutUs(modifier: Modifier = Modifier) {
 
         DeveloperCardCentered(
             name = "Nick Dieda Dieda",
-            role = "Lead Developer",
+            role = "Developer",
             portfolioUrl = "https://nickdieda.web.app/"
         )
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        DeveloperCardCentered(
-            name = "Alizen Juma",
-            role = "Content Creator",
-            portfolioUrl = "https://alizenjuma.vercel.app/"
-        )
+//        DeveloperCardCentered(
+//            name = "Alizen Juma",
+//            role = "Content Creator",
+//            portfolioUrl = "https://alizenjuma.vercel.app/"
+//        )
 
         Spacer(modifier = Modifier.height(14.dp))
 

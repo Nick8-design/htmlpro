@@ -123,7 +123,7 @@ fun Settings(
                 onClick = {
                     val sendIntent = Intent().apply {
                         action = Intent.ACTION_SEND
-                        putExtra(Intent.EXTRA_TEXT, "Learn JavaScript with this amazing app: https://play.google.com/store/apps/details?id=${context.packageName}")
+                        putExtra(Intent.EXTRA_TEXT, "Learn HTML with this amazing app: https://play.google.com/store/apps/details?id=${context.packageName}")
                         type = "text/plain"
                     }
                     context.startActivity(Intent.createChooser(sendIntent, null))

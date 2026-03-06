@@ -33,7 +33,7 @@ fun AboutScreen() {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
 
                 Text(
-                    text = "JavaScript Learning App",
+                    text = "HTML Learning App",
                     style = MaterialTheme.typography.headlineMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -41,7 +41,7 @@ fun AboutScreen() {
                 Spacer(modifier = Modifier.height(8.dp))
 
                 Text(
-                    text = "Learn JavaScript, read notes, and run code offline.",
+                    text = "Learn HTML, read notes, and run code offline.",
                     style = MaterialTheme.typography.bodyLarge
                 )
 
@@ -53,7 +53,7 @@ fun AboutScreen() {
             AboutItem(
                 icon = Icons.Default.MenuBook,
                 title = "Interactive Notes",
-                description = "Step-by-step JavaScript lessons with explanations and examples."
+                description = "Step-by-step HTML lessons with explanations and examples."
             )
         }
 
@@ -61,7 +61,7 @@ fun AboutScreen() {
             AboutItem(
                 icon = Icons.Default.Code,
                 title = "Built-in Compiler",
-                description = "Write and execute JavaScript code instantly."
+                description = "Write and execute WEB code instantly."
             )
         }
 
@@ -98,7 +98,7 @@ fun AboutScreen() {
             Spacer(modifier = Modifier.height(20.dp))
 
             Text(
-                text = "This app helps students learn JavaScript through structured notes and an integrated coding environment.",
+                text = "This app helps students learn HTML through structured notes and an integrated coding environment.",
                 style = MaterialTheme.typography.bodyMedium
             )
 

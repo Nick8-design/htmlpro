@@ -208,15 +208,19 @@ fun HeadlineItem(
                 Column {
                     Box(
                         modifier = Modifier
-                        .heightIn(min = 10.dp, max = 180.dp)
+                            .fillMaxWidth()
+                        .heightIn(min = 120.dp, max = 250.dp)
 
-                    ) { // Fixed height for code block
+                    ) {
                         JsCodeEditor(
-                            modifier = Modifier
+                            modifier = Modifier.fillMaxSize()
                                 ,
                             editorRef = { editor ->
                             editor.setText(headline.codeExample)
                             editor.isEditable = false
+
+                                editor.isWordwrap = false
+                                editor.overScrollMode = android.view.View.OVER_SCROLL_IF_CONTENT_SCROLLS
                         })
                     }
 

@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.nickdieda.htmlpro.data.samples.SampleData
 import com.nickdieda.htmlpro.navigation.ScreenRoutes
-import com.nickdieda.htmlpro.presentation.ProjectCard
+import com.nickdieda.htmlpro.presentation.components.ProjectCard
 import java.nio.charset.StandardCharsets
 
 

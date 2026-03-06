@@ -35,6 +35,23 @@ fun JsCodeEditor(
                 // 3. This will now find "source.js" because init() finished above
                 setEditorLanguage(TextMateLanguage.create("text.html.basic", true))
 
+                // --- ADD THESE SETTINGS ---
+//                isWordwrap = false            // Disable word wrap to allow horizontal scrolling
+////                isOverScrollEnabled = true    // Allow scrolling past the last line/char
+////                setHorizontallyScrolling(true) // Explicitly enable horizontal scrolling
+//
+//                // Ensure the editor handles its own touch events inside the LazyColumn
+//                isFocusable = true
+//                isFocusableInTouchMode = true
+
+                isWordwrap = false // horizontal scroll when lines are long
+
+                // This prevents LazyColumn (parent) from hijacking scroll while dragging inside editor
+                setOnTouchListener { v, event ->
+                    v.parent?.requestDisallowInterceptTouchEvent(true)
+                    false // let CodeEditor handle the touch
+                }
+
                 editorRef(this)
             }
         },
